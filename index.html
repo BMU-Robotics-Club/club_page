@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMU Robotics</title>
     <link rel="stylesheet" href="style/index.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -21,11 +23,10 @@
                     <a href="#">
                         <img src="Images/logo2.png" class="title-logo" alt="logo">
                     </a>
-                </li><link rel="preconnect" href="https://fonts.gstatic.com">
-                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+                </li>
             </ul>
             <ul class="right-ul">
-                <li>
+                <li class="li-active">
                     <a href="#">HOME</a>
                 </li>
                 <li>
@@ -41,62 +42,61 @@
         </nav>
     
         <!-- ? Home navigation -->
-        <div>
-            
-        </div>
-        <div class="Home-nav">
-            <i class="fas fa-trophy"></i>
-            <a href="#Achievements">Achievements</a>
-        </div>
-        <div class="Home-nav">
-            <i class="fas fa-tasks"></i>
-            <a href="#Projects">Projects</a>
-        </div>
-        <div class="Home-nav">
-            <i class="fas fa-users"></i>
-            <a href="#Team">Team</a>
-        </div>
-
+            <div class="Home-nav">
+                <i class="fas fa-trophy"></i>
+                <a href="#Achievements">Achievements</a>
+            </div>
+                <div class="Home-nav">
+                <i class="fas fa-tasks"></i>
+                <a href="#Projects">Projects</a>
+            </div>
+                <div class="Home-nav">
+                <i class="fas fa-users"></i>
+                <a href="#Team">Team</a>
+            </div>
+    
+            <!-- text -->
+    <div class="title-text">
         <!-- typing effect -->
-
-    <textarea id="typing-text" readonly ></textarea>
-    <script>
-        (function () {
-           var CharacterPos = 0;
-           var MsgBuffer = "";
-           var TypeDelay = 100; 
-           var NxtMsgDelay = 1000;
-           var MsgIndex = 0;
-           var delay;
-           var MsgArray = ["BMU Robotics Club"];
-        
-           function StartTyping() {
-              var id = document.getElementById("typing-text");
-              if (CharacterPos != MsgArray[MsgIndex].length) {
-                 MsgBuffer  = MsgBuffer + MsgArray[MsgIndex].charAt(CharacterPos);
-                 id.value = MsgBuffer+"|";
-                 delay = TypeDelay;
-                 id.scrollTop = id.scrollHeight; 
-              } else {
-                 delay = NxtMsgDelay;
-                 MsgBuffer   = "";
-                 CharacterPos = -1;
-                 if (MsgIndex!=MsgArray.length-1){
-                   MsgIndex++;
-                 }else {
-                   MsgIndex = 0;
-                 }
+        <textarea id="typing-text" readonly ></textarea>
+        <script>
+            (function () {
+               var CharacterPos = 0;
+               var MsgBuffer = "";
+               var TypeDelay = 100; 
+               var NxtMsgDelay = 1000;
+               var MsgIndex = 0;
+                   var delay;
+               var MsgArray = ["BMU Robotics Club"];
+                
+               function StartTyping() {
+                  var id = document.getElementById("typing-text");
+                  if (CharacterPos != MsgArray[MsgIndex].length) {
+                     MsgBuffer  = MsgBuffer + MsgArray[MsgIndex].charAt(CharacterPos);
+                     id.value = MsgBuffer+"|";
+                     delay = TypeDelay;
+                     id.scrollTop = id.scrollHeight; 
+                  } else {
+                     delay = NxtMsgDelay;
+                     MsgBuffer   = "";
+                     CharacterPos = -1;
+                     if (MsgIndex!=MsgArray.length-1){
+                       MsgIndex++;
+                     }else {
+                       MsgIndex = 0;
+                         }
+                   }
+                   CharacterPos++;
+                   setTimeout(StartTyping,delay);
                }
-               CharacterPos++;
-               setTimeout(StartTyping,delay);
-           }
-        StartTyping();
+                StartTyping();
         })();
-        </script>
+            </script>
 
-        <h2>
-            Student Club
-        </h2>
+            <h2 class="float-right">
+                Student Club
+            </h2>
+        </div>
 
     </section>
 
