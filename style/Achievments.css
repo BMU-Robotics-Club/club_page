@@ -4,18 +4,46 @@ html, body
     height:100%;
 }
 .box{
-    height:50%;
-    display:inline-block;
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    background: #D7FFAE;
 }
 .box1{
-    position: absolute;
-    width: 209px;
-    height: 41px;
-    left: 645px;
-    top: 690px;
-    
-    background: #D7FFAE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 144px;
+
+    width: 50%;
+    height: 100%;
+    background:blue ;
+
+}
+.box2{
+    position:relative;
+    margin-top: -47%;
+    margin-left:52%;
+    width: 18%;
+    height: 40%;
+    background: red;
+}
+.box3{
+    position:relative;
+    margin-top: 5%;
+    margin-left:52%;
+    width: 18%;
+    height: 40%;
+    background: orange;
+}
+.box4{
+    position:relative;
+    margin-top: -44.8%;
+    margin-left:75%;
+    width: 18%;
+    height: 40%;
+    background: red;
+}
+.box5{
+    position:relative;
+    margin-top: 5%;
+    margin-left:75%;
+    width: 18%;
+    height: 40%;
+    background: orange;
 }
