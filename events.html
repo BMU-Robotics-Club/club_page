@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="Style/events.css">
     <title>Club Events</title>
 
- 
+    <script src="js/events.js"></script>
 
 </head>
 <body>
@@ -40,19 +40,38 @@
        
     </div>
 
-    
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <div class="eventsmenu1">
-        <button class = "classforbutton">Upcoming Events</button>   
+    <div id="eventsmenu1">
+        <button id = "classforbutton1" onclick="showupcomingevents()">Upcoming Events</button>   
     </div>
 
-    <div class="eventsmenu2">
-        <button class="classforbutton">Flagship Events</button>         
+    <br>
+    <br>
+
+    <div id="eventsmenu2">
+        <button id="classforbutton2" onclick="showflagshipevents()">Flagship Events</button>         
      </div>
+
+     <br>
+     <br>
+     
+     <div id="eventsmenu2">
+         <button id="classforbutton2" onclick="showflagshipevents()">Workshops</button>         
+      </div>
     
+      <br>
+      <br>
+      
+      <div id="eventsmenu2">
+          <button id="classforbutton2" onclick="showflagshipevents()">Technical Fest</button>         
+       </div>
 
 
-     <div class = "upcominginformation">
+     <div id = "upcominginformation">
          <div class="block1">
              <img src="Images/learnarduino.png" height="250px" width="250px">
              <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
@@ -80,7 +99,7 @@
 
 
 
-     <div class = "flagshipinformation">
+     <div id = "flagshipinformation">
         <div class="block1">
             <img src="Images/rcinfo.JPG" height="250px" width="250px">
             <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>

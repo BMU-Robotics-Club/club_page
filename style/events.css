@@ -62,7 +62,7 @@ div > a{
     height:555px;
 }
 
-.eventsmenu1{
+#eventsmenu1{
     position: relative;
     color:black;
     position: relative;
@@ -75,7 +75,7 @@ div > a{
     border-radius: 10px;
         
 }
-.eventsmenu2{
+#eventsmenu2{
     position: relative;
     color:black;
     position: relative;
@@ -89,19 +89,31 @@ div > a{
         
 }
 
-.classforbutton{
+#classforbutton1{
     
-    background-color: #00adb5;
+    background-color: #D7FFAE;
     height: 35px;
     margin-top: 5px;
     margin-left:33px;
     border-style: none;
+    cursor: pointer;
+   
+}
+
+#classforbutton2{
+    
+    background-color: #D7FFAE;
+    height: 35px;
+    margin-top: 5px;
+    margin-left:33px;
+    border-style: none;
+    cursor: pointer;
    
 }
 
 
 
-.flagshipinformation{
+#flagshipinformation{
     display: none;
     top:665px;
     left:305px;
@@ -113,8 +125,8 @@ div > a{
     
 }
 
-.upcominginformation{
-    display: none;
+#upcominginformation{
+    
     top:665px;
     left:305px;
     position:absolute;
