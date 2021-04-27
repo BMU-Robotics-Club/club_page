@@ -121,12 +121,45 @@ li a{
     height: 100%;
     background: #D7FFAE;
 }
+.box h1{
+    background-color: rgb(155, 138, 252);
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 65%;
+    border-radius: 10px;
+
+    /* z-index: 1; */
+}
 .box1{
     width: 50%;
     height: 100%;
     background:blue ;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* boxes */
 .box2{
@@ -160,10 +193,14 @@ li a{
     background: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
+    cursor: pointer;
 }
-.box2 .knowmore p{
+.box2 .knowmore button{
     font-size: larger;
     padding-top: 7%;
+}
+button:hover{
+background-color: aquamarine;
 }
 .box3{
     position:relative;
@@ -196,8 +233,9 @@ li a{
     background: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
+    cursor: pointer;
 }
-.box3 .knowmore p{
+.box3 .knowmore button{
     font-size: larger;
     padding-top: 7%;
 }
@@ -232,8 +270,9 @@ li a{
     background: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
+    cursor: pointer;
 }
-.box4 .knowmore p{
+.box4 .knowmore button{
     font-size: larger;
     padding-top: 7%;
 }
@@ -268,8 +307,13 @@ li a{
     background: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
+    cursor: pointer;
 }
-.box5 .knowmore p{
+.box5 .knowmore button{
     font-size: larger;
     padding-top: 7%;
+    
+}
+.knowmore:hover{
+    background-color: #08f169;
 }
