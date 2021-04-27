@@ -1,15 +1,8 @@
-body{
+html,body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-image: url("/club_page/Images/bg6.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    filter: saturate(60%);
-    opacity: 80%;
-    height: 100rem;
+    height:100%;
 }
 h2{
     margin: 0;
@@ -17,6 +10,16 @@ h2{
     margin-left: 5px;
 }
 /* * title section  */
+.title{
+    background-image: url("/Images/bg6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: saturate(60%);
+    opacity: 80%;
+    height: 100vh;
+}
 nav{
     position: sticky;
 }
@@ -109,4 +112,256 @@ li a{
     #typing-text{
         text-align: center;
     }
+}
+
+
+.box{
+    /* margin-top: 50%; */
+    width: 100%;
+    height: 100%;
+    background: #D7FFAE;
+}
+.box h1{
+    background-color: rgb(155, 138, 252);
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 65%;
+    border-radius: 10px;
+
+    /* z-index: 1; */
+}
+.box1{
+    width: 50%;
+    height: 100%;
+    background:blue ;
+
+}
+#box10 p{
+    display:inline;
+    margin-top: 0;
+    font-size: xx-large;
+}
+#box11{
+    display:none;
+}
+ #box11 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box11 p{
+    margin-left:2%;
+}
+#box12{
+    display:none;
+}
+ #box12 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box12 p{
+    margin-left:2%;
+}
+#box13{
+    display:none;
+}
+ #box13 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box13 p{
+    margin-left:2%;
+}
+#box14{
+    display:none;
+}
+ #box14 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box14 p{
+    margin-left:2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* boxes */
+.box2{
+    position:relative;
+    margin-top: -47%;
+    margin-left:54%;
+    width: 17%;
+    height: 40%;
+    background: red;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+.box2 img{
+    border-radius: 14px;
+    width:100%;
+    height: 55%;
+}
+.box2 h2{
+    padding-top: 0%;
+    padding-left: 2%;
+}
+.box2 h3{
+    padding-left: 2%;
+}
+.box2 .knowmore{
+    text-align: center;
+    width: 50%;
+    height: 15%;
+    margin-top: -4%;
+    margin-left: 38%;
+    background: aqua;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    cursor: pointer;
+}
+.box2 .knowmore button{
+    font-size: larger;
+    padding-top: 7%;
+}
+button:hover{
+background-color: aquamarine;
+}
+.box3{
+    position:relative;
+    margin-top: 5%;
+    margin-left:54%;
+    width: 17%;
+    height: 40%;
+    background: orange;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+.box3 img{
+    border-radius: 14px;
+    width:100%;
+    height: 55%;
+}
+.box3 h2{
+    padding-top: 0%;
+    padding-left: 2%;
+}
+.box3 h3{
+    padding-left: 2%;
+}
+.box3 .knowmore{
+    text-align: center;
+    width: 50%;
+    height: 15%;
+    margin-top: -4%;
+    margin-left: 38%;
+    background: aqua;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    cursor: pointer;
+}
+.box3 .knowmore button{
+    font-size: larger;
+    padding-top: 7%;
+}
+.box4{
+    position:relative;
+    margin-top: -44.7%;
+    margin-left:75%;
+    width: 17%;
+    height: 40%;
+    background: red;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+.box4 img{
+    border-radius: 14px;
+    width:100%;
+    height: 55%;
+}
+.box4 h2{
+    padding-top: 0%;
+    padding-left: 2%;
+}
+.box4 h3{
+    padding-left: 2%;
+}
+.box4 .knowmore{
+    text-align: center;
+    width: 50%;
+    height: 15%;
+    margin-top: -4%;
+    margin-left: 38%;
+    background: aqua;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    cursor: pointer;
+}
+.box4 .knowmore button{
+    font-size: larger;
+    padding-top: 7%;
+}
+.box5{
+    position:relative;
+    margin-top: 4.9%;
+    margin-left:75%;
+    width: 17%;
+    height: 40%;
+    background: orange;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+.box5 img{
+    border-radius: 14px;
+    width:100%;
+    height: 55%;
+}
+.box5 h2{
+    padding-top: 0%;
+    padding-left: 2%;
+}
+.box5 h3{
+    padding-left: 2%;
+}
+.box5 .knowmore{
+    text-align: center;
+    width: 50%;
+    height: 15%;
+    margin-top: -4%;
+    margin-left: 38%;
+    background: aqua;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    cursor: pointer;
+}
+.box5 .knowmore button{
+    font-size: larger;
+    padding-top: 7%;
+    
+}
+.knowmore:hover{
+    background-color: #08f169;
 }
