@@ -136,11 +136,59 @@ li a{
     background:blue ;
 
 }
-
-
-
-
-
+#box10 p{
+    display:inline;
+    margin-top: 0;
+    font-size: xx-large;
+}
+#box11{
+    display:none;
+}
+ #box11 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box11 p{
+    margin-left:2%;
+}
+#box12{
+    display:none;
+}
+ #box12 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box12 p{
+    margin-left:2%;
+}
+#box13{
+    display:none;
+}
+ #box13 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box13 p{
+    margin-left:2%;
+}
+#box14{
+    display:none;
+}
+ #box14 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box14 p{
+    margin-left:2%;
+}
 
 
 
