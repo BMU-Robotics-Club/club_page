@@ -1,0 +1,182 @@
+html
+{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    margin: 0px;
+    padding: 0%;   
+}
+
+header{
+    height: 90px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+#logo-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    position: relative;
+    top: 1px;
+}
+.title{
+    color: #eeeeee;
+    display: inline-block;
+    padding: 10px;
+}
+h1{
+    margin-top: -1px;
+    margin-bottom: 2px;
+}
+h3{
+    margin-top: 1px;
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+.headerLink{
+    display: inline-block;
+    padding: 50px 20px 36px 20px;
+    position: relative;
+    left : 45%;
+    bottom: 20%;
+    margin: 0;
+}
+.eventsLink{
+    color: #00adb5;
+}
+.headerLink:hover{
+    background-color: #393e46;
+}
+div > a{
+    color: white;
+    text-decoration: none;
+}
+
+.imagesetup{
+    opacity: 85%;
+    background-image: url("/Images/rccar.jpg");
+    background-size: cover;
+    width:100%;
+    height:555px;
+}
+
+#eventsmenu1{
+    position: relative;
+    color:black;
+    position: relative;
+    background: #D7FFAE;
+    padding: 5px;
+    width:200px;
+    height:45px;
+    margin-left: 1%;
+    margin-top: 18px;
+    border-radius: 10px;
+        
+}
+#eventsmenu2{
+    position: relative;
+    color:black;
+    position: relative;
+    background: #D7FFAE;
+    padding: 5px;
+    width:200px;
+    height:45px;
+    margin-left: 1%;
+    margin-top: 18px;
+    border-radius: 10px;
+        
+}
+
+#classforbutton1{
+    
+    background-color: #D7FFAE;
+    height: 35px;
+    margin-top: 5px;
+    margin-left:33px;
+    border-style: none;
+    cursor: pointer;
+   
+}
+
+#classforbutton2{
+    
+    background-color: #D7FFAE;
+    height: 35px;
+    margin-top: 5px;
+    margin-left:33px;
+    border-style: none;
+    cursor: pointer;
+   
+}
+
+
+
+#flagshipinformation{
+    display: none;
+    top:665px;
+    left:305px;
+    position:absolute;
+    width:1000px;
+    height:500px;
+    background-color: #D7FFAE;
+    
+    
+}
+
+#upcominginformation{
+    
+    top:665px;
+    left:305px;
+    position:absolute;
+    width:1000px;
+    height:500px;
+    background-color: #D7FFAE;
+    
+    
+}
+
+.block1{
+    position: absolute;
+    width:250px;
+    height:400px;
+    left: 25px;
+    top:50px;
+    background-color: #393e46;
+    text-align: center;
+}
+
+
+.block2{
+    position: absolute;
+    width:250px;
+    height:400px;
+    left: 375px;
+    top:50px;
+    background-color: #393e46;
+    text-align: center;
+}
+
+.block3{
+    position: absolute;
+    width:250px;
+    height:400px;
+    left: 725px;
+    top:50px;
+    background-color: #393e46;
+    text-align: center;
+}
+
+.registernow{
+   
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+      
+}
