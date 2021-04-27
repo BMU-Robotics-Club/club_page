@@ -136,10 +136,17 @@ li a{
     background:blue ;
 
 }
-#box10 p{
+#box10{
     display:inline;
-    margin-top: 0;
-    font-size: xx-large;
+}
+ #box10 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box10 p{
+    margin-left:2%;
 }
 #box11{
     display:none;
