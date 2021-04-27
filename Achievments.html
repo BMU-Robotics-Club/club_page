@@ -3,58 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-        <link rel="stylesheet" href="style/Achievments.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMU Robotics</title>
+    <link rel="stylesheet" href="style/index.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <!-- right -->
-    <div class="box">  
-        <!-- left -->
-        <div class="box1">
-           
-        </div>
-        <!-- red1 -->
-        <div class="box2">
-            <img src="/Images/linefollower.jfif">
-                <h2>Line Follower Robot</h2>
-                <h3>1st Prize</h3>
-
-            <div class="knowmore">
-                <p>Know more</p>
+    <!-- *title --> 
+    <section class="title">
+        <!-- navigation bar  -->
+        <nav class="title-nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="Images/logo2.png" class="title-logo" alt="logo">
+                    </a>
+                </li>
+            </ul>
+            <ul class="right-ul">
+                <li class="li-active">
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">EVENTS</a>
+                </li>
+                <li>
+                    <a href="#">BLOG</a>
+                </li>
+                <li>
+                    <a href="#">SIGNUP</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- ? Home navigation -->
+            <div class="Home-nav">
+                <i class="fas fa-trophy"></i>
+                <a href="#box">Achievements</a>
             </div>
+                <div class="Home-nav">
+                <i class="fas fa-tasks"></i>
+                <a href="#Projects">Projects</a>
+            </div>
+                <div class="Home-nav">
+                <i class="fas fa-users"></i>
+                <a href="#Team">Team</a>
+            </div>
+    
+            <!-- text -->
+    <div class="title-text">
+        <!-- typing effect -->
+        <textarea id="typing-text" readonly ></textarea>
+        <script>
+            (function () {
+               var CharacterPos = 0;
+               var MsgBuffer = "";
+               var TypeDelay = 100; 
+               var NxtMsgDelay = 1000;
+               var MsgIndex = 0;
+                   var delay;
+               var MsgArray = ["BMU Robotics Club"];
+                
+               function StartTyping() {
+                  var id = document.getElementById("typing-text");
+                  if (CharacterPos != MsgArray[MsgIndex].length) {
+                     MsgBuffer  = MsgBuffer + MsgArray[MsgIndex].charAt(CharacterPos);
+                     id.value = MsgBuffer+"|";
+                     delay = TypeDelay;
+                     id.scrollTop = id.scrollHeight; 
+                  } else {
+                     delay = NxtMsgDelay;
+                     MsgBuffer   = "";
+                     CharacterPos = -1;
+                     if (MsgIndex!=MsgArray.length-1){
+                       MsgIndex++;
+                     }else {
+                       MsgIndex = 0;
+                         }
+                   }
+                   CharacterPos++;
+                   setTimeout(StartTyping,delay);
+               }
+                StartTyping();
+        })();
+            </script>
+
+            <h2 class="float-right">
+                Student Club
+            </h2>
         </div>
-        <!-- oragne1 -->
-        <div class="box3">
-            <img src="/Images/nitrosurge.jpg">
-            <h2>Nitro Surge</h2>
-            <h3>1st Prize</h3>
-        
-        <div class="knowmore">
-            <p>Know more</p>
-        </div>
-        </div>
-        <!-- red2 -->
-        <div class="box4">
-            <img src="/Images/robosoccer.jpg">
-            <h2>Robo Soccer</h2>
+
+    </section>
+
+
+  
+
+
+ <!-- right -->
+ <div class="box">  
+    <!-- left -->
+    <div class="box1">
+       
+    </div>
+    <!-- red1 -->
+    <div class="box2">
+        <img src="/Images/linefollower.jfif">
+            <h2>Line Follower Robot</h2>
             <h3>1st Prize</h3>
 
         <div class="knowmore">
             <p>Know more</p>
-        </div>
-        </div>
-        <!-- orange2 -->
-        <div class="box5">
-            <img src="/Images/robowar.jpg">
-            <h2>Robo War</h2>
-            <h3>1st Prize</h3>
-
-        <div class="knowmore">
-            <p>Know more</p>
-        </div>
         </div>
     </div>
+    <!-- oragne1 -->
+    <div class="box3">
+        <img src="/Images/nitrosurge.jpg">
+        <h2>Nitro Surge</h2>
+        <h3>1st Prize</h3>
     
+    <div class="knowmore">
+        <p>Know more</p>
+    </div>
+    </div>
+    <!-- red2 -->
+    <div class="box4">
+        <img src="/Images/robosoccer.jpg">
+        <h2>Robo Soccer</h2>
+        <h3>1st Prize</h3>
+
+    <div class="knowmore">
+        <p>Know more</p>
+    </div>
+    </div>
+    <!-- orange2 -->
+    <div class="box5">
+        <img src="/Images/robowar.jpg">
+        <h2>Robo War</h2>
+        <h3>1st Prize</h3>
+
+    <div class="knowmore">
+        <p>Know more</p>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+    
+    <section id="Projects">
+
+    </section>
+    <section id="Team">
+
+    </section>
+
 </body>
 </html>
