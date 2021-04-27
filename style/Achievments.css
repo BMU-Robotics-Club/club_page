@@ -121,13 +121,101 @@ li a{
     height: 100%;
     background: #D7FFAE;
 }
-.box1{
+.box h1{
+    background-color: rgb(155, 138, 252);
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 65%;
+    border-radius: 10px;
 
+    /* z-index: 1; */
+}
+.box1{
     width: 50%;
     height: 100%;
     background:blue ;
 
 }
+#box10{
+    display:inline;
+}
+ #box10 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box10 p{
+    margin-left:2%;
+}
+#box11{
+    display:none;
+}
+ #box11 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box11 p{
+    margin-left:2%;
+}
+#box12{
+    display:none;
+}
+ #box12 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box12 p{
+    margin-left:2%;
+}
+#box13{
+    display:none;
+}
+ #box13 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box13 p{
+    margin-left:2%;
+}
+#box14{
+    display:none;
+}
+ #box14 img{
+     
+     margin-top: 5%;
+     margin-left: 23%;
+    width:50%;
+}
+#box14 p{
+    margin-left:2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* boxes */
 .box2{
     position:relative;
@@ -155,15 +243,19 @@ li a{
     text-align: center;
     width: 50%;
     height: 15%;
-    margin-top: -15%;
+    margin-top: -4%;
     margin-left: 38%;
     background: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
+    cursor: pointer;
 }
-.box2 .knowmore p{
+.box2 .knowmore button{
     font-size: larger;
     padding-top: 7%;
+}
+button:hover{
+background-color: aquamarine;
 }
 .box3{
     position:relative;
@@ -196,8 +288,9 @@ li a{
     background: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
+    cursor: pointer;
 }
-.box3 .knowmore p{
+.box3 .knowmore button{
     font-size: larger;
     padding-top: 7%;
 }
@@ -232,8 +325,9 @@ li a{
     background: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
+    cursor: pointer;
 }
-.box4 .knowmore p{
+.box4 .knowmore button{
     font-size: larger;
     padding-top: 7%;
 }
@@ -268,8 +362,13 @@ li a{
     background: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
+    cursor: pointer;
 }
-.box5 .knowmore p{
+.box5 .knowmore button{
     font-size: larger;
     padding-top: 7%;
+    
+}
+.knowmore:hover{
+    background-color: #08f169;
 }
