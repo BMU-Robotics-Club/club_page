@@ -18,7 +18,7 @@ h2{
     background-attachment: fixed;
     filter: saturate(60%);
     opacity: 80%;
-    height: 100vh;
+    height: 70vh;
 }
 nav{
     position: sticky;
