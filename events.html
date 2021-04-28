@@ -7,6 +7,7 @@
     <title>Club Events</title>
 
     <script src="js/events.js"></script>
+    <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -34,12 +35,117 @@
     </header>
 
     
-
+    
 
     <div class = "imagesetup">
+     
+        <!-- <div class="marqueetext">
+            <b><a href="#upcominginformation"> <marquee direction = "left" style="color: black;">Register for our upcoming event <span style="color:rgb(181, 135, 225)"> 3 Day workshop on Arduino</span> <span style="color:rgb(111, 111, 235)" ><u>below</u> </span>and get a chance to grab exciting prizes!!</marquee></a> </b>
+        </div>
+         -->
+
+        <div id="demo"></div>
+      <script>
+        (function(){
+            
        
+        
+        
+            function abc(){
+                
+                var i = 0;
+                var txt = 'Lets !! Get !! Chase !!'; /* The text */
+                var speed = 150;
+
+                function typeWriter() {
+               
+                if (i < txt.length) {
+                  document.getElementById("demo").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              else{
+                i=0;
+                document.getElementById("demo").innerHTML ="";
+                typeWriter();
+              }
+               
+              }
+              
+              
+              setTimeout(typeWriter, speed);
+            }
+            
+              
+              abc();
+
+        }
+        
+        )(); 
+        
+      </script>
+        
+        
+      
+     
+         
+      
     </div>
 
+    <div class="eventsstats">
+        
+        <div class="icon">
+            <i class="fas fa-caret-down fa-3x"></i>
+        </div>
+        
+
+        <div class="stats1">
+            <p>20+</p>
+        </div>
+
+        <div class="stats1data">
+            <p>Events</p>
+        </div>
+
+        <div class="stats2">
+            <p>4</p>
+        </div>
+
+        <div class="stats2data">
+            <p>Falgship Events</p>
+        </div>
+
+        <div class="stats3">
+            <p>40+</p>
+        </div>
+
+        <div class="stats3data">
+            <p>Workshops</p>
+        </div>
+
+        <div class="vertical1">
+
+        </div>
+
+        <div class="vertical2">
+
+        </div>
+        <div class="vertical3">
+
+        </div>
+    </div>
+
+
+    <div class = "imagesetup2">
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -75,7 +181,7 @@
          <div class="block1">
              <img src="Images/learnarduino.png" height="250px" width="250px">
              <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-            <div class="registernow">Register Now</div>
+           <a href = "#formdivmovement"><div class="registernow">Register Now</div></a> 
         
         </div>
 
@@ -83,7 +189,7 @@
          <div class="block2" >
             <img src="Images/obstaclebot.JPG" height="250px" width="250px">
              <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-            <div class="registernow">Register Now</div>
+             <a href = "#formdivmovement"><div class="registernow">Register Now</div></a>
         
         </div>
         
@@ -91,7 +197,7 @@
         <div class="block3" >
             <img src="Images/arduinoavr.JPG" height="250px" width="250px">
              <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-            <div class="registernow">Register Now</div>
+             <a href = "#formdivmovement"><div class="registernow">Register Now</div></a>
         </div>
          
      </div>
@@ -127,7 +233,57 @@
 
 
 
+    <div class="formdiv">
 
+        <div id="formdivmovement">
+
+        </div>
+
+        <h2 class= "formattingregisterhere">Event Registration Form</h2>
+
+        <form action="/action_page.php">
+            <div class="formatting">
+                <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"placeholder="Your name.."> 
+            <br><br>            
+            </div>
+
+            <div class="formatting">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Email Id">
+            <br><br>
+            </div>
+
+            <div class="formatting">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile No">
+                <br><br>
+            </div>
+
+            <div class="formatting">
+                <label for="eventname">Event Name:</label>
+                <input type="text" id="eventname" name="eventname" placeholder="Event you want to register for">
+                <br><br>
+            </div>
+
+            
+
+            <div class="formattingyesno">
+
+                <label for="updates">Do you want to receive updates?    Yes</label>
+                <input type="radio" id="yes" name="updates" value="yes">
+                <label for="updates">No</label>
+                <input type="radio" id="no" name="updates" value="no">
+                <br><br>
+            </div>
+
+            <div class = "formattingsubmit">
+                <input type="submit" value="Submit">
+            </div>
+
+            
+          </form>
+    </div>
 
 
      
