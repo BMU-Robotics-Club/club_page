@@ -74,7 +74,7 @@ div > a{
     background-image: url("/Images/bg.jpg");
     background-size: cover;
     width:100%;
-    height:1500px;
+    height:1450px;
 }
 
 #eventsmenu1{
@@ -363,3 +363,19 @@ input[type=text], select, textarea {
 #eventname{
     margin-left: 53px;
 }
+
+/* !FOOTER CONTENTS */
+#footer{
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .footer-icons{
+    padding: 1rem;
+  }
+  footer a{
+    text-decoration:none;
+    color: black;
+  }
+  footer a:hover{
+    color: grey;
+  }
