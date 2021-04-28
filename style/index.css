@@ -18,7 +18,7 @@ h2{
     background-attachment: fixed;
     filter: saturate(60%);
     opacity: 80%;
-    height: 70vh;
+    height: 100vh;
 }
 .speaker-info h3{
   color:orange;
