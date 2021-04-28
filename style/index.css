@@ -138,7 +138,7 @@ li a{
 .box1{
     width: 50%;
     height: 100%;
-    background:#03a8e4 ;
+    background:#9cd6eb ;
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,6 +148,7 @@ li a{
 }
 #box11{
     display:inline;
+    
     
 }
  #box11 img{
@@ -1065,3 +1066,21 @@ html {
   
       z-index: 1;
   }
+
+/* !FOOTER CONTENTS */
+#footer{
+  text-align: center;
+  margin-top: 3rem;
+}
+.footer-icons{
+  padding: 1rem;
+}
+footer a{
+  text-decoration:none;
+  color: black;
+}
+footer a:hover{
+  color: grey;
+}
+
+  
