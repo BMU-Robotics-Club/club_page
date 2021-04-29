@@ -12,7 +12,8 @@ header{
     height: 90px;
     width: 100%;
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #0B0C10 ,#1F2833);
+    /* background-color: rgb(0, 0, 0); */
 }
 #logo-img{
     height: 60px;
@@ -55,18 +56,49 @@ div > a{
 }
 
 .imagesetup{
-    opacity: 85%;
-    background-image: url("/Images/rccar.jpg");
+    position: relative;
+    background-image: url("/Images/rccarbg.jpeg");
     background-size: cover;
     width:100%;
-    height:555px;
+    height:80%;
+
+}
+
+
+
+
+.imagesetup2{
+    position: relative;
+    background-image: url("/Images/bg.jpg");
+    background-size: cover;
+    width:100%;
+    
+}
+
+.layerpositioning
+{
+    padding-left: 1.5%;
+    position: relative;
+    display: flex;
+}
+
+
+.menupositioning{
+    padding-top: 6%;
+padding-left:2%;
+}
+
+
+.detailspositioning{
+    padding-top: 2%;
+    padding-left:5%;
 }
 
 #eventsmenu1{
     position: relative;
     color:black;
     position: relative;
-    background: #D7FFAE;
+    background:  #66FCF1;
     padding: 5px;
     width:200px;
     height:45px;
@@ -79,7 +111,7 @@ div > a{
     position: relative;
     color:black;
     position: relative;
-    background: #D7FFAE;
+    background:  #66FCF1;
     padding: 5px;
     width:200px;
     height:45px;
@@ -90,93 +122,285 @@ div > a{
 }
 
 #classforbutton1{
-    
-    background-color: #D7FFAE;
+    font-size: 18px;
+    color:white;
+    background-color:  #66FCF1;
     height: 35px;
     margin-top: 5px;
-    margin-left:33px;
+    margin-left:20px;
     border-style: none;
     cursor: pointer;
    
 }
 
 #classforbutton2{
-    
-    background-color: #D7FFAE;
+    font-size:18px;
+    background-color:  #66FCF1;
     height: 35px;
     margin-top: 5px;
-    margin-left:33px;
+    margin-left:20px;
     border-style: none;
     cursor: pointer;
    
 }
 
 
+#classforbutton3{
+    font-size:18px;
+    background-color:  #66FCF1;
+    height: 35px;
+    margin-top: 5px;
+    margin-left:20px;
+    border-style: none;
+    cursor: pointer;
+   
+}
+#classforbutton4{
+    font-size:18px;
+    background-color:  #66FCF1;
+    height: 35px;
+    margin-top: 5px;
+    margin-left:20px;
+    border-style: none;
+    cursor: pointer;
+   
+}
 
 #flagshipinformation{
     display: none;
-    top:665px;
-    left:305px;
-    position:absolute;
-    width:1000px;
+    position:relative;
+    width:970px;
     height:500px;
-    background-color: #D7FFAE;
+    background-color: #0B0C10;
+    
     
     
 }
 
 #upcominginformation{
-    
-    top:665px;
-    left:305px;
-    position:absolute;
-    width:1000px;
+    display: flex;
+    position:relative;
+    width:970px;
     height:500px;
-    background-color: #D7FFAE;
+    background-color: #0B0C10 ;
     
     
 }
 
 .block1{
-    position: absolute;
+    border-radius: 25px;
+    position: relative;
     width:250px;
     height:400px;
-    left: 25px;
-    top:50px;
-    background-color: #393e46;
+    left: 3%;
+    top: 8%;
+    background-color: yellow;
     text-align: center;
 }
 
 
 .block2{
-    position: absolute;
+    border-radius: 25px;
+    position: relative;
     width:250px;
     height:400px;
-    left: 375px;
-    top:50px;
-    background-color: #393e46;
+    left: 10%;
+    top: 8%;
+    background-color: yellow;
     text-align: center;
 }
 
 .block3{
-    position: absolute;
+    border-radius: 25px;
+    position: relative;
     width:250px;
     height:400px;
-    left: 725px;
-    top:50px;
-    background-color: #393e46;
+    left: 17%;
+    top: 8%;
+    background-color: yellow;
     text-align: center;
 }
 
 .registernow{
    
-        background-color: #4CAF50; /* Green */
+        background-color: black; /* Green */
         border: none;
         color: white;
         padding: 10px 28px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 12px;
+        font-size: 15px;
+        border-radius: 10%;
       
+}
+
+.eventsstats{
+      
+        margin-top: 19%;
+        width:100%;
+        height:130px;
+        background-color: #45A29E;
+        display: flex;
+        
+    
+}
+
+/* .ourstats{
+    position: relative;
+    margin-top: -2%;
+    margin-left: 10%;
+    color: white;
+    font-size: 50px;
+} */
+
+
+.stats1{
+    position: relative;
+    margin-top: -2%;
+    margin-left: 10%;
+    color: white;
+    font-size: 50px;
+}
+
+.stats1data{
+    position: relative;
+    margin-top: 5%;
+    margin-left: -5.5%;
+    color: white;
+    font-size: 20px;
+}
+
+.vertical1{
+    margin-top: 1%;
+    margin-left: 16%; 
+    border-left: 2px solid white;
+  height: 100px;
+}
+
+.stats2{
+    position: relative;
+    margin-top: -2%;
+    margin-left: 17%;
+    color: white;
+    font-size: 50px;
+}
+
+.stats2data{
+    position: relative;
+    margin-top: 5%;
+    margin-left: -6%;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.vertical2{
+    margin-top: 1%;
+    margin-left: 16%;
+    border-left: 2px solid white;
+  height: 100px;
+}
+
+.stats3{
+    position: relative;
+    margin-top: -2%;
+    margin-left: 14%;
+    color: white;
+    font-size: 50px;
+}
+
+.stats3data{
+    position: relative;
+    margin-top: 5%;
+    margin-left: -6.2%;
+    color: white;
+    font-size: 20px;
+}
+
+.icon{
+    position: relative;
+    margin-top: 107px;
+    margin-left: 640px;
+    color: rgb(76,47,163);
+    font-size: 20px;
+}
+
+
+#demo{
+    position: relative;
+    padding-left: 23%;
+    padding-top:10% ;
+    font-size: 80px;
+    color: white;
+}
+
+.formdiv{
+   
+    position:relative;
+    padding-top:2%;
+    border-radius: 15px;
+    width:1000px;
+    height:500px;
+    left:12%;
+    background-color: #c5c6c7;
+}
+
+input[type=text], select, textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+     
+    background-color: black;
+    color: white;
+    padding: 13px 23px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+
+  .formatting{
+    font-weight: bold;
+      margin-left: 110px;
+  }
+
+  .formattingregisterhere
+  {
+      
+      margin-left:390px;
+  }
+
+  .formattingyesno{
+      font-weight: bold;
+      margin-left: 110px;
+  }
+  .formattingsubmit{
+      
+    font-weight: bold;
+    margin-left: 48%;
+  }
+
+  #fname{
+      
+    margin-left: 63px;
+}
+#email{
+    margin-left: 95px;
+}
+#mobile{
+    margin-left: 27px;
+}
+  
+#eventname{
+    margin-left: 53px;
 }
