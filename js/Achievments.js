@@ -38,3 +38,17 @@ function funcbox11() {
     document.getElementById("box14").style.display="inline";
 
  }
+ let t=30
+ function otpsent() {
+
+if(t>0)
+{
+   document.getElementById("OTP").textContent="Sent  "+t+"s";
+   t=t-1;
+   setTimeout(otpsent,1000);
+ }
+ else{
+    t=9
+   document.getElementById("OTP").textContent="Send again";
+ }
+}

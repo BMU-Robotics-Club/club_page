@@ -70,11 +70,11 @@ a:hover{
 .outter{
     position: relative;
 width: 500px;
-height: 500px;
+height: 300px;
 left: 645px;
-top:90px;
-left:900px;
-background: #FFFFFF;
+top:200px;
+left:35%;
+background: #ffff;
 box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.25);
 border-radius: 15px;
 z-index: 1;
@@ -94,47 +94,27 @@ z-index: 1;
       font-size: larger;
 
   }
-  .o2 input[type=password] {
+  .o2 input[type=text] {
     width: 70%;
     padding: 12px 20px;
-    margin-top:50px;
+    margin-top:10px;
     margin-left: 70px;
     box-sizing: border-box;
     border-radius: 3px;
   }
-  .o2 input[type="password"]::placeholder
+  .o2 input[type="text"]::placeholder
   {
       color:#90949C;
       font-size: larger;
       
   }
-  .outter p{
-      color:#1877F2;
-      font-weight:bold;
-      margin-left: 5%;
-      margin-top: 7%;
-      font-size: medium;
-      cursor:pointer;
-  }
-  .outter p:hover{
-      text-decoration: underline;
-  }
 
-  .outter hr{
-      width:70%;
-  }
-  .create a{
-   
-  
-      background-color: black;
-      font-weight:bold;
-      border-radius: 5px;
-      padding:10px;
-      cursor:pointer;
-     align-items:center;
-      margin-left: 175px;
-      font-size: medium;
-  }
+.outter p{
+    font-size: small;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+}
   .outter a:hover{
     background-color: #27691a;
     color:white;
@@ -155,13 +135,14 @@ z-index: 1;
       margin-top: 50px;
      
   }
-.loginbtn a{
+.loginbtn button{
     background-color: black;
       font-weight:bold;
       border-radius: 5px;
       padding:15px 94px;
       cursor:pointer;
+      color:white;
      align-items:center;
-      margin-left: 135px;
+      margin-left: 125px;
       font-size: medium;
 }
