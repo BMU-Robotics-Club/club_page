@@ -308,7 +308,8 @@ header{
         /* !BELOW PROJECT */
 #below-achievements{
     position: relative;
-    bottom: 9rem;
+    bottom: 13rem;
+    padding-top: 6rem;
 }
 
         /* !PROJECT CONTENT */
@@ -343,7 +344,8 @@ header{
 /* !FOOTER CONTENTS */
 #footer{
     text-align: center;
-    margin-top: 3rem;
+    position: relative;
+    bottom: 5rem;
 
 }
 .footer-icons{
@@ -356,3 +358,8 @@ footer a{
 footer a:hover{
     color: grey;
 }
+
+
+
+/* Team's CSS */
+
