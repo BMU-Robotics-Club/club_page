@@ -83,7 +83,7 @@ z-index: 1;
 .o1 input[type=text] {
     width: 70%;
     padding: 12px 20px;
-    margin-top:110px;
+    margin-top:80px;
     margin-left: 70px;
     box-sizing: border-box;
     border-radius: 3px;
@@ -112,6 +112,7 @@ z-index: 1;
       color:#1877F2;
       font-weight:bold;
       margin-left: 35%;
+      margin-top: 50px;
       cursor:pointer;
   }
   .outter p:hover{
@@ -121,10 +122,10 @@ z-index: 1;
   .outter hr{
       width:70%;
   }
-  .outter a{
+  .create a{
    
   
-      background-color: #36A420;
+      background-color: black;
       font-weight:bold;
       border-radius: 5px;
       padding:10px;
@@ -142,3 +143,24 @@ z-index: 1;
       margin-top: 50px;
      
   }
+
+  .loginbtn{
+    align-items: center;
+    margin-top: 50px;
+   
+}
+  .create{
+      align-items: center;
+      margin-top: 50px;
+     
+  }
+.loginbtn a{
+    background-color: black;
+      font-weight:bold;
+      border-radius: 5px;
+      padding:15px 94px;
+      cursor:pointer;
+     align-items:center;
+      margin-left: 135px;
+      font-size: medium;
+}
