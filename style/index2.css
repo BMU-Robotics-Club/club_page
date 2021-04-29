@@ -2,6 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     --navBg:  rgba(139, 138, 138, 0.493);
+    --titleBg :#1b1a17;
     --transition-speed: 600ms;
 }
 html{
@@ -71,7 +72,7 @@ header{
             /* Scrolling Effect */
             /*Apply styles after scroll*/
 .scrolling-active{
-    background-color: #000;
+    background-color: var(--titleBg);
     box-shadow: 0 3px 1rem var(--navBg);
 }
 
@@ -144,7 +145,7 @@ header{
     text-align: center;
     max-width: max-content;
     padding: 1px 5rem;
-    background-color: black;
+    background-color: var(--titleBg);
     color: white;
     border-radius: 1rem;
 }
@@ -296,7 +297,7 @@ header{
 
         /* !PROJECT CONTENT */
 .proj-con-main{
-    background-color: var(--ProjBg);
+    background-color: #1b1a17;
     margin-top: 0;
 }
 .proj-con-flex{
