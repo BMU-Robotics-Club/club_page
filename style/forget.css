@@ -3,7 +3,7 @@ body{
     padding:0px;
     /* background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2); */
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
     /* background-image: url("/Images/testB4.jpg"); */
     background-position:center;

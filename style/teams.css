@@ -88,7 +88,7 @@ header{
     margin-top: 4%;
     width:100%;
     height: 150%;
-    background: #d8e3e7;
+  
     display:flex;
 }
 
@@ -323,7 +323,7 @@ html {
     }
   
     .lgx-single-speaker figure figcaption {
-      background: rgba(25, 118, 210, 0.9);
+      background: rgba(34, 35, 36, 0.9);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -371,6 +371,9 @@ html {
       margin: 0;
       color: #efa506;
     }
+    .speaker-info h3{
+color:white;
+    }
     .lgx-single-speaker .speaker-info .title a {
       font-size: inherit;
       color: inherit;
@@ -388,7 +391,7 @@ html {
       opacity: .7;
     }
     .lgx-single-speaker:hover {
-      background: #1976d2;
+      background: #000000;
       overflow: hidden;
     }
     .lgx-single-speaker:hover:after {
