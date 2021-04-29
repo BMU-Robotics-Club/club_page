@@ -1,6 +1,11 @@
 :root{
     --AchBg: #d8e3e7;
     --ProjBg: #ffe8e8  ;
+    --transition-speed: 600ms;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
 }
 body{
     margin: 0;

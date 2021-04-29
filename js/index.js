@@ -29,6 +29,8 @@
     }
      StartTyping();
 })();
+
+// !Project JS 
 let flex_img = document.getElementById("flex-img");
 let flex_content = document.getElementById("flex-content");
 
