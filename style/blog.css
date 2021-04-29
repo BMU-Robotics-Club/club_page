@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+header{
+    height: 90px;
+    width: 100%;
+    margin: 0;
+    background-color: #222831;
+}
+#logo-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    position: relative;
+    top: 1px;
+    margin-left: 50px;
+}
+.title{
+    color: #f8f5f1;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+h3{
+    margin-top: 1px;
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+.headerLink{
+    display: inline-block;
+    padding: 50px 20px 36px 20px;
+    position: relative;
+    left : 42%;
+    bottom: 20%;
+    margin: 0;
+}
+.blogLink{
+    color: #00adb5;
+    text-decoration: none;
+}
+.headerLink:hover{
+    background-color: #393e46;
+    height: 22px;
+}
+.anchor{
+    color: #f8f5f1;
+    text-decoration: none;
+}
+a{
+    /* background-color: #15305A; */
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+a:hover{
+    color:orange;
+    transition: 0.5s;
+}
+
+/* blog part CSS */
+main{
+    margin: 50px auto;  
+    width: 98%;
+    height : 900px;
+}
+.Blog{
+    display:inline-block;
+    height:400px;
+    width: 28%;
+    margin: 15px;
+    background-color: #ffffff;
+    border-radius: 9%;
+    position: relative;
+    left: 50px;
+    border-width: 2px;
+}
+.Blog:hover{
+    border-color: #99bbad;
+    color:#00adb5;
+    border-style: solid;
+    border-width: 4px;
+}
+.blog-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 11% 11% 0 0;
+}
+.blog-anchor{
+    color: #00adb5;
+}
+.blog-text{
+    margin: 10px;
+}
+.div-blog-anchor{
+    position: absolute;
+    left: 280px;
+    bottom: 30px;
+}
+
+/* Footer */
+
+footer{
+    position: absolute;
+    width:100%;
+    height: 183px;
+    left: 0px;
+    top: 1100px;
+    background: #222831;
+}
+.commu{
+    /* Community */
+margin-left:100px;
+margin-top: 30px;
+color: #FFFFFF;
+font-weight: bold;
+}
+
+.aboutusfooter{
+    position: absolute;
+    margin-left:732px;
+    margin-top: -35px;
+    color: #FFFFFF;
+}
+
+.aboutusfooterinformation{
+    position: absolute;
+    margin-left:400px;
+    margin-right: 510px;
+margin-top: 7px;
+color: #FFFFFF;
+text-align: center;
+width:730px;
+}
+
+.writeusat{
+    position: absolute;
+    margin-left:1290px;
+margin-top: -35px;
+color: #FFFFFF;
+}
+
+.fb{
+    /* image 2 */
+
+position: absolute;
+width: 80px;
+height: 58px;
+margin-left: 50px;
+margin-top: 10px;
+border-radius: 34px;
+
+}
+.insta{
+    position: absolute;
+width: 60px;
+height: 58px;
+margin-left: 120px;
+margin-top: 10px;
+border-radius: 34px;
+}
+.discord{
+    position: absolute;
+    width: 59px;
+    height: 54px;
+    margin-left: 186px;
+    margin-top: 10px;
+    border-radius: 34px;
+}
+.mail
+{
+    /* image 3 */
+
+position: absolute;
+width: 35px;
+/* height: 32px; */
+left: 1320px;
+top: 58px;
+border-radius: 25px;
+color:white;
+}
+.mailtext{
+ position: absolute;
+width: 55px;
+left: 1235px;
+top: 88px;
+color:white;
+}
+.vertical {
+    border-left: 3.5px solid white;
+    height: 100px;
+    position:absolute;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+.vertical2 {
+    border-left: 3.5px solid white;
+    height: 100px;
+    position:absolute;
+    margin-top: 50px;
+    margin-left: 1180px;
+}
