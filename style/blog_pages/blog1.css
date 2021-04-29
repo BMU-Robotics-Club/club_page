@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding:0px;
     /* background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2); */
-    background-color: #F6E9D9;
+    background-color: #ffffff;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -112,4 +112,15 @@ p{
     top: 300px;
     left: 30px;
     width: 35%;
+}
+
+.by{
+    color:black;
+    display:block;
+    margin-left: -600px;
+    margin-top: -90px;
+    }
+
+.name{
+    
 }
