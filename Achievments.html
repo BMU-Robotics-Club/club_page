@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMU Robotics</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="style/index1.css">
+=======
+    <link rel="stylesheet" href="style/Achievments.css">
+>>>>>>> 66fed10f58f999a52c1867e14babb169e73b8daa
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
     <!-- FONT AWESOME  -->
     <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
     <script src="js/Achievments.js"></script>
@@ -17,33 +21,34 @@
     <!-- *title --> 
     <section class="title">
         <!-- navigation bar  -->
-        <nav>
+        <nav class="title-nav">
             <ul>
-                <li class="logo-li">
-                    <a href="#" >
+                <li>
+                    <a href="#">
                         <img src="Images/logo2.png" class="title-logo" alt="logo">
                     </a>
                 </li>
             </ul>
             <ul class="right-ul">
-                <li class="nav-li li-active">
+                <li class="li-active">
                     <a href="#">HOME</a>
                 </li>
-                <li class="nav-li">
+                <li>
                     <a href="#">EVENTS</a>
                 </li>
-                <li class="nav-li">
+                <li>
                     <a href="#">BLOG</a>
                 </li>
-                <li class="nav-li">
+                <li>
                     <a href="#">SIGNUP</a>
                 </li>
             </ul>
         </nav>
+    
         <!-- ? Home navigation -->
             <div class="Home-nav">
                 <i class="fas fa-trophy"></i>
-                <a href="#Achievements">Achievements</a>
+                <a href="#box">Achievements</a>
             </div>
                 <div class="Home-nav">
                 <i class="fas fa-tasks"></i>
@@ -55,19 +60,53 @@
             </div>
     
             <!-- text -->
-            <div class="title-text">
-                <!-- typing effect -->
-                <textarea id="typing-text" readonly ></textarea>
-                <h2 class="float-right">Student Club</h2>
-            </div>
+    <div class="title-text">
+        <!-- typing effect -->
+        <textarea id="typing-text" readonly ></textarea>
+        <script>
+            (function () {
+               var CharacterPos = 0;
+               var MsgBuffer = "";
+               var TypeDelay = 100; 
+               var NxtMsgDelay = 1000;
+               var MsgIndex = 0;
+                   var delay;
+               var MsgArray = ["BMU Robotics Club"];
+                
+               function StartTyping() {
+                  var id = document.getElementById("typing-text");
+                  if (CharacterPos != MsgArray[MsgIndex].length) {
+                     MsgBuffer  = MsgBuffer + MsgArray[MsgIndex].charAt(CharacterPos);
+                     id.value = MsgBuffer+"|";
+                     delay = TypeDelay;
+                     id.scrollTop = id.scrollHeight; 
+                  } else {
+                     delay = NxtMsgDelay;
+                     MsgBuffer   = "";
+                     CharacterPos = -1;
+                     if (MsgIndex!=MsgArray.length-1){
+                       MsgIndex++;
+                     }else {
+                       MsgIndex = 0;
+                         }
+                   }
+                   CharacterPos++;
+                   setTimeout(StartTyping,delay);
+               }
+                StartTyping();
+        })();
+            </script>
+
+            <h2 class="float-right">
+                Student Club
+            </h2>
+        </div>
+
     </section>
 
 
-    <section id="Achievements">
-        <div class="Ach-header">
-            <h2>Achievements</h2>
-        </div>
 
+<<<<<<< HEAD
         <div class="flex-container">
 
             <div class="div-flex-left">
@@ -113,84 +152,156 @@
                         <h3>Nitro Surge</h3>
                     </div>
                 </div>
+=======
+ <!-- right -->
+ <div class="box">  
+     <h1>Achievements</h1>
 
-                <div class="flex-item">
-                    <img class="flex-item-img" src="/Images/robowar.jpg" alt="robowar">
-                    <div class="flex-item-overlay-title"> 
-                        <h3>Robo War</h3>
-                    </div>
-                </div>
 
+
+
+
+    <!-- left -->
+    <div class="box1">
+
+
+        
+            <div id="box11">
+
+                <img src="Images/linefollower.jfif">
+                <h3>Participants</h3>
+                <ol>
+                    <li>Participant1</li>
+                    <li>Participant2</li>
+                    <li>Participant3</li>
+                    <li>Participant4</li>
+                </ol>
+                <h3>Description</h3>
+                <p>The line follower robot is a mobile machine that can detect and follow the line drawn on the floor. Generally, the path is predefined and can be either visible like a black line on a white surface with a high contrasted color or it can be invisible like a magnetic filed. These robots may be used to in various industrial and domestic applications such as to carry goods, floor cleaning, delivery services and transportation.</p>
+                <p>The sensor based black line follower robots are one of the most basic robots used to follow black line on white background or vice versa.  </p>
+                <h2>From Snu University</h2>
             </div>
-        </div>
-    </section>
+
+            <div id="box12">
+
+                <img src="Images/nitrosurge.jpg">
+                <h3>Participants</h3>
+                <ol>
+                    <li>Participant1</li>
+                    <li>Participant2</li>
+                    <li>Participant3</li>
+                    <li>Participant4</li>
+                </ol>
+    
+                <h3>Description</h3>
+                <p>Nitro vehicles also require a means of cranking the engine over, which can be achieved using a pull-start, starter box, battery operated rotostart, or by an electric drill. The Traxxas nitro rc cars come with a hand start up system, that revs the engine and starts it up. It doesn't require a pull start system.</p>
+                <p>RC engines are compression ignition, like diesel engines. The engine does not have a spark plug to ignite the fuel at a specific time the fuel simply ignites when it has been crushed or compressed to a specific point.</p>
+                <h2>From Bennet University</h2>
+            </div>
+
+            <div id="box13">
+
+                <img src="Images/robosoccer.jpg">
+                <h3>Participants</h3>
+                <ol>
+                    <li>Participant1</li>
+                    <li>Participant2</li>
+                    <li>Participant3</li>
+                    <li>Participant4</li>
+                </ol>
+                
+                <h3>Description</h3>
+                <p>Robot Soccer is a robot sport, where robot machines compete against each other in a variation of the game of Association Football (soccer). In robot soccer, each team is fully autonomous - once the game starts the only input from any human is from the referee.</p>
+                <p>The sensor based black line follower robots are one of the most basic robots used to follow black line on white background or vice versa. These robots may be used to in various industrial and domestic applications such as to carry goods, floor cleaning, delivery services and transportation.</p>
+                <h2>From BML University</h2>
+            </div>
+>>>>>>> 66fed10f58f999a52c1867e14babb169e73b8daa
+
+            <div id="box14">
+
+                <img src="Images/robowar.jpg">
+                <h3>Participants</h3>
+                <ol>
+                    <li>Participant1</li>
+                    <li>Participant2</li>
+                    <li>Participant3</li>
+                    <li>Participant4</li>
+                </ol>
+            
+                <h3>Description</h3>
+                <p>RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects. The syntax of the language in which the robots are programmed is a relatively simple stack-based one, based largely on IF, THEN, and simply-defined variables</p>
+                <p>The sensor based black line follower robots are one of the most basic robots used to follow black line on white background or vice versa. These robots may be used to in various industrial and domestic applications such as to carry goods, floor cleaning, delivery services and transportation.</p>
+                <h2>From Jaipur University</h2>
+            </div>
+
+    </div>
 
 
+
+
+
+
+
+
+
+
+
+
+    <!-- red1 -->
+    <div class="box2">
+        <img src="/Images/linefollower.jfif">
+            <h2>Line Follower </h2>
+            <h3>1st Prize</h3>
+
+        <button onclick="funcbox11()" class="knowmore">
+           <p>Know more</p>
+        </button>
+    </div>
+    <!-- oragne1 -->
+    <div class="box3">
+        <img src="/Images/nitrosurge.jpg">
+        <h2>Nitro Surge</h2>
+        <h3>1st Prize</h3>
+    
+    <button onclick="funcbox12()" class="knowmore">
+        <p>Know more</p>
+    </button>
+    </div>
+    <!-- red2 -->
+    <div class="box4">
+        <img src="/Images/robosoccer.jpg">
+        <h2>Robo Soccer</h2>
+        <h3>1st Prize</h3>
+
+    <button onclick="funcbox13()" class="knowmore">
+        <p>Know more</p>
+    </button>
+    </div>
+    <!-- orange2 -->
+    <div class="box5">
+        <img src="/Images/robowar.jpg">
+        <h2>Robo War</h2>
+        <h3>1st Prize</h3>
+
+    <button onclick="funcbox14()" class="knowmore">
+        <p>Know more</p>
+    </button>
+    </div>
+</div>
+
+
+
+
+
+
+
+    
     <section id="Projects">
-        <div class="Ach-header Proj-header">
-            <h2>Projects</h2>
-        </div>
-        <!-- !Project Navigation -->
-        <nav class="proj-nav">
-            <ul class="proj-ul">
-                <li class="proj-li">
-                    <button  onclick="FBbot()" class="button button1">Food Serving bot</button>
-                </li>
 
-                <li class="proj-li">
-                    <button onclick="FFbot()" class="button button1">Fire Fighting Robot</button>
-                </li>
-
-                <li class="proj-li">
-                    <button  onclick="RFid()" class="button button1">RFID Card</button>
-                </li>
-
-                <li class="proj-li">
-                    <button onclick="RCplane()" class="button button1">RC Plane</button>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- !Project Content Section  -->
-        <div class="proj-con-main">
-            <div class="proj-con-flex">
-                <div class="proj-flex-item">
-                    <img src="/Images/food.jpg" class="flex-img" id="flex-img" alt="">
-                </div>
-
-                <div class="proj-flex-item flex-right">
-                    <div class="flex-content" id="flex-content">
-                        <h4 >By Charith Reddy</h4>
-                        <h4 >Batch: 2021 </h4>
-                        <h4 >About : </h4>
-                        <p>
-                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
-                        </p>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-    
-        </section>
-        <section id="Team">
-    
-        </section>
-    
     </section>
     <section id="Team">
 
     </section>
-    <!-- Footer -->
 
-  <footer id="footer">
-    <a href="https://twitter.com/SespiStone" target="_blank"><i class="fab fa-twitter footer-icons"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-facebook-f footer-icons"></i></a>
-    <a href="https://www.instagram.com/bmuroboticsclub/" target="_blank"><i class="fab fa-instagram footer-icons"></i></a>
-    <a href="#" target="_blank"><i class="fas fa-envelope footer-icons"></i></a>
-    <p>© Copyright 2021 BMU_Robotics Club</p>
-  </footer>
-
-<script src="js/index.js"></script>
 </body>
 </html>

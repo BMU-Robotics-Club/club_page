@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="Pictures/logo.png">
-    <link rel="stylesheet" href="style/events.css">
+    <link rel="stylesheet" href="Style/events.css">
     <title>Club Events</title>
 
     <script src="js/events.js"></script>
-    <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
+    
 
 </head>
 <body>
@@ -44,7 +44,7 @@
         </div>
          -->
 
-        <div id="demo"></div>
+        
       <script>
         (function(){
             
@@ -55,7 +55,7 @@
                 
                 var i = 0;
                 var txt = 'Lets !! Get !! Chase !!'; /* The text */
-                var speed = 150;
+                var speed = 160;
 
                 function typeWriter() {
                
@@ -84,19 +84,18 @@
         )(); 
         
       </script>
-        
-        
-      
-     
-         
-      
-    </div>
+    
 
+        
+      <div id="demo"></div>
+
+      
     <div class="eventsstats">
         
-        <div class="icon">
+        <!-- <div class="icon">
             <i class="fas fa-caret-down fa-3x"></i>
-        </div>
+        </div> -->
+        
         
 
         <div class="stats1">
@@ -107,12 +106,21 @@
             <p>Events</p>
         </div>
 
+        <div class="vertical1">
+
+        </div>
+
+
         <div class="stats2">
             <p>4</p>
         </div>
 
         <div class="stats2data">
             <p>Falgship Events</p>
+        </div>
+
+        <div class="vertical2">
+
         </div>
 
         <div class="stats3">
@@ -122,115 +130,116 @@
         <div class="stats3data">
             <p>Workshops</p>
         </div>
-
-        <div class="vertical1">
-
-        </div>
-
-        <div class="vertical2">
-
-        </div>
+       
+       
         <div class="vertical3">
 
         </div>
     </div>
+     
+         
+      
+    </div>
+
 
 
     <div class = "imagesetup2">
 
-    </div>
+            <div class="layerpositioning">
+                <div class="menupositioning">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+                    <div id="eventsmenu1">
+                        <button id = "classforbutton1" onclick="showupcomingevents()">Upcoming Events</button>   
+                    </div>
+                
+                    <br>
+                    <br>
+                
+                    <div id="eventsmenu2">
+                        <button id="classforbutton2" onclick="showflagshipevents()">Flagship Events</button>         
+                     </div>
+                
+                     <br>
+                     <br>
+                     
+                     <div id="eventsmenu2">
+                         <button id="classforbutton2" onclick="showflagshipevents()">Workshops</button>         
+                      </div>
+                    
+                      <br>
+                      <br>
+                      
+                      <div id="eventsmenu2">
+                          <button id="classforbutton2" onclick="showflagshipevents()">Technical Fest</button>         
+                       </div>
+                
+                </div>
+                
+               
+                
+                <div class="detailspositioning">
+            
+                    <div id = "upcominginformation">
+                        <div class="block1">
+                            <img src="Images/learnarduino.png" height="250px" width="250px">
+                            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                          <a href = "#formdivmovement"><div class="registernow">Register Now</div></a> 
+                       
+                       </div>
+               
+               
+                        <div class="block2" >
+                           <img src="Images/obstaclebot.JPG" height="250px" width="250px">
+                            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                            <a href = "#formdivmovement"><div class="registernow">Register Now</div></a>
+                       
+                       </div>
+                       
+                       
+                       <div class="block3" >
+                           <img src="Images/arduinoavr.JPG" height="250px" width="250px">
+                            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                            <a href = "#formdivmovement"><div class="registernow">Register Now</div></a>
+                       </div>
+                        
+                    </div>
+               
+               
+               
+               
+                    <div id = "flagshipinformation">
+                       <div class="block1">
+                           <img src="Images/rcinfo.JPG" height="250px" width="250px">
+                           <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                          <div class="registernow">Register Now</div>
+                      
+                      </div>
+               
+               
+                       <div class="block2" >
+                          <img src="Images/droneinfo.JPG" height="250px" width="250px">
+                           <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                          <div class="registernow">Register Now</div>
+                      
+                      </div>
+                      
+                      
+                      <div class="block3" >
+                          <img src="Images/robowarinfo.JPG" height="250px" width="250px">
+                           <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                          <div class="registernow">Register Now</div>
+                      </div>
+                       
+                   </div>
+               
+            </div>
 
-    <div id="eventsmenu1">
-        <button id = "classforbutton1" onclick="showupcomingevents()">Upcoming Events</button>   
-    </div>
-
-    <br>
-    <br>
-
-    <div id="eventsmenu2">
-        <button id="classforbutton2" onclick="showflagshipevents()">Flagship Events</button>         
-     </div>
+   
+    </div> 
 
      <br>
      <br>
-     
-     <div id="eventsmenu2">
-         <button id="classforbutton2" onclick="showflagshipevents()">Workshops</button>         
-      </div>
-    
-      <br>
-      <br>
-      
-      <div id="eventsmenu2">
-          <button id="classforbutton2" onclick="showflagshipevents()">Technical Fest</button>         
-       </div>
-
-
-     <div id = "upcominginformation">
-         <div class="block1">
-             <img src="Images/learnarduino.png" height="250px" width="250px">
-             <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-           <a href = "#formdivmovement"><div class="registernow">Register Now</div></a> 
-        
-        </div>
-
-
-         <div class="block2" >
-            <img src="Images/obstaclebot.JPG" height="250px" width="250px">
-             <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-             <a href = "#formdivmovement"><div class="registernow">Register Now</div></a>
-        
-        </div>
-        
-        
-        <div class="block3" >
-            <img src="Images/arduinoavr.JPG" height="250px" width="250px">
-             <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-             <a href = "#formdivmovement"><div class="registernow">Register Now</div></a>
-        </div>
-         
-     </div>
-
-
-
-
-     <div id = "flagshipinformation">
-        <div class="block1">
-            <img src="Images/rcinfo.JPG" height="250px" width="250px">
-            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-           <div class="registernow">Register Now</div>
-       
-       </div>
-
-
-        <div class="block2" >
-           <img src="Images/droneinfo.JPG" height="250px" width="250px">
-            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-           <div class="registernow">Register Now</div>
-       
-       </div>
-       
-       
-       <div class="block3" >
-           <img src="Images/robowarinfo.JPG" height="250px" width="250px">
-            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
-           <div class="registernow">Register Now</div>
-       </div>
-        
-    </div>
-
-
+     <br>
 
 
     <div class="formdiv">
@@ -285,32 +294,12 @@
           </form>
     </div>
 
-
-     
-     <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br>
-     <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br> <br>
-     <br>
+<br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br>
+  
      
 </body>

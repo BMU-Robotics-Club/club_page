@@ -1,5 +1,5 @@
 function showupcomingevents(){
-    document.getElementById("upcominginformation").style.display = "inline";
+    document.getElementById("upcominginformation").style.display = "flex";
     document.getElementById("flagshipinformation").style.display = "none";
    // document.getElementById("eventsmenu1").style.backgroundColor = "blue";
     //document.getElementById("classforbutton1").style.backgroundColor = "blue";
@@ -12,7 +12,7 @@ function showupcomingevents(){
 
 function showflagshipevents(){
     document.getElementById("upcominginformation").style.display = "none";
-    document.getElementById("flagshipinformation").style.display = "inline";
+    document.getElementById("flagshipinformation").style.display = "flex";
 
     document.getElementById("classforbutton1").style.color="black";
     document.getElementById("classforbutton2").style.color="white";

@@ -2,9 +2,10 @@ body{
     margin: 0px;
     padding:0px;
     /* background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2); */
+    background-color: #F6E9D9;
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: #EBEDF0;
 }
+
 
 header{
     height: 90px;
@@ -26,11 +27,12 @@ header{
     padding: 10px;
     font-family: 'Merriweather Sans', sans-serif;
 }
-h1{
-    margin-top: 0px;
+.header-h1{
+    margin-top: -1px;
     margin-bottom: 2px;
+    text-align: left;
 }
-h3{
+.header-h3{
     margin-top: 1px;
     margin-bottom: 2px;
     font-weight: normal;
@@ -43,7 +45,7 @@ h3{
     bottom: 20%;
     margin: 0;
 }
-.loginlink{
+.blogLink{
     color: #00adb5;
     text-decoration: none;
 }
@@ -55,6 +57,8 @@ h3{
     color: #f8f5f1;
     text-decoration: none;
 }
+
+
 a{
     /* background-color: #15305A; */
     text-align: center;
@@ -66,34 +70,46 @@ a:hover{
     color:orange;
     transition: 0.5s;
 }
-.create{
-   margin-top:5%;
-    margin-left:38%;
-    font-size: 40px;
-}
-
-
-.outter{
-    width:100%;
-    position: relative;
-    height:100%;
-    display:flex;
-}
-
-.o1 input[type="text"] {
+/******    MAIN ******************/
+main{
+    margin: 0px;
     width: 100%;
-    padding: 12px 20px;
-    margin-top:110px;
-    margin-left: 268%;
-    box-sizing: border-box;
-    border-radius: 3px;
-  }
+    height: auto;
+}
+main h1{
+    font-weight: bold;
+    margin-left: 40%;
+}
+main h3{
+    margin-left: 40%;
+    margin-top: 0px;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+   
+}
+main h1{
+    color:#605B53;
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
 
-  .o1 input[type="text"]::placeholder
-  {
-      color:#90949C;
-      font-size: larger;
+}
+p{
+    margin-left : 38%;
+    width:60%;
+    font-weight: light;
+    text-align: left;
+}
 
-  }
-
- 
+.main-img{
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    width: 35%;
+}

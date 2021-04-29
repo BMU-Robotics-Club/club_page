@@ -12,7 +12,7 @@ header{
     height: 90px;
     width: 100%;
     margin: 0;
-    background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(50, 61, 67));
+    background-image: linear-gradient(to right, #0B0C10 ,#1F2833);
     /* background-color: rgb(0, 0, 0); */
 }
 #logo-img{
@@ -60,7 +60,7 @@ div > a{
     background-image: url("/Images/rccarbg.jpeg");
     background-size: cover;
     width:100%;
-    height:555px;
+    height:80%;
 
 }
 
@@ -68,20 +68,37 @@ div > a{
 
 
 .imagesetup2{
-    position: absolute;
-    top:645px;
-    opacity: 85%;
+    position: relative;
     background-image: url("/Images/bg.jpg");
     background-size: cover;
     width:100%;
-    height:1500px;
+    
+}
+
+.layerpositioning
+{
+    padding-left: 1.5%;
+    position: relative;
+    display: flex;
+}
+
+
+.menupositioning{
+    padding-top: 6%;
+padding-left:2%;
+}
+
+
+.detailspositioning{
+    padding-top: 2%;
+    padding-left:5%;
 }
 
 #eventsmenu1{
     position: relative;
     color:black;
     position: relative;
-    background: rgb(197, 136, 4);
+    background:  #66FCF1;
     padding: 5px;
     width:200px;
     height:45px;
@@ -94,7 +111,7 @@ div > a{
     position: relative;
     color:black;
     position: relative;
-    background: rgb(197, 136, 4);
+    background:  #66FCF1;
     padding: 5px;
     width:200px;
     height:45px;
@@ -105,86 +122,102 @@ div > a{
 }
 
 #classforbutton1{
-   
+    font-size: 18px;
     color:white;
-    background-color: rgb(197, 136, 4);
+    background-color:  #66FCF1;
     height: 35px;
     margin-top: 5px;
-    margin-left:33px;
+    margin-left:20px;
     border-style: none;
     cursor: pointer;
    
 }
 
 #classforbutton2{
-    
-    background-color: rgb(197, 136, 4);
+    font-size:18px;
+    background-color:  #66FCF1;
     height: 35px;
     margin-top: 5px;
-    margin-left:33px;
+    margin-left:20px;
     border-style: none;
     cursor: pointer;
    
 }
 
 
+#classforbutton3{
+    font-size:18px;
+    background-color:  #66FCF1;
+    height: 35px;
+    margin-top: 5px;
+    margin-left:20px;
+    border-style: none;
+    cursor: pointer;
+   
+}
+#classforbutton4{
+    font-size:18px;
+    background-color:  #66FCF1;
+    height: 35px;
+    margin-top: 5px;
+    margin-left:20px;
+    border-style: none;
+    cursor: pointer;
+   
+}
 
 #flagshipinformation{
     display: none;
-    top:760px;
-    left:305px;
-    position:absolute;
-    width:1000px;
+    position:relative;
+    width:970px;
     height:500px;
-    background-color: rgb(27,39,61);
+    background-color: #0B0C10;
     
     
     
 }
 
 #upcominginformation{
-   
-    top:760px;
-    left:305px;
-    position:absolute;
-    width:1000px;
+    display: flex;
+    position:relative;
+    width:970px;
     height:500px;
-    background-color: rgb(27,39,61);
+    background-color: #0B0C10 ;
     
     
 }
 
 .block1{
     border-radius: 25px;
-    position: absolute;
+    position: relative;
     width:250px;
     height:400px;
-    left: 25px;
-    top:50px;
-    background-color: rgba(214, 255, 174, 0.671);
+    left: 3%;
+    top: 8%;
+    background-color: yellow;
     text-align: center;
 }
 
 
 .block2{
     border-radius: 25px;
-    position: absolute;
+    position: relative;
     width:250px;
     height:400px;
-    left: 375px;
-    top:50px;
-    background-color: rgba(214, 255, 174, 0.671);
+    left: 10%;
+    top: 8%;
+    background-color: yellow;
     text-align: center;
 }
 
 .block3{
     border-radius: 25px;
-    position: absolute;
+    position: relative;
     width:250px;
     height:400px;
-    left: 725px;
-    top:50px;
-    background-color: rgba(214, 255, 174, 0.671);
+    left: 17%;
+    top: 8%;
+    background-color: yellow;
     text-align: center;
 }
 
@@ -197,97 +230,96 @@ div > a{
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 12px;
+        font-size: 15px;
+        border-radius: 10%;
       
 }
 
-.knowmoretext{
-    z-index: 1;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 100px;
-    padding-left: 25px;
-    padding-top: 505px;
-    color:#eeeeee
-}
-
 .eventsstats{
-        z-index: 2;
-        position: absolute;
-        top:560px;
+      
+        margin-top: 19%;
         width:100%;
         height:130px;
-        background-color: rgb(76,47,163);
+        background-color: #45A29E;
         display: flex;
         
     
 }
 
-.vertical1{
-    margin-top: 16px;
-    margin-left: 420px;
-    border-left: 2px solid white;
-  height: 100px;
-}
-.vertical2{
-    margin-top: 16px;
-    margin-left: 420px;
-    border-left: 2px solid white;
-  height: 100px;
-}
+/* .ourstats{
+    position: relative;
+    margin-top: -2%;
+    margin-left: 10%;
+    color: white;
+    font-size: 50px;
+} */
+
 
 .stats1{
-    position: absolute;
-    margin-top: -25px;
-    margin-left: 160px;
+    position: relative;
+    margin-top: -2%;
+    margin-left: 10%;
     color: white;
     font-size: 50px;
 }
 
 .stats1data{
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 165px;
+    position: relative;
+    margin-top: 5%;
+    margin-left: -5.5%;
     color: white;
     font-size: 20px;
 }
 
-
+.vertical1{
+    margin-top: 1%;
+    margin-left: 16%; 
+    border-left: 2px solid white;
+  height: 100px;
+}
 
 .stats2{
-    position: absolute;
-    margin-top: -25px;
-    margin-left: 620px;
+    position: relative;
+    margin-top: -2%;
+    margin-left: 17%;
     color: white;
     font-size: 50px;
 }
 
 .stats2data{
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 575px;
+    position: relative;
+    margin-top: 5%;
+    margin-left: -6%;
     color: white;
     font-size: 20px;
+    
+}
+
+.vertical2{
+    margin-top: 1%;
+    margin-left: 16%;
+    border-left: 2px solid white;
+  height: 100px;
 }
 
 .stats3{
-    position: absolute;
-    margin-top: -25px;
-    margin-left: 1060px;
+    position: relative;
+    margin-top: -2%;
+    margin-left: 14%;
     color: white;
     font-size: 50px;
 }
 
 .stats3data{
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 1050px;
+    position: relative;
+    margin-top: 5%;
+    margin-left: -6.2%;
     color: white;
     font-size: 20px;
 }
 
 .icon{
-    position: absolute;
+    position: relative;
     margin-top: 107px;
     margin-left: 640px;
     color: rgb(76,47,163);
@@ -296,22 +328,22 @@ div > a{
 
 
 #demo{
-    position: absolute;
-    margin-top: 130px;
-    margin-left: 330px;
+    position: relative;
+    padding-left: 23%;
+    padding-top:10% ;
     font-size: 80px;
     color: white;
 }
 
 .formdiv{
    
+    position:relative;
+    padding-top:2%;
     border-radius: 15px;
-    top:1360px;
-    left:180px;
-    position:absolute;
     width:1000px;
     height:500px;
-    background-color: #f2f2f2;
+    left:12%;
+    background-color: #c5c6c7;
 }
 
 input[type=text], select, textarea {
@@ -326,35 +358,44 @@ input[type=text], select, textarea {
   }
 
   input[type=submit] {
-    background-color: greenyellow;
-    color: black;
-    padding: 12px 20px;
+     
+    background-color: black;
+    color: white;
+    padding: 13px 23px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
   }
 
 
   .formatting{
+    font-weight: bold;
       margin-left: 110px;
   }
 
-  .formattingregisterhere{
+  .formattingregisterhere
+  {
+      
       margin-left:390px;
   }
 
   .formattingyesno{
+      font-weight: bold;
       margin-left: 110px;
   }
   .formattingsubmit{
-    margin-left: 460px;
+      
+    font-weight: bold;
+    margin-left: 48%;
   }
 
   #fname{
-    margin-left: 58px;
+      
+    margin-left: 63px;
 }
 #email{
-    margin-left: 88px;
+    margin-left: 95px;
 }
 #mobile{
     margin-left: 27px;
