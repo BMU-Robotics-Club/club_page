@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="Style/Loginpage.css">
+    <link rel="stylesheet" href="Style/forget.css">
     <link rel="icon" href="Images/logo2.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="js/Achievments.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -33,19 +34,27 @@
 
 
     <div class="outter">
+       <b> <P>Please enter your email address or mobile number to search for your account</P></b>
+        <h3></h3>
         <div class="o1">
-            <input id="phone" type="text" placeholder="Email address or Phone number">
+            <input id="phone" type="text" placeholder="Mobile number">
         </div>
         <div class="o2">
-            <input id="phone" type="password" placeholder="Password">
-            <div class="loginbtn"><a href="signup.html">Login</a></div>
-            <a href="forget.html"><P>Forgotten password?</P></a>
+            <input id="phone" type="text" placeholder="OTP">
+            <div class="loginbtn">
+                <button onclick="otpsent()" id="OTP">Send OTP</button>
+            </div>
+            
         </div>
-        <hr>
-        <div class="create"><a href="signup.html">Create New Account</a></div>
+    
         
     </div>
 
-    
+
+
+
+
+
+       
 </body>
 </html>
