@@ -2,8 +2,10 @@ body{
     margin: 0px;
     padding:0px;
     /* background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2); */
-    background-color: #F6E9D9;
+    background-color: #ffffff;
     font-family: 'IBM Plex Sans', sans-serif;
+
+ 
 }
 
 
@@ -90,9 +92,15 @@ h1{
    
 }
 main h1{
-    color:#605B53;
+    color:white;
     text-align: center;
     font-weight: bold;
+    background-color: black;
+    width:50%;
+    padding:2px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px black;
+    
 }
 h3{
     text-align: center;
@@ -105,11 +113,24 @@ p{
     width:60%;
     font-weight: light;
     text-align: left;
+    
 }
+
 
 .main-img{
     position: absolute;
     top: 300px;
     left: 30px;
     width: 35%;
+}
+
+.by{
+    color:black;
+    display:block;
+    margin-left: -600px;
+    margin-top: -90px;
+    }
+
+.name{
+ color:rgb(243, 149, 73);   
 }

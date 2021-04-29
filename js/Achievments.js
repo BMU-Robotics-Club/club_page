@@ -38,7 +38,7 @@ function funcbox11() {
     document.getElementById("box14").style.display="inline";
 
  }
- let t=30
+ let t=8
  function otpsent() {
 
 if(t>0)
@@ -48,7 +48,7 @@ if(t>0)
    setTimeout(otpsent,1000);
  }
  else{
-    t=9
+    t=8
    document.getElementById("OTP").textContent="Send again";
  }
 }

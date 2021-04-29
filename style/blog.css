@@ -124,7 +124,6 @@ input, button
     margin: -83px auto 0 auto;
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 3px 5px 40px rgb(154, 153, 228);
     transform: scale(0.6);
 }
 
@@ -140,12 +139,14 @@ input[type="text"]
     font-size: 60px;
     line-height: 1;
     color:rgb(0, 0, 0);
+    
 }
 
 input[type="text"]::placeholder
 {
-    color:rgb(68, 64, 64);
-    
+    color:rgb(110, 99, 99);
+    font-size: 50px;
+    position: absolute;
 }
 
 #s-cover
