@@ -1,9 +1,10 @@
 body{
     margin: 0px;
     padding:0px;
-    background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2);
+    /* background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2); */
     font-family: 'IBM Plex Sans', sans-serif;
 }
+
 header{
     height: 90px;
     width: 100%;
@@ -65,145 +66,116 @@ a:hover{
     transition: 0.5s;
 }
 
-/* blog part CSS */
-main{
-    margin: 50px auto;  
-    width: 98%;
-    height : 900px;
-}
-.Blog{
-    display:inline-block;
-    height:400px;
-    width: 28%;
-    margin: 15px;
-    background-color: #ffffff;
-    border-radius: 9%;
-    position: relative;
-    left: 50px;
-    border-width: 2px;
-}
-.Blog:hover{
-    border-color: #99bbad;
-    color:#00adb5;
-    border-style: solid;
-    border-width: 4px;
-}
-.blog-img{
-    width: 100%;
-    height: 200px;
-    border-radius: 11% 11% 0 0;
-}
-.blog-anchor{
-    color: #00adb5;
-}
-.blog-text{
-    margin: 10px;
-}
-.div-blog-anchor{
-    position: absolute;
-    left: 280px;
-    bottom: 30px;
-}
+.td img{
+    width:80%;
+    margin-top:-30% ;
+    }
 
-/* Footer */
-
-footer{
-    position: absolute;
-    width:100%;
-    height: 183px;
-    left: 0px;
-    top: 1100px;
-    background: #222831;
+.outer{
+    position:relative;
+    margin-top: 5%;
+    margin-left:15%;
+    align-items: center;
+    width:70%;
+    height:40%;
+    background-color: #222831;
+    border-radius: 14px;
 }
-.commu{
-    /* Community */
-margin-left:100px;
-margin-top: 30px;
-color: #FFFFFF;
-font-weight: bold;
+.searchblock{
+    margin-left:40%;
 }
-
-.aboutusfooter{
-    position: absolute;
-    margin-left:732px;
-    margin-top: -35px;
-    color: #FFFFFF;
-}
-
-.aboutusfooterinformation{
-    position: absolute;
-    margin-left:400px;
-    margin-right: 510px;
-margin-top: 7px;
-color: #FFFFFF;
-text-align: center;
-width:730px;
-}
-
-.writeusat{
-    position: absolute;
-    margin-left:1290px;
-margin-top: -35px;
-color: #FFFFFF;
-}
-
-.fb{
-    /* image 2 */
-
-position: absolute;
-width: 80px;
-height: 58px;
-margin-left: 50px;
-margin-top: 10px;
-border-radius: 34px;
-
-}
-.insta{
-    position: absolute;
-width: 60px;
-height: 58px;
-margin-left: 120px;
-margin-top: 10px;
-border-radius: 34px;
-}
-.discord{
-    position: absolute;
-    width: 59px;
-    height: 54px;
-    margin-left: 186px;
-    margin-top: 10px;
-    border-radius: 34px;
-}
-.mail
+*
 {
-    /* image 3 */
+    outline: none;
+}
 
-position: absolute;
-width: 35px;
-/* height: 32px; */
-left: 1320px;
-top: 58px;
-border-radius: 25px;
-color:white;
+.tb
+{
+    display: table;
+    width: 100%;
 }
-.mailtext{
- position: absolute;
-width: 55px;
-left: 1235px;
-top: 88px;
-color:white;
+
+.td
+{
+    display: table-cell;
+    vertical-align: middle;
 }
-.vertical {
-    border-left: 3.5px solid white;
-    height: 100px;
-    position:absolute;
-    margin-top: 50px;
-    margin-left: 350px;
+
+input, button
+{
+    color: #fff;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
 }
-.vertical2 {
-    border-left: 3.5px solid white;
-    height: 100px;
-    position:absolute;
-    margin-top: 50px;
-    margin-left: 1180px;
+
+#cover
+{
+    position: absolute;
+    top: 60%;
+    left: -20%;
+    right: 0;
+    width: 80%;
+    height:15%;
+    padding: 35px;
+    margin: -83px auto 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 40px rgb(154, 153, 228);
+    transform: scale(0.6);
+}
+
+form
+{
+    height: 96px;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 96px;
+    font-size: 60px;
+    line-height: 1;
+    color:rgb(0, 0, 0);
+}
+
+input[type="text"]::placeholder
+{
+    color:rgb(68, 64, 64);
+    
+}
+
+#s-cover
+{
+    width: 1px;
+    padding-left: 35px;
+}
+
+button
+{
+    position: relative;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+}
+
+#s-cover:hover #s-circle
+{
+    top: -1px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+#here{
+    position:relative;
+    background-color: #00adb5;
+    width: 30%;
+    height:30%;
 }
