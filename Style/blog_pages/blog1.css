@@ -1,0 +1,218 @@
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --navBg:  rgba(139, 138, 138, 0.493);
+    --titleBg :#1b1a17;
+    --transition-speed: 600ms;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+}
+svg{
+    transform: scale(3);
+}
+/* *for the scroll bar */
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    color: black;
+}
+
+/* ! Header navigation  */
+
+header{
+    width: 100vw;
+    height: 3.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1b1a17;
+    transition: background-color .5s ease;
+    z-index: 100;
+}
+.navbar{
+    margin: 0.5rem 5rem -3rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.055);
+    transition: height .5s ease;
+}
+.navbar-nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+.nav-item{
+    list-style-type: none;  
+    padding: 0 2rem 1rem;
+
+}
+.nav-item:first-child{
+    margin-right: auto;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-item:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.822);
+}
+
+            /* Scrolling Effect */
+            /*Apply styles after scroll*/
+.scrolling-active{
+    background-color: var(--titleBg);
+    box-shadow: 0 3px 1rem var(--navBg);
+}
+
+
+
+
+
+
+
+
+body{
+    margin: 0px;
+    padding:0px;
+    /* background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2); */
+    background-color: #ffffff;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+ 
+}
+
+
+
+#logo-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    position: relative;
+    top: 1px;
+    margin-left: 50px;
+}
+.title{
+    color: #f8f5f1;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.header-h1{
+    margin-top: -1px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+.header-h3{
+    margin-top: 1px;
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+.headerLink{
+    display: inline-block;
+    padding: 50px 20px 36px 20px;
+    position: relative;
+    left : 42%;
+    bottom: 20%;
+    margin: 0;
+}
+.blogLink{
+    color: #00adb5;
+    text-decoration: none;
+}
+.headerLink:hover{
+    background-color: #393e46;
+    height: 22px;
+}
+.anchor{
+    color: #f8f5f1;
+    text-decoration: none;
+}
+
+
+a{
+    /* background-color: #15305A; */
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+a:hover{
+    transition: 0.5s;
+}
+/******    MAIN ******************/
+main{
+    margin: 5rem;
+    width: 100%;
+    height: auto;
+}
+main h1{
+    font-weight: bold;
+    margin-left: 40%;
+}
+main h3{
+    margin-left: 40%;
+    margin-top: 0px;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+   
+}
+main h1{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    width:50%;
+    padding:2px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px black;
+    
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+
+}
+p{
+    margin-left : 38%;
+    width:60%;
+    font-weight: light;
+    text-align: left;
+    
+}
+
+
+.main-img{
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    width: 35%;
+}
+
+.by{
+    color:black;
+    display:block;
+    margin-left: -600px;
+    margin-top: -90px;
+    }
+
+.name{
+ color:rgb(243, 149, 73);   
+}

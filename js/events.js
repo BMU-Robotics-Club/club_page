@@ -50,12 +50,6 @@ function showtechnicalevents(){
 
 
 
-
-
-
-
-
-
 var i = 0;
 var txt = 'Lets !! Get !! Chase !!'; /* The text */
 var speed = 150; /* The speed/duration of the effect in milliseconds */

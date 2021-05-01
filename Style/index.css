@@ -1,0 +1,366 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --navBg:  rgba(139, 138, 138, 0.493);
+    --titleBg :#1b1a17;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+}
+svg{
+    transform: scale(3);
+}
+/* *for the scroll bar */
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    color: black;
+}
+
+/* ! Header navigation  */
+
+header{
+    width: 100vw;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    transition: background-color .5s ease;
+    z-index: 100;
+}
+.navbar{
+    margin: 0.5rem 5rem 0rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.055);
+    /* transition: height .5s ease; */
+}
+.navbar-nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+.nav-item{
+    list-style-type: none;  
+    padding: 0 2rem 1rem;
+
+}
+.nav-item:first-child{
+    margin-right: auto;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-item:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.822);
+}
+
+            /* Scrolling Effect */
+            /*Apply styles after scroll*/
+.scrolling-active{
+    background-color: var(--titleBg);
+    box-shadow: 0 3px 1rem var(--navBg);
+}
+
+
+/* ! TITLE */
+#title{
+    height: 100vh;
+    /* width: 100vw; */
+    background-image: url("/Images/testBg3.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-text{
+    padding: 20vh 40vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#typing-text {
+    color: white; 
+    font-weight: bolder;
+    border: 0;
+    text-align: left;
+    overflow: hidden/* title section  */;
+    background-color: transparent;
+    font-size: 5rem;
+    padding: 5px;
+    width: auto;
+    outline: none;
+    box-sizing: border-box;
+}
+.float-right{
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+    /* HOME NAVIGATION */
+    .home-navbar{
+    }
+    .home-navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .home-nav-item{
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 5rem;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .home-nav-div{
+
+    }
+    .home-nav-link{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+/* * Achievements Section  */
+#Achievements{
+    margin-top: 2rem;
+    position : relative;
+}
+.Ach-header{
+    margin: 0 auto;
+    text-align: center;
+    max-width: max-content;
+    padding: 1px 5rem;
+    background-color: var(--titleBg);
+    color: white;
+    border-radius: 2rem;
+}
+.Ach-flex-container{
+    margin: 2rem 3rem 0rem 5rem;
+}
+
+.Ach-navbar{
+    display: flex;
+    justify-content: center;
+    /* overflow: auto; */
+}
+.Ach-nav-item{
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 5rem;
+    flex:1;
+    
+
+}
+.Ach-nav-img{
+    width: 20rem;
+    height: 15rem;
+    position: relative;
+    box-shadow: 2px 2px 5px 2px #888888;
+}
+.Ach-img{
+    height: 100%;
+    width: 100%;
+}
+.Ach-nav-div{
+    width: 20rem;
+    height: 15rem;
+}
+.Ach-btn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Montserrat',sans-serif;
+    cursor: pointer;
+    background-color: rgba(71, 64, 64, 0.747);
+    font-weight: bold;
+    color: white; 
+    height: 100%;
+    width: 100%;
+    z-index:3;
+    position: relative;
+    bottom: 15rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.Ach-nav-item:hover .Ach-btn{
+    opacity:1;
+}
+
+
+/* ! DELETE IT  */
+.Hidden{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(41, 41, 41, 0.747);
+    position:fixed;
+    transition: 1s ease;
+}
+.Hidden-not-active{
+    opacity: 0;
+    z-index: -1; 
+}
+.Hidden-active{
+    opacity: 1;
+    z-index: 4; 
+}
+.btn-close{
+    border: none;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: white; 
+    z-index:10;
+    margin-top: 3rem;
+}
+
+.Hidden-content{
+    margin: 10vh 20vw;
+    display: flex;
+    border-radius: 2rem;
+    background-color: white;
+
+}
+.Hidden-flex-items{
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+    height: 60vh;
+}
+.Hidden-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+/* !PROJECTS SECTION */
+#Project{
+    position: relative;
+    bottom: 10rem;
+}
+.proj-nav{
+    margin: 1rem 12rem 0;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Proj-header{
+    border-radius: 2rem;
+    
+}
+.proj-ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    
+}
+.proj-li{
+    list-style-type: none;
+    padding: 1rem 0rem;
+    
+}
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+  }
+  .btn-active{
+    border-bottom: solid;
+    border-color: black;
+  }
+.button:hover{
+    border-bottom: solid;
+    border-color: black;
+}
+        /* !BELOW PROJECT */
+#below-achievements{
+    position: relative;
+    bottom: 13rem;
+    padding-top: 6rem;
+}
+
+        /* !PROJECT CONTENT */
+.proj-con-main{
+    background-color: #1b1a17;
+    margin-top: 0;
+}
+.proj-con-flex{
+    display: flex;
+    flex-row: row;
+    margin: 0 20rem;
+    padding: 5rem;
+    justify-content:safe;
+}
+.proj-flex-item{
+    text-align: left;
+    width: 50%;
+    min-width: 20rem;
+}
+.flex-img{
+    height: 100%;
+    width: 100%;
+}
+.flex-content{
+    padding: 2rem;
+}
+.flex-right{
+    background-color: white;
+    text-align: center;
+}
+
+/* !FOOTER CONTENTS */
+#footer{
+    text-align: center;
+    position: relative;
+    bottom: 5rem;
+
+}
+.footer-icons{
+    padding: 1rem;
+}
+footer a{
+    text-decoration:none;
+    color: black;
+}
+footer a:hover{
+    color: grey;
+}
+
+
+
+/* Team's CSS */
+

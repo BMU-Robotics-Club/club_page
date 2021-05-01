@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="icon" href="Pictures/logo.png"> -->
+    <link rel="stylesheet" href="/Style/events.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
+    <title>Club Events</title>
+
+    <script src="/js/events.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#"  class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="16" height="16"
+                        viewBox="0 0 24 24"
+                        style=" fill:#f8f8f8;"><path d="M 8.5859375 1 L 5 4.5859375 L 5 8.7636719 L 3.9199219 10.923828 L 5.03125 14.257812 L 6.1015625 19.601562 L 9.6972656 22 L 12 22 L 14.302734 22 L 17.898438 19.601562 L 18.96875 14.257812 L 20.080078 10.923828 L 19 8.7636719 L 19 4.5859375 L 15.414062 1 L 8.5859375 1 z M 8.6347656 3.7792969 L 10.322266 8 L 13.677734 8 L 15.365234 3.7792969 L 17 5.4140625 L 17 9.2363281 L 17.919922 11.076172 L 17.03125 13.742188 L 16.101562 18.398438 L 14.925781 19.181641 L 13.330078 18 L 10.669922 18 L 9.0742188 19.181641 L 7.8984375 18.398438 L 6.96875 13.742188 L 6.0800781 11.076172 L 7 9.2363281 L 7 5.4140625 L 8.6347656 3.7792969 z M 7.2421875 10.029297 L 6.7578125 11.970703 L 10.757812 12.970703 L 11.242188 11.029297 L 7.2421875 10.029297 z M 16.757812 10.029297 L 12.757812 11.029297 L 13.242188 12.970703 L 17.242188 11.970703 L 16.757812 10.029297 z"></path></svg></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html"  class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#"  class="nav-link">Events</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="blog.html"  class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="teams.html"  class="nav-link">Team</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Loginpage.html"  class="nav-link">LogIn</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class = "imagesetup">
+     
+        <!-- <div class="marqueetext">
+            <b><a href="#upcominginformation"> <marquee direction = "left" style="color: black;">Register for our upcoming event <span style="color:rgb(181, 135, 225)"> 3 Day workshop on Arduino</span> <span style="color:rgb(111, 111, 235)" ><u>below</u> </span>and get a chance to grab exciting prizes!!</marquee></a> </b>
+        </div>
+         -->
+
+        
+      <script>
+        (function(){
+            
+       
+        
+        
+            function abc(){
+                
+                var i = 0;
+                var txt = 'Lets !! Get !! Chase !!'; /* The text */
+                var speed = 160;
+
+                function typeWriter() {
+               
+                if (i < txt.length) {
+                  document.getElementById("demo").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              else{
+                i=0;
+                document.getElementById("demo").innerHTML ="";
+                typeWriter();
+              }
+               
+              }
+              
+              
+              setTimeout(typeWriter, speed);
+            }
+            
+              
+              abc();
+
+        }
+        
+        )(); 
+        
+      </script>
+    
+
+        
+      <div id="demo"></div>
+
+      
+    <div class="eventsstats">
+        
+        <!-- <div class="icon">
+            <i class="fas fa-caret-down fa-3x"></i>
+        </div> -->
+        
+        
+
+        <div class="stats1">
+            <p>20+</p>
+        </div>
+
+        <div class="stats1data">
+            <p>Events</p>
+        </div>
+
+        <div class="vertical1">
+
+        </div>
+
+
+        <div class="stats2">
+            <p>4</p>
+        </div>
+
+        <div class="stats2data">
+            <p>Falgship Events</p>
+        </div>
+
+        <div class="vertical2">
+
+        </div>
+
+        <div class="stats3">
+            <p>40+</p>
+        </div>
+
+        <div class="stats3data">
+            <p>Workshops</p>
+        </div>
+       
+       
+        <div class="vertical3">
+
+        </div>
+    </div>
+     
+         
+      
+    </div>
+
+    <div class="eventsheading">
+        <h1 class="eventsheadingformatting">Events</h1>
+    </div>
+
+
+    <div class = "imagesetup2">
+
+            <div class="layerpositioning">
+                <div class="menupositioning">
+
+                    <div id="eventsmenu1">
+                        <button id = "classforbutton1" onclick="showupcomingevents()">Upcoming Events</button> 
+                        <div id="smallvertical1">
+                        
+                        </div>  
+                    </div>
+                    
+                    
+                    <br>
+                    <br>
+                
+                    <div id="eventsmenu2">
+                        <button id="classforbutton2" onclick="showflagshipevents()">Flagship Events</button> 
+                        <div id="smallvertical2">
+                        
+                        </div>          
+                     </div>
+                
+                     <br>
+                     <br>
+                     
+                     <div id="eventsmenu3">
+                         <button id="classforbutton3" onclick="showworkshops()">Workshops</button>    
+                         <div id="smallvertical3">
+                        
+                        </div>       
+                      </div>
+                    
+                      <br>
+                      <br>
+                      
+                      <div id="eventsmenu4">
+                          <button id="classforbutton4" onclick="showtechnicalevents()">Technical Fest</button>    
+                          <div id="smallvertical4">
+                        
+                        </div>       
+                       </div>
+                
+                </div>
+                
+               
+                
+                <div class="detailspositioning">
+            
+                    <div id = "upcominginformation">
+                        <div class="block1">
+                            <img src="/Images/learnarduino.png" height="250px" width="250px">
+                            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                          <a href = "#formdivmovement"><div class="registernow">Register Now</div></a> 
+                       
+                       </div>
+               
+               
+                        <div class="block2" >
+                           <img src="/Images/obstaclebot.JPG" height="250px" width="250px">
+                            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                            <a href = "#formdivmovement"><div class="registernow">Register Now</div></a>
+                       
+                       </div>
+                       
+                       
+                       <div class="block3" >
+                           <img src="/Images/arduinoavr.jpeg" height="250px" width="250px">
+                            <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                            <a href = "#formdivmovement"><div class="registernow">Register Now</div></a>
+                       </div>
+                        
+                    </div>
+               
+               
+               
+               
+                    <div id = "flagshipinformation">
+                       <div class="block1">
+                           <img src="/Images/rcinfo.JPG" height="250px" width="250px">
+                           <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                          <div class="registernow">Register Now</div>
+                      
+                      </div>
+               
+               
+                       <div class="block2" >
+                          <img src="/Images/droneinfo.JPG" height="250px" width="250px">
+                           <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                          <div class="registernow">Register Now</div>
+                      
+                      </div>
+                      
+                      
+                      <div class="block3" >
+                          <img src="/Images/robowarinfo.JPG" height="250px" width="250px">
+                           <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                          <div class="registernow">Register Now</div>
+                      </div>
+                       
+                   </div>
+
+                   <div id = "workshopinformation">
+                    <div class="block1">
+                        <img src="/Images/rcinfo.JPG" height="250px" width="250px">
+                        <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                       <div class="registernow">Register Now</div>
+                   
+                   </div>
+            
+            
+                    <div class="block2" >
+                       <img src="/Images/droneinfo.JPG" height="250px" width="250px">
+                        <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                       <div class="registernow">Register Now</div>
+                   
+                   </div>
+                   
+                   
+                   <div class="block3" >
+                       <img src="/Images/robowarinfo.JPG" height="250px" width="250px">
+                        <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                       <div class="registernow">Register Now</div>
+                   </div>
+                    
+                </div>
+
+                <div id = "technicalinformation">
+                    <div class="block1">
+                        <img src="/Images/rcinfo.JPG" height="250px" width="250px">
+                        <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                       <div class="registernow">Register Now</div>
+                   
+                   </div>
+            
+            
+                    <div class="block2" >
+                       <img src="/Images/droneinfo.JPG" height="250px" width="250px">
+                        <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                       <div class="registernow">Register Now</div>
+                   
+                   </div>
+                   
+                   
+                   <div class="block3" >
+                       <img src="/Images/robowarinfo.JPG" height="250px" width="250px">
+                        <p>This event revolves around teaching students across the world abouyt arduino. This workshop goes for 30days</p>
+                       <div class="registernow">Register Now</div>
+                   </div>
+                    
+                </div>
+               
+            </div>
+
+   
+    </div> 
+
+     <br>
+     <br>
+     <br>
+
+
+    <div class="formdiv">
+
+        <div id="formdivmovement">
+
+        </div>
+
+        <h2 class= "formattingregisterhere">Event Registration Form</h2>
+
+        <form action="/action_page.php">
+            <div class="formatting">
+                <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"placeholder="Your name.."> 
+            <br><br>            
+            </div>
+
+            <div class="formatting">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Email Id">
+            <br><br>
+            </div>
+
+            <div class="formatting">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile No">
+                <br><br>
+            </div>
+
+            <div class="formatting">
+                <label for="eventname">Event Name:</label>
+                <input type="text" id="eventname" name="eventname" placeholder="Event you want to register for">
+                <br><br>
+            </div>
+
+            
+
+            <div class="formattingyesno">
+
+                <label for="updates">Do you want to receive updates?    Yes</label>
+                <input type="radio" id="yes" name="updates" value="yes">
+                <label for="updates">No</label>
+                <input type="radio" id="no" name="updates" value="no">
+                <br><br>
+            </div>
+
+            <div class = "formattingsubmit">
+                <input type="submit" value="Submit">
+            </div>
+
+            
+          </form>
+    </div>
+
+<br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br>
+<script src="/js/navBar.js"></script>
+</body>
