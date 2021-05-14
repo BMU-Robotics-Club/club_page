@@ -6,7 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body{
     margin: 0;
@@ -151,11 +151,13 @@ header{
 }
 .Ach-flex-container{
     margin: 2rem 3rem 0rem 5rem;
+    
 }
 
 .Ach-navbar{
     display: flex;
     justify-content: center;
+    overflow-x: auto;
     /* overflow: auto; */
 }
 .Ach-nav-item{
