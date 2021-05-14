@@ -41,6 +41,7 @@ header{
 .navbar{
     margin: 0.5rem 5rem 0rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.055);
+
     /* transition: height .5s ease; */
 }
 .navbar-nav{
@@ -48,6 +49,7 @@ header{
     padding: 0;
     display: flex;
     align-items: center;
+    flex-flow: column wrap;
 
 }
 .nav-item{
@@ -57,6 +59,13 @@ header{
 }
 .nav-item:first-child{
     margin-right: auto;
+}
+.nav-words{
+    display: none;
+}
+#hamburger{
+    position: absolute;
+    right: 2rem;
 }
 .nav-link{
     text-decoration: none;
@@ -98,7 +107,7 @@ header{
     text-align: left;
     overflow: hidden/* title section  */;
     background-color: transparent;
-    font-size: 5rem;
+    font-size: 5vw;
     padding: 5px;
     width: auto;
     outline: none;
@@ -107,7 +116,7 @@ header{
 .float-right{
     margin: 0;
     color: white;
-    font-size: 2rem;
+    font-size: 3vw;
 }
 
     /* HOME NAVIGATION */
@@ -366,3 +375,17 @@ footer a:hover{
 
 /* Team's CSS */
 
+/* * media queries  */
+
+@media screen and (min-width:1000px) {
+    .nav-words{
+        display: initial;
+        /* transition: 1s ease-in-out; */
+    }
+    .navbar-nav{
+        flex-flow: row wrap;
+    }
+    #hamburger{
+        display: none;
+    }
+}
