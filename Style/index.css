@@ -120,17 +120,18 @@ header{
 }
 
     /* HOME NAVIGATION */
-    .home-navbar{
-    }
+
     .home-navbar-nav{
         display: flex;
-        flex-direction: row;
+        flex-flow: column wrap;
+        align-items: center;
         justify-content: center;
     }
     .home-nav-item{
         list-style-type: none;
-        padding-left: 0;
-        padding-right: 5rem;
+        /* padding-left: 0;
+        padding-right: 5rem; */
+        padding-top: 2rem;
         color: white;
         font-size: 1.5rem;
     }
@@ -388,4 +389,12 @@ footer a:hover{
     #hamburger{
         display: none;
     }
+    .home-navbar-nav{
+        flex-flow: row wrap;
+    }
+    .home-nav-item{
+        padding-left: 0;
+        padding-right: 5rem;
+    }
+
 }
