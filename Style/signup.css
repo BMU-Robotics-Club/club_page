@@ -1,17 +1,104 @@
+
+.outter .createtitle{
+   margin-top:5%;
+    margin-left:15%;
+    font-size: 40px;
+   
+}
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --navBg:  rgba(139, 138, 138, 0.493);
+    --titleBg :#1b1a17;
+    --transition-speed: 600ms;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+}
+svg{
+    transform: scale(3);
+}
+/* *for the scroll bar */
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    color: black;
+}
+
+/* ! Header navigation  */
+
+header{
+    width: 100vw;
+    height: 3.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color .5s ease;
+    z-index: 100;
+}
+.navbar{
+    margin: 0.5rem 5rem -3rem;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.055);
+    transition: height .5s ease;
+}
+.navbar-nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+.nav-item{
+    list-style-type: none;  
+    padding: 0 2rem 1rem;
+
+}
+.nav-item:first-child{
+    margin-right: auto;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-item:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.822);
+}
+
+            /* Scrolling Effect */
+            /*Apply styles after scroll*/
+.scrolling-active{
+    background-color: var(--titleBg);
+    box-shadow: 0 3px 1rem var(--navBg);
+}
+
+
+
+
 body{
     margin: 0px;
     padding:0px;
-    /* background-image: linear-gradient(to right,#f0e3ca,#f8f5f1,#d5ecc2); */
-    font-family: 'IBM Plex Sans', sans-serif;
-    background-color: #EBEDF0;
+    background-image: url("/Images/testBg4.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;   
 }
 
-header{
-    height: 90px;
-    width: 100%;
-    margin: 0;
-    background-color: #222831;
-}
+
 #logo-img{
     height: 60px;
     width: 60px;
@@ -63,37 +150,105 @@ a{
     font-size: 1.5vw;
 }
 a:hover{
-    color:orange;
     transition: 0.5s;
 }
-.create{
-   margin-top:5%;
-    margin-left:38%;
-    font-size: 40px;
-}
-
 
 .outter{
-    width:100%;
     position: relative;
-    height:100%;
-    display:flex;
+width: 500px;
+height: 500px;
+left: 645px;
+top:160px;
+left:530px;
+background: #FFFFFF;
+border-radius: 15px;
+z-index: 1;
+box-shadow: -5px 3px 3px rgb(85, 71, 71);
 }
 
-.o1 input[type="text"] {
-    width: 100%;
+.o1 input[type=text] {
+    width: 70%;
     padding: 12px 20px;
-    margin-top:110px;
-    margin-left: 268%;
+    margin-top:80px;
+    margin-left: 70px;
     box-sizing: border-box;
     border-radius: 3px;
   }
-
   .o1 input[type="text"]::placeholder
   {
       color:#90949C;
       font-size: larger;
 
   }
+  .o2 input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin-top:50px;
+    margin-left: 70px;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .o2 input[type="password"]::placeholder
+  {
+      color:#90949C;
+      font-size: larger;
+      
+  }
+  .o3 input[type="password"]::placeholder
+  {
+      color:#90949C;
+      font-size: larger;
+      
+  }
+  .o3 input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin-top:50px;
+    margin-left: 70px;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
 
- 
+  .outter p:hover{
+      text-decoration: underline;
+  }
+
+
+
+  .outter a:hover{
+    background-color: rgb(56, 54, 54);
+    color:white;
+
+  }
+
+  .create{
+      align-items: center;
+      margin-top: 50%;
+      padding-top: 4%;
+      margin-left: 2%;
+  }
+  .create a{
+   
+  
+    background-color: black;
+    font-weight:bold;
+    border-radius: 5px;
+    padding:10px;
+    cursor:pointer;
+   align-items:center;
+    margin-left: 165px;
+    font-size: medium;
+}
+
+.signupbtn button{
+    background-color: black;
+    color:white;
+    margin-top: 11%;
+    margin-left:35%;
+    border-radius: 4px;
+    padding:10px 50px;
+}
+.signupbtn button:hover{
+    background-color: #393e46;
+    cursor: pointer;
+}

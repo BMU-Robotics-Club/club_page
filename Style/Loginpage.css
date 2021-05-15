@@ -151,11 +151,12 @@ a:hover{
 width: 500px;
 height: 500px;
 left: 645px;
-top:90px;
+top:180px;
 left:530px;
 background: #FFFFFF;
 border-radius: 15px;
 z-index: 1;
+box-shadow: -5px 3px 3px rgb(85, 71, 71);
 }
 
 .o1 input[type=text] {
@@ -228,7 +229,7 @@ z-index: 1;
       align-items: center;
       margin-top: 50%;
       padding-top: 4%;
-      margin-left: 2%;
+      margin-left: 1%;
   }
   .create a{
    
