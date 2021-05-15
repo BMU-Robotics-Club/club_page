@@ -249,3 +249,7 @@ box-shadow: -5px 3px 3px rgb(85, 71, 71);
       margin-left: 135px;
       font-size: medium;
 }
+.loginbtn button:hover{
+  transition:0.5s;
+  background-color: rgb(56, 54, 54);
+}

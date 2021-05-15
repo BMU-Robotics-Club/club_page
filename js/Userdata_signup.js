@@ -24,7 +24,7 @@ function loginvalidate()
 // login validation
 
     alert("hi");
-    window.location.href="blog.html";
+    // window.location.href="blog.html";
 
     
 }
