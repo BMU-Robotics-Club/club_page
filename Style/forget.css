@@ -148,18 +148,36 @@ a{
 a:hover{
     transition: 0.5s;
 }
-
-.outter{
+#overlay{
+    display:none;
     position: relative;
+    width: 100%;
+    height: 100%;
+    left: -500px;
+    top:-796px;
+    left:0%;
+    background: rgb(138, 130, 130);
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    z-index: 4;
+    opacity:0.8;
+   transition-property: all;
+   transition: 1s ease;
+    
+}
+#outter2{
+position: relative;
 width: 500px;
 height: 300px;
 left: 645px;
-top:200px;
-left:35%;
+top:-250px;
+left:34.5%;
 background: #ffff;
 box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.25);
 border-radius: 15px;
-z-index: 1;
+z-index: 10;
+display:none;
+opacity:1.5;
 }
 
 .o1 input[type=text] {
@@ -191,13 +209,13 @@ z-index: 1;
       
   }
 
-.outter p{
+#outter2 p{
     font-size: small;
     position: absolute;
     margin-top: 30px;
     margin-left: 30px;
 }
-  .outter a:hover{
+#outter2 a:hover{
     background-color: #27691a;
     color:white;
   }

@@ -186,7 +186,15 @@ z-index: 1;
       font-size: larger;
       
   }
-  .outter p{
+  .outter button{
+    background-color: transparent;
+    border: none;
+    margin-top:5%;
+    margin-left: 33%;
+  }
+  .outter button p{
+    
+      height:1px;
       color:#1877F2;
       font-weight:bold;
       margin-left: -2%;
@@ -199,30 +207,17 @@ z-index: 1;
   }
 
   .outter hr{
+
       width:70%;
+      margin-top: 3%;
   }
-  .create a{
-   
-  
-      background-color: black;
-      font-weight:bold;
-      border-radius: 5px;
-      padding:10px;
-      cursor:pointer;
-     align-items:center;
-      margin-left: 165px;
-      font-size: medium;
-  }
+
   .outter a:hover{
     background-color: rgb(56, 54, 54);
     color:white;
 
   }
-  .create{
-      align-items: center;
-      margin-top: 50px;
-     
-  }
+ 
 
   .loginbtn{
     align-items: center;
@@ -231,9 +226,22 @@ z-index: 1;
 }
   .create{
       align-items: center;
-      margin-top: 50px;
-     
+      margin-top: 50%;
+      padding-top: 4%;
+      margin-left: 2%;
   }
+  .create a{
+   
+  
+    background-color: black;
+    font-weight:bold;
+    border-radius: 5px;
+    padding:10px;
+    cursor:pointer;
+   align-items:center;
+    margin-left: 165px;
+    font-size: medium;
+}
 .loginbtn a{
     background-color: black;
       font-weight:bold;
