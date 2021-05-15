@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="/Style/signup.css">
-    <link rel="stylesheet" href="/Style/forget.css">
-    <!-- <link rel="icon" href="Images/logo2.png"> -->
     <script src="/js/otp.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
@@ -45,22 +43,25 @@
         </nav>
     </header>
 
-
+    
     <div class="outter">
         <h1 class="createtitle">Create New Account</h1>
         <div class="o1">
-            <input id="phone" type="text" placeholder="Email address or Phone number">
+            <input id="mail" type="text" placeholder="Email address">
+        </div>
+        <div class="o4">
+            <input id="phone" type="text" placeholder="Phone number">
         </div>
         <div class="o2">
             <input id="pass1" type="password" placeholder="Password">
         </div>
         <div class="o3">
-            <input id="pass2" type="password" placeholder="Re-Enter the Password">
+            <input id="pass2" type="password" placeholder="Repeat Password">
         </div>
-        <div class="signupbtn"><button>Signup</button> </div>       
+        <div class="signupbtn"><button type="button" onclick="storedata()">Signup</button> </div>       
     </div>
 
- 
+    <script src="/js/Userdata_signup.js"></script> 
     
 </body>
 </html>

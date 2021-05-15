@@ -1,8 +1,10 @@
 
 .outter .createtitle{
    margin-top:5%;
-    margin-left:15%;
-    font-size: 40px;
+    margin-left:25%;
+    font-size: 25px;
+padding-top: 2%;
+
    
 }
 
@@ -169,7 +171,7 @@ box-shadow: -5px 3px 3px rgb(85, 71, 71);
 .o1 input[type=text] {
     width: 70%;
     padding: 12px 20px;
-    margin-top:80px;
+    margin-top: 40px;
     margin-left: 70px;
     box-sizing: border-box;
     border-radius: 3px;
@@ -209,6 +211,21 @@ box-shadow: -5px 3px 3px rgb(85, 71, 71);
     border-radius: 3px;
   }
 
+  .o4 input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin-top:50px;
+    margin-left: 70px;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .o4 input[type="text"]::placeholder
+  {
+      color:#90949C;
+      font-size: larger;
+      
+  }
+
   .outter p:hover{
       text-decoration: underline;
   }
@@ -243,12 +260,15 @@ box-shadow: -5px 3px 3px rgb(85, 71, 71);
 .signupbtn button{
     background-color: black;
     color:white;
-    margin-top: 11%;
-    margin-left:35%;
+    margin-top: 8%;
+    margin-left:33.5%;
     border-radius: 4px;
     padding:10px 50px;
+    
 }
 .signupbtn button:hover{
+    transition-delay: 0.3s;
+    transition-duration: 0.6s;
     background-color: #393e46;
     cursor: pointer;
 }
