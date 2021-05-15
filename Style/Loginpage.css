@@ -225,12 +225,7 @@ box-shadow: -5px 3px 3px rgb(85, 71, 71);
     margin-top: 50px;
    
 }
-  .create{
-      align-items: center;
-      margin-top: 50%;
-      padding-top: 4%;
-      margin-left: 1%;
-  }
+ 
   .create a{
    
   
@@ -243,11 +238,12 @@ box-shadow: -5px 3px 3px rgb(85, 71, 71);
     margin-left: 165px;
     font-size: medium;
 }
-.loginbtn a{
+.loginbtn button{
     background-color: black;
       font-weight:bold;
       border-radius: 5px;
       padding:15px 94px;
+      margin-top: -10%;
       cursor:pointer;
      align-items:center;
       margin-left: 135px;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Register</title>
     <link rel="stylesheet" href="/Style/signup.css">
     <script src="/js/otp.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,18 +47,18 @@
     <div class="outter">
         <h1 class="createtitle">Create New Account</h1>
         <div class="o1">
-            <input id="mail" type="text" placeholder="Email address">
+            <input id="mail" type="text" placeholder="Email address" required>
         </div>
         <div class="o4">
-            <input id="phone" type="text" placeholder="Phone number">
+            <input id="phone" type="text" placeholder="Phone number" required>
         </div>
         <div class="o2">
-            <input id="pass1" type="password" placeholder="Password">
+            <input id="pass1" type="password" placeholder="Password" required>
         </div>
         <div class="o3">
-            <input id="pass2" type="password" placeholder="Repeat Password">
+            <input id="pass2" type="password" placeholder="Repeat Password" required>
         </div>
-        <div class="signupbtn"><button type="button" onclick="storedata()">Signup</button> </div>       
+        <div class="signupbtn"><button type="submit" onclick="storedata()">Signup</button> </div>       
     </div>
 
     <script src="/js/Userdata_signup.js"></script> 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Account Login</title>
     <link rel="stylesheet" href="/Style/Loginpage.css">
     <link rel="stylesheet" href="/Style/forget.css">
     <!-- <link rel="icon" href="Images/logo2.png"> -->
@@ -48,11 +48,11 @@
 
     <div class="outter">
         <div class="o1">
-            <input id="phone" type="text" placeholder="Email address or Phone number">
+            <input id="mailorphone" type="text" placeholder="Email address or Phone number">
         </div>
         <div class="o2">
-            <input id="phone" type="password" placeholder="Password">
-            <div class="loginbtn"><a href="#">Login</a></div>
+            <input id="passwd" type="password" placeholder="Password">
+            <div class="loginbtn"><button type="submit" onclick="loginvalidate()">Login</button></div>
             <button onclick="forgetpopup()"><P>Forgotten password?</P></button>
         </div>
         <hr>
@@ -80,9 +80,10 @@
      </div>
      <div id="overlay"> </div>
 
-     
+     <script src="/js/Userdata_signup.js"></script> 
 
     <script src="/js/navBar.js"></script>  
+   
     
 </body>
 </html>
