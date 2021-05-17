@@ -137,6 +137,51 @@ div > a{
     filter:grayscale();
 } */
 
+.registereventspos
+{
+    position: relative;
+    font-size: 10px;
+    color: white;
+        margin-top: -5%;
+    margin-left: 5%;
+    color: #ccc;
+}
+.registerevents{
+    
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.chatwithuspos{
+    position: relative;
+    font-size: 10px;
+    color: white;
+        margin-top: -1.7%;
+    margin-left: 82%;
+    color: #ccc;
+}
+.chatwithus{
+    
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+/* 
+
 .eventsheading
 {
     margin-top: 2%;
@@ -153,286 +198,64 @@ div > a{
     margin-left:14%;
     color:white;
     font-weight:bold;
-}
+} */
 
-
+/* 
 .imagesetup2{
     position: relative;
     
     background-size: cover;
     width:100%;
     
-}
+} */
 
-.layerpositioning
-{
-    padding-left: 1.5%;
+
+.newpos{
     position: relative;
-    display: flex;
+    font-size: 50px;
+    color: #0B0C10;
+    font-weight: 500;
+    margin-top: 20%;
+    margin-left: 50%;
+    color: #ccc;
 }
 
+  .arrow1 {
+    animation: slide1 1s ease-in-out infinite;
+    margin-left: 9px;
+  }
 
-.menupositioning{
-    padding-top: 6%;
-padding-left:2%;
-}
-
-
-.detailspositioning{
-    padding-top: 2%;
-    padding-left:5%;
-}
-
-
-#eventsmenu1{
-    position: relative;
-    background:  rgb(27,26,23);
-    padding: 5px;
-    width:200px;
-    height:45px;
-    margin-left: 1%;
-    margin-top: 18px;
-    border-radius: 10px;
-    display: flex;
-        
-}
-
-#classforbutton1{
-    font-size: 16px;
-    color:white;
-    background-color:  rgb(27,26,23);
-    height: 35px;
-    margin-top: 5px;
-    margin-left:20px;
-    border-style: none;
-    cursor: pointer;
-   
-}
-
-
-#smallvertical1
-{
-    display: flex;
-    margin-top: 2.5%;
-    margin-left: 16%; 
-    border-left: 2px solid white;
-  height: 35px;
-}
-
-
-/*                 */
-
-#eventsmenu2{
-    position: relative;
-
-    display: flex;
-    background-color:  rgb(27,26,23);
-    padding: 5px;
-    width:200px;
-    height:45px;
-    margin-left: 1%;
-    margin-top: 18px;
-    border-radius: 10px;
-        
-}
-
-
-#classforbutton2{
-    color:white;
-    font-size:18px;
-    background-color:  rgb(27,26,23);
-    height: 35px;
-    margin-top: 5px;
-    margin-left:20px;
-    border-style: none;
-    cursor: pointer;
-   
-}
-#smallvertical2
-{
-    display: none;
-    margin-top: 2.5%;
-    margin-left: 14%; 
-    border-left: 2px solid white;
-  height: 35px;
-}
-
-/*                   */
-
-#eventsmenu3{
-    position: relative;
-    display: flex;
-    background-color:  rgb(27,26,23);
-    padding: 5px;
-    width:200px;
-    height:45px;
-    margin-left: 1%;
-    margin-top: 18px;
-    border-radius: 10px;
-        
-}
-
-
-#classforbutton3{
-    color:white;
-    font-size:18px;
-    background-color:  rgb(27,26,23);
-    height: 35px;
-    margin-top: 5px;
-    margin-left:35px;
-    border-style: none;
-    cursor: pointer;
-   
-}
-
-#smallvertical3
-{
-    display: none;
-    margin-top: 2.5%;
-    margin-left: 25%; 
-    border-left: 2px solid white;
-  height: 35px;
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
   
-}
-
-/*               */
-
-#eventsmenu4{
-    position: relative;
-
-    display: flex;
-    background-color:  rgb(27,26,23);
-    padding: 5px;
-    width:200px;
-    height:45px;
-    margin-left: 1%;
-    margin-top: 18px;
-    border-radius: 10px;
-        
-}
+    50% {
+      transform: translate(0, 10px);
+    }
+  }
+  
 
 
-#classforbutton4{
-    color:white;
-    font-size:18px;
-    background-color:  rgb(27,26,23);
-    height: 35px;
-    margin-top: 5px;
-    margin-left:20px;
-    border-style: none;
-    cursor: pointer;
-   
-}
 
-#smallvertical4
-{
-    display: none;
-    margin-top: 2.5%;
-    margin-left: 20%; 
-    border-left: 2px solid white;
-  height: 35px;
-}
-
-/*                   */
-
-
-#upcominginformation{
-    display: flex;
-    position:relative;
-    width:970px;
-    height:500px;
-    background-color: rgb(0, 0, 0,0.5) ;
+.eventshead{
     
     
-}
-
-#flagshipinformation{
-    display: none;
-    position:relative;
-    width:970px;
-    height:500px;
-    background-color: rgb(0, 0, 0,0.5)  ;
-       
-}
-
-#workshopinformation{
-    display: none;
-    position:relative;
-    width:970px;
-    height:500px;
-    background-color: rgb(0, 0, 0,0.5)  ;
-    
-}
-
-
-#technicalinformation{
-    display: none;
-    position:relative;
-    width:970px;
-    height:500px;
-    background-color: rgb(0, 0, 0,0.5) ;   
-}
-
-
-
-
-.block1{
-    border-radius: 25px;
     position: relative;
-    width:250px;
-    height:400px;
-    left: 3%;
-    top: 8%;
-    background-color: rgb(0, 0, 0);
-    color:white;
-    text-align: center;
-    filter:grayscale(50%);
-}
-
-
-.block2{
-    border-radius: 25px;
-    position: relative;
-    width:250px;
-    height:400px;
-    left: 10%;
-    top: 8%;
-    background-color: black;
-    color:white;
-    text-align: center;
-    filter:grayscale(50%);
-}
-
-.block3{
-    border-radius: 25px;
-    position: relative;
-    width:250px;
-    height:400px;
-    left: 17%;
-    top: 8%;
-    background-color: black;
-    color:white;
-    text-align: center;
-    filter:grayscale(50%);
-}
-
-.registernow{
-   
-        background-color: white; /* Green */
-        border: none;
-        color: black;
-        padding: 10px 28px;
+        /* margin: 300px auto; */
+        padding-top: 5.5%;
         text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 15px;
-        border-radius: 10%;
-      
+        color: white;
+        font-size: 6em;
+        
+        font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .eventsstats{
       
-        margin-top: 19%;
+        margin-top: 4%;
         width:100%;
         height:130px;
         background-color: rgb(27,26,23);
@@ -448,6 +271,10 @@ padding-left:2%;
     color: white;
     font-size: 50px;
 } */
+
+
+
+
 
 
 .stats1{
@@ -512,92 +339,64 @@ padding-left:2%;
     color: white;
     font-size: 20px;
 }
+/* Part 2 */
 
-.icon{
-    position: relative;
-    margin-top: 107px;
-    margin-left: 640px;
-    color: rgb(76,47,163);
-    font-size: 20px;
+
+.rotatepos {
+
+    margin-top: 100px;
 }
 
+.rotateformatting{
 
-#demo{
+    
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    
+    float: left;
+    color:#0B0C10;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Part 3 */
+
+/* #demo{
     position: relative;
     padding-left: 23%;
     padding-top:10% ;
     font-size: 80px;
     color: white;
+} */
+
+.events-ul {
+    position: relative;
+	border-radius: 25px;
+	height: 40px;
+	display: inline-flex;
+	background-color: rgba(0, 0, 0, .4); 
+	align-items: center;
+	padding: 5px 10px 5px 5px;
+    margin-top: -30px;
+    margin-left: 15%;
 }
-
-.formdiv{
-   
-    position:relative;
-    padding-top:2%;
-    border-radius: 15px;
-    width:1000px;
-    height:500px;
-    left:15%;
-    background-color: rgb(0, 0, 0,0.9);
-    color:white;
+.events-li {
+    padding: 5px 85px 5px 85px;
+		list-style: none;
+		color: black;
+		font-family: sans-serif;
+		position: relative;
+		cursor: pointer;
+	
 }
+	
 
-input[type=text], select, textarea {
-    width: 75%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    color:black;
-  }
-
-  input[type=submit] {
-     
-    background-color: white;
-    color: black;
-    padding: 13px 23px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-
-  .formatting{
-    font-weight: bold;
-      margin-left: 110px;
-  }
-
-  .formattingregisterhere
-  {
-      
-      margin-left:390px;
-  }
-
-  .formattingyesno{
-      font-weight: bold;
-      margin-left: 110px;
-  }
-  .formattingsubmit{
-      
-    font-weight: bold;
-    margin-left: 48%;
-  }
-
-  #fname{
-      
-    margin-left: 63px;
-}
-#email{
-    margin-left: 95px;
-}
-#mobile{
-    margin-left: 27px;
-}
-  
-#eventname{
-    margin-left: 53px;
-}
