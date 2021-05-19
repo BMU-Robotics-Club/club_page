@@ -1,4 +1,6 @@
 
+
+
 // Blog1
 function show(){
     var element=document.getElementById("readit1");
