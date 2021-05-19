@@ -1,0 +1,93 @@
+.blogholder{
+    position:relative;
+    margin-top: 10%;
+    padding:1%;
+    background: #000;
+    display:flex;
+}
+
+/* blog1 */
+.blog1{
+    position:relative;
+    height:100%;
+    width:25%;
+    margin-left: 10%;
+    background-color: aqua;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+.blog1 .in1{
+    padding:2%;
+}
+.blog1 .in2 img{
+    position:relative;
+    width:100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 0.3 ease-in-out;
+}
+.blog1 .in2 img:hover{
+    transition:0.3s ease-in-out;
+    width:101%;
+    filter:saturate(50%);
+}
+.blog1 .in2 h3{       /*read it*/
+    padding:1%;
+    margin:1%;
+   
+    display:none;
+}
+.blog1 .in3{         /*blog head*/
+    padding-left:4%;
+    padding-top:1%;
+}               
+.blog1 .in4{        /*SHort descrip*/
+    padding:1%;
+    margin-left:4%;
+}
+.blog1 .in5 #who1{        /*who wrote and all*/
+    padding-top:3%;
+    padding-left:10%;
+    display:none;
+}
+/* blog2 */
+.blog2{
+    position:relative;
+    height:100%;
+    width:25%;
+    margin-left: 2%;
+    background-color: aqua;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.blog2 .in1{
+    padding:2%;
+}
+.blog2 .in2 img{
+    position:relative;
+    width:100%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* blog3 */
+.blog3{
+    position:relative;
+    height:100%;
+    width:25%;
+    margin-left: 2%;
+    background-color: aqua;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.blog3 .in1{
+    padding:2%;
+}
+.blog3 .in2 img{
+    position:relative;
+    width:100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
