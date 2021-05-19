@@ -1,7 +1,7 @@
 // !Achivements JS
 
 // ? Global Variables 
-    // *section hidden 
+// *section hidden 
 let sec_hidden = document.querySelector(".Hidden");
 // ! for content
 let hidden_img = document.querySelector(".Hidden-img");
