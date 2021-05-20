@@ -5,15 +5,20 @@ root{
   --titleBg :#1b1a17;
   --transition-speed: 600ms;
 }
+
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-image: linear-gradient( to bottom left, white, black);
 }
 body{
+  
   margin: 0;
   padding: 0;
   color: black;
-  background-color: white;
+  
+  /* background-image: linear-gradient(to bottom right, black, white); */
+  
 }
 svg{
   transform: scale(3);
@@ -36,7 +41,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.527);
   transition: background-color .5s ease;
   z-index: 100;
   height: auto;
@@ -152,7 +157,8 @@ html {
     font-size: 62.5%;
   }
   body {
-    background: #f1f1f1;
+    background-image: linear-gradient(to bottom right, black, white);
+    background-repeat:space;
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
@@ -745,7 +751,7 @@ margin-top:-100%;
       background-color: rgb(0, 0, 0);
       position: absolute;
       margin-top: -1%;
-      margin-left: 42%;
+      margin-left: 43%;
       color: white;
       padding: 5px  5rem;
       text-align: center;
