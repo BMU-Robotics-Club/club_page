@@ -738,8 +738,14 @@ margin-top:-100%;
       margin-top: -428px;
       margin-left: 490px;
     }
+    
     .column1{
       margin-top: 10%;
+    }
+    .column2{
+      position:absolute;
+      margin-top: -428px;
+      margin-left: 500px;
     }
     .column3{
       position:absolute;
