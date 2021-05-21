@@ -123,14 +123,31 @@ div > a{
 
 .imagesetup{
     position: relative;
-    background-image: url("/Images/even.png");
-    /* background-color: #0B0C10; */
+    /* background-image: url("/Images/eventsbggif.gif"); */
     background-size: cover;
     width:100%;
-    height:100%;
-    filter: grayscale(90%);
-    
-    
+    height: 900px;
+    background-image: url("/Images/robowar.jpg");
+    filter: grayscale(100%);
+
+}
+#galleryimage{
+    position: relative;
+    background-image: url("/Images/gallery2.png");
+    background-size: cover;
+    width: 1510px;
+    height: 1700px;
+    filter: grayscale(100%);
+
+}
+#ourgalleytext{
+    position: relative;
+    font-size: 100px;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    top:30%;
+    margin-left:430px;
 
 }
 /* .imagesetup2{
@@ -141,27 +158,16 @@ div > a{
     filter:grayscale();
 } */
 
-.registereventspos
-{
+
+
+.registereventspos{
+    
     position: relative;
     font-size: 10px;
     color: white;
-        margin-top: -8%;
-    margin-left: 24%;
+    margin-left: 86.5%;
     color: #ccc;
-    top:245px;
-}
-.registerevents{
-    border-radius: 12px;
-  border: 2px solid white;
-  color: white;
-  background-color: rgb(27,26,23);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    top:-295px;
 }
 
 .chatwithuspos{
@@ -169,56 +175,58 @@ div > a{
     position: relative;
     font-size: 10px;
     color: white;
-   
-    margin-left: 89.5%;
+    margin-left: 88.5%;
     color: #ccc;
-    top:-149px;
-}
-.chatwithus{
-    border-radius: 12px;
-    background-color: rgb(27,26,23);
-  border: 2px solid white;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    top:-230px;
+    
 }
 
-.brochurepos
-{
+.brochurepos{
+    
     position: relative;
     font-size: 10px;
     color: white;
-        margin-top: -8%;
-    margin-left: 8%;
+    margin-left: 1%;
     color: #ccc;
-    top:82px;
+    top:-350px;
 }
-.brochure{
-    border-radius: 12px;
+.gallerypos{
+    
+    position: relative;
+    font-size: 10px;
+    color: white;
+    margin-left: 1.3%;
+    color: #ccc;
+    top:-280px;
+}
+
+
+.topbutton{
+  border-radius: 12px;
+  background-color: #181E1E;
   border: 2px solid white;
   color: white;
-  background-color: rgb(27,26,23);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
+  
 }
 
+.topbutton:hover{
+background-color: #2f293d;
+}
 
 .knowmoreaction
 {
     position: relative;
     font-size: 13px;
     color: white;
-    margin-left: 54.5%;
+    margin-left: 50%;
     color: #ccc;
-    top:450px;
+    top:-250px;
+
     animation: slide1 1s ease-in-out infinite;
 }
 
@@ -305,9 +313,24 @@ div > a{
         font-size: 5em;
         text-shadow: 6px 12px #0B0C10;
         font-family: 'Montserrat', sans-serif;
-        top:60px;
-        margin-left: 80px;
+        top:-150px;
+        margin-left: -60px;
+        font-weight:bolder;
 }
+
+
+.eventshead2{
+    
+    position: relative;
+        padding-top: 23%;
+        text-align: center;
+        color: #ccc;
+        font-size: 5em;
+        text-shadow: 6px 12px #0B0C10;
+        font-family: 'Montserrat', sans-serif;
+        top:-380px;
+}
+
 
 
 .eventsstats{
@@ -442,16 +465,16 @@ div > a{
 	border-radius: 25px;
 	height: 40px;
 	display: inline-flex;
-	background-color: white; 
+	background-color: rgb(27,26,23); 
 	align-items: center;
 	padding: 5px 10px 5px 5px;
-    margin-top: 30%;
+    margin-top: 5%;
     margin-left: 19%;
 }
 .events-li {
     padding: 5px 85px 5px 85px;
 		list-style: none;
-		color: black;
+		color: white;
 		font-family: sans-serif;
 		position: relative;
 		cursor: pointer;
@@ -520,7 +543,7 @@ div > a{
         width:96%;
         margin-top: 2%;
         height:125px;
-        background-color: white;  
+        background-color: rgb(255, 247, 247);  
         z-index: 1;      
     }
 
@@ -546,6 +569,7 @@ div > a{
 
     .dateandregistrationalignment
     {
+        border-left: 2px solid rgb(27,26,23);
         width:25%;
         display: inline-block;
     }
@@ -567,4 +591,17 @@ div > a{
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+      }
+
+
+      .trailbutton{
+
+          background-color: #181E1E;
+  border: 2px solid white;
+  padding: 15px 32px;
+  
+  width:50px;
+      }
+      .trailbuttonim{
+        background-image: url("/Images/firefighting.webp");
       }
