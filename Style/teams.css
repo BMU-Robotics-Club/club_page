@@ -764,3 +764,8 @@ margin-top:-100%;
   
       z-index: 1;
   }
+/*
+  .profile-img img{
+    filter:grayscale(90%);
+  }
+*/
