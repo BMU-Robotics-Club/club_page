@@ -1,9 +1,12 @@
 function closeupcomingevents(){
   document.getElementById("upcominginformation").style.display = "none";
+  document.getElementById("statsdiv").style.display = "inline-block";
 }
 
-
-
+function openupcomingevents(){
+  document.getElementById("upcominginformation").style.display = "inline-block";
+  document.getElementById("statsdiv").style.display = "none";
+}
 
 function showupcomingevents(){
     document.getElementById("upcominginformation").style.display = "flex";

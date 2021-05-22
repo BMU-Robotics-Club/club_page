@@ -57,27 +57,24 @@
         <h1 class = "eventshead2">ACE IT !!</h1>
 
 
+
+        <div class="brochurepos">
+            <a href="#" class="topbutton1">Brochure</a>
+        </div>
+
+        <div class="gallerypos">
+            <a href="#galleryimage" class="topbutton2">Gallery</a>
+        </div>
+
         <div class="registereventspos">
-            <a href="#" class="topbutton">Register For Events</a>
+            <a href="#" class="topbutton3">Register For Events</a>
         </div>
             
 
         <div class="chatwithuspos">
-            <a href="https://wa.me/+919160511676" class="topbutton">Chat With Us</a>
+            <a href="https://wa.me/+919160511676" class="topbutton4">Chat With Us</a>
         </div>
 
-
-        <div class="brochurepos">
-            <a href="#" class="topbutton">Brochure</a>
-        </div>
-
-        <div class="gallerypos">
-            <a href="#galleryimage" class="topbutton">Gallery</a>
-        </div>
-
-        <div class="trailbutton">
-            <p class="trailbuttonim">Hello</p>
-        </div>
 
         <div class="knowmoreaction">
             <p>Know More ⬇</p>
@@ -92,63 +89,28 @@
 
 <div class="div2imagesetup">
 
+    <!-- Left Side Buttons -->
+
     <div class="leftbuttons">
 
         
-    <div class="upcomingeventsbuttonpos">
-        <a href="#" class="eventsbuttons">Upcoming Events</a>
-    </div>
-
-    <div class="flagshipeventsbuttonpos">
-        <a href="#" class="eventsbuttons">Flagship Events</a>
-    </div>
-
-    </div>
-
-
-
-    <div class="allinformation">
-        <div class="statsdiv">
-            <h1 class="statusdivhead">BMU ROBOTICS CLUB</h1>
-            <p class="statusdivheadtext">BMU Robotics Club is renowned for its events at our college. BMU Robotics Club has been established
-                in 2016. Students in Robotics Club have been actively participating in many competetions and grabbed many 
-                prizes. Students in BMU have been actively participating in many events and we at BMU Club are always keen in learning 
-                new things and teaching to students. Faculty and Seniors at Robotics Club have amazing talent and always guide their students 
-                in right paths. BMU Robotics Club always hosts many events every year during its Annual Fest. Robotics Club hosts 3 Flagship Events
-                every year (Robo War, Drone Competetion, RC Nitro Surge) and other events such as Line Follower, Robo Race, Robo Soccer. Students in
-                Robotics Club learn in many workshops conducted in the campus and get trained.
-            </p>
-    
-            <p class="statusdivheadtext" style="margin-left:41%; font-size:25px;">Our Event Stats</p>
-    
-            <div class="newstats">
-                <div class="eventsstats">
-                    <p>6 Events</p>
-                </div>
-                <div class="smallvertical"></div>
-    
-    
-                <div class="flagshipeventsstats">
-                    <p>3 Flagship Events</p>
-                </div>
-                <div class="smallvertical1"></div>
-    
-    
-                <div class="workshopstats">
-                    <p>15+ Workshop</p>
-                </div>
-    
-            </div>
-            
-    
-    
+        <div class="upcomingeventsbuttonpos">
+            <button class="eventsbuttons" onclick="openupcomingevents()">Upcoming Events</button>
         </div>
-    
-    
-    
-    
-    
-    
+
+        <div class="flagshipeventsbuttonpos">
+            <button class="eventsbuttons" onclick="openupcomingevents()">Flagship Events</button>
+        </div>
+
+    </div>
+
+    <!-- Information displayed on the middle -->
+
+
+
+    <div class="middleinfo">
+
+        <!-- Upcoming Events Information -->
         <div id="upcominginformation">
             <div class="divheading">
                 <h1>Upcoming Events</h1>
@@ -157,8 +119,10 @@
             <div class="close">
                 <p onclick="closeupcomingevents()">X</p>
             </div>
+
             <br>
         
+            <!-- Card One -->
             <div class="card">
             
             
@@ -189,7 +153,7 @@
     
             </div>
     
-            
+            <!-- Card Two -->
             <div class="card">
             
             
@@ -220,6 +184,7 @@
     
             </div>
     
+            <!-- Card Three -->
     
             <div class="card">
             
@@ -251,19 +216,73 @@
     
             </div>
     
-        
+        </div>  
+        <!-- Upcoming Information End -->
+
+
+        <!-- Stats Divison -->
+        <div id="statsdiv">
+            <h1 class="statusdivhead">BMU ROBOTICS CLUB</h1>
+            <p class="statusdivheadtext" style="color: white;">BMU Robotics Club is renowned for its events at our University.  Students in Robotics Club have been actively participating in many competetions and grabbed many 
+                prizes. Students in BMU have been actively participating in many events and we at BMU Club are always keen in learning 
+                new things and teaching to students. 
+            </p>
+            
+            <div class="statusdivheadtextbox">
+
+                <p class="statusdivheadtext" style="margin-left:6%; font-size:25px;">Our Event Stats</p>
+    
+            <div class="newstats">
+                <div class="eventsstats">
+                    <p>6 Events</p>
+                </div>
+                <div class="smallvertical"></div>
     
     
+                <div class="flagshipeventsstats">
+                    <p>3 Flagship Events</p>
+                </div>
+                <div class="smallvertical1"></div>
+    
+    
+                <div class="workshopstats">
+                    <p>15+ Workshop</p>
+                </div>
+    
+            </div>
+            
+    
+
+            </div>
+            
     
         </div>
-    </div>
-  
-    <div class="rightbuttons">
+    
+    <!-- Stats Divison End -->
 
     </div>
+    <!-- Middle Information End -->
+
+
+    <!-- ------------- -->
+
+    <!-- Right Side Buttons -->
+
+    <div class="rightbuttons">
+        <div class="workshopsbuttonpos">
+            <a href="#" class="eventsbuttons">Workshops</a>
+        </div>
+
+        <div class="technicaleventsbuttonpos">
+            <a href="#" class="eventsbuttons">Technical Events</a>
+        </div>
+
+    </div>
+
     
 </div>
     
+<!-- Image 2 Setup Done -->
 
 
 
