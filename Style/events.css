@@ -158,7 +158,8 @@ div > a{
     width:100%;
     height: 900px;
     background-image: url("/Images/robowar.jpg");
-    filter:grayscale(100%);
+    filter:grayscale(80%);
+
 
 
 }
@@ -166,10 +167,11 @@ div > a{
 .div2imagesetup{
     display: flex;
     position: relative;
-    background-image: url("/Images/even3withhead.png");
+    background-image: url("/Images/bb3.png");
     background-size: cover;
     width:100%;
     height: 900px;
+    filter: grayscale(80%);
     /* background-image: url("/Images/robowar.jpg"); */
 
 
@@ -178,9 +180,11 @@ div > a{
     position: relative;
     background-image: url("/Images/gallery2.png");
     background-size: cover;
+    margin-top: -6%;;
     width: 1510px;
-    height: 1700px;
-    filter: grayscale(100%);
+    height: 1600px;
+    filter: grayscale(30%);
+
 
 }
 #ourgalleytext{
@@ -347,31 +351,15 @@ background-color: #2f293d;
 
 /* Builfing of the information */
 
-.smallbox
-{
-    position: relative;
-    width: 80%;
- background-color: black;
-  margin-left: 1%;
-  padding-top: 1%;
-    
+
+
+.event_name{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+
+
 }
-
-
-
-.rotatetext{
-    -webkit-transform: rotate(-90deg);
-    
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    padding: 55px;
-    margin-bottom: 10px;;
-
-    
-   
-}
-
 
 
 #statsdiv{
@@ -379,7 +367,7 @@ background-color: #2f293d;
     display: inline-block;
     position:relative;
     width:1019px;
-    background-color: rgb(27,26,23) ;
+    background-color: #1b1a17;
     height: 490px;
 }
 
@@ -387,7 +375,7 @@ background-color: #2f293d;
     text-align: center;
     color: #ccc;
     font-size: 5em;
-    text-shadow: 6px 12px #0B0C10;
+    text-shadow: 6px 12px #222738;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -419,7 +407,7 @@ background-color: #2f293d;
 .eventsstats{
 font-size: 20px;
 color:black;
-margin-left:7%;
+margin-left:6%;
 }
 
 .smallvertical
@@ -480,7 +468,7 @@ margin-left:7%;
     .eventsbuttons{
         box-shadow: 4px 4px 4px 1px rgba(0, 0, 0);
         border-radius: 12px;
-        background-color: #181E1E;
+        background-color: #0f177c;
         border: 2px solid white;
         color: white;
         padding: 15px 32px;
@@ -493,7 +481,7 @@ margin-left:7%;
     }
 
     .upcomingeventsbuttonpos{
-        
+
         top:360px;
         position: relative;
         font-size: 10px;
@@ -537,9 +525,20 @@ margin-left:7%;
         padding-top: 4%;
         display: none;
         position:relative;
-        width:100%;
         height:500px;
-        background-color: rgb(27,26,23) ;
+        background-color:  #1b1a17;
+        border: 2px solid white;
+        
+        
+    }
+
+    #flagshipinformation{
+     
+        padding-top: 4%;
+        display: none;
+        position:relative;
+        height:500px;
+        background-color:  #1b1a17;
         border: 2px solid white;
         
         
@@ -566,19 +565,20 @@ margin-left:7%;
 
     .cardalignment
     {
-        display: flex;
+        display: inline-block;
      
         
     }
 
     .card
     {
+        background-image: url("/Images/fest.jpg");
+        display: inline-block;
         position: relative;
-        margin-left: 8%;
-        width:87%;
-        margin-top: 1%;
-        height:125px;
-        background-color: rgb(255, 247, 247);  
+        width:30%;
+        margin-left: 20px;
+        height:360px;
+        background-color: black;  
         z-index: 1;     
         
     }
@@ -588,17 +588,17 @@ margin-left:7%;
         padding-top: 10px;
         padding-right: 10px;
         position: relative;
-        width:10%;
+        width:30%;
         height:115px;
-        background-color: rgb(27,26,23);
     }
     
     .cardtextposition
     {
         position: relative;
-        color:rgb(27,26,23);
-        margin-left:50px;
-        margin-right: 120px;
+        color:white;
+        margin-top: 20px;
+        margin-left:20px;
+        margin-right: 10px;
         display: inline-block;
 
     }
@@ -607,10 +607,13 @@ margin-left:7%;
 
     .dateandregistrationalignment
     {
-        border-left: 2px solid rgb(27,26,23);
+        border-top: 2px solid rgb(223, 220, 211);
+        color:white;
         padding-top: 2%;
         width:40%;
         display: inline-block;
+        margin-left: 85px;
+        margin-top: 30px;
     }
 
     .registereventsbutton
@@ -618,19 +621,46 @@ margin-left:7%;
 
         position: relative;
         font-size: 7px;
-          margin-top: -3%;
-        margin-left: 55%;
+        margin-left: 39.5%;
+        margin-top: 2.5%;
     }
     .registereventscss{
     
-        border: 2px solid rgb(27,26,23);
-        color: black;
+        border: 2px solid white;
+        color: white;
         padding: 10px 28px;
         text-align: center;
-        font-size: 16px;
-        margin: 4px 2px;
+        font-size: 20px;
         cursor: pointer;
       }
 
 
- 
+ .eventorganizers{
+     display: flex;
+     margin-top:0.5%;
+    position: relative;
+    background-image: url("/Images/event_organizers.png");
+    background-size: cover;
+    width: 1510px;
+    height: 290px;
+ }
+
+ .eventorganizers1{
+     width:290px;
+     height:290px;
+     margin-left:37.5%;
+     padding-top: 6%;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bolder;
+ }
+
+ .eventorganizers2{
+    width:290px;
+    height:290px;
+    margin-left:25.5%;
+    padding-top: 6%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
