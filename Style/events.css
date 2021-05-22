@@ -121,6 +121,36 @@ div > a{
     text-decoration: none;
 }
 
+/* --------------------------------------------------------- */
+
+
+.eventshead{
+    
+    position: relative;
+        padding-top: 23%;
+        text-align: center;
+        color: #ccc;
+        font-size: 5em;
+        text-shadow: 6px 12px #0B0C10;
+        font-family: 'Montserrat', sans-serif;
+        top:-150px;
+        margin-left: -60px;
+        font-weight:bolder;
+}
+
+
+.eventshead2{
+    
+    position: relative;
+        padding-top: 23%;
+        text-align: center;
+        color: #ccc;
+        font-size: 5em;
+        text-shadow: 6px 12px #0B0C10;
+        font-family: 'Montserrat', sans-serif;
+        top:-380px;
+}
+
 .imagesetup{
     position: relative;
     /* background-image: url("/Images/eventsbggif.gif"); */
@@ -133,8 +163,9 @@ div > a{
 }
 
 .div2imagesetup{
+    display: flex;
     position: relative;
-    background-image: url("/Images/even3.png");
+    background-image: url("/Images/even3withbody.png");
     background-size: cover;
     width:100%;
     height: 900px;
@@ -161,15 +192,7 @@ div > a{
     margin-left:430px;
 
 }
-/* .imagesetup2{
-    position: relative;
-    background-image: url("/Images/bgdots.jpg");
-    background-size: cover;
-    width:100%;
-    filter:grayscale();
-} */
-
-
+/* Image 1 Buttons */
 
 .registereventspos{
     
@@ -230,77 +253,20 @@ div > a{
 background-color: #2f293d;
 }
 
+
+/* Know More on Image 1 Action */
 .knowmoreaction
 {
     position: relative;
     font-size: 13px;
     color: white;
-    margin-left: 50%;
+    margin-left: 47%;
     color: #ccc;
-    top:-250px;
+    top:-350px;
 
     animation: slide1 1s ease-in-out infinite;
 }
 
-/* 
-
-.eventsheading
-{
-    margin-top: 2%;
-    margin-left:43%;
-    border-radius:10px;
-    background-color: #0B0C10;
-    width:130px;
-    height:40px;
- 
-}
-
-.eventsheadingformatting
-{
-    margin-left:14%;
-    color:white;
-    font-weight:bold;
-} */
-
-/* 
-.imagesetup2{
-    position: relative;
-    
-    background-size: cover;
-    width:100%;
-    
-} */
-
-
-.startpos{
-
-}
-
-
-
-.stop{
-
-}
-
-.knowmore
-{
-    
-}
-
-.newpos{
- 
-    font-size: 50px;
-    color: #1B1A17;
-    margin-top: 25%;
-    margin-left: 50%;
-    color: black;
-    padding-top: 10px;
-}
-
-  .arrow1 {
-    animation: slide1 1s ease-in-out infinite;
-    margin-left: 19px;
-  }
 
   @keyframes slide1 {
     0%,
@@ -316,206 +282,21 @@ background-color: #2f293d;
 
 
 
-.eventshead{
-    
-    position: relative;
-        padding-top: 23%;
-        text-align: center;
-        color: #ccc;
-        font-size: 5em;
-        text-shadow: 6px 12px #0B0C10;
-        font-family: 'Montserrat', sans-serif;
-        top:-150px;
-        margin-left: -60px;
-        font-weight:bolder;
-}
-
-
-.eventshead2{
-    
-    position: relative;
-        padding-top: 23%;
-        text-align: center;
-        color: #ccc;
-        font-size: 5em;
-        text-shadow: 6px 12px #0B0C10;
-        font-family: 'Montserrat', sans-serif;
-        top:-380px;
-}
-
-
-
-.eventsstats{
-      
-        margin-top: 25%;
-        width:100%;
-        height:130px;
-        background-color: rgb(27,26,23);
-        display: flex;
-        
-        
-    
-}
-
-/* .ourstats{
-    position: relative;
-    margin-top: -2%;
-    margin-left: 10%;
-    color: white;
-    font-size: 50px;
-} */
-
-
-
-
-
-
-.stats1{
-    position: relative;
-    margin-top: -2%;
-    margin-left: 10%;
-    color: white;
-    font-size: 50px;
-}
-
-.stats1data{
-    position: relative;
-    margin-top: 5%;
-    margin-left: -5.5%;
-    color: white;
-    font-size: 20px;
-}
-
-.vertical1{
-    margin-top: 1%;
-    margin-left: 16%; 
-    border-left: 2px solid white;
-  height: 100px;
-}
-
-.stats2{
-    position: relative;
-    margin-top: -2%;
-    margin-left: 17%;
-    color: white;
-    font-size: 50px;
-}
-
-.stats2data{
-    position: relative;
-    margin-top: 5%;
-    margin-left: -6%;
-    color: white;
-    font-size: 20px;
-    
-}
-
-.vertical2{
-    margin-top: 1%;
-    margin-left: 16%;
-    border-left: 2px solid white;
-  height: 100px;
-}
-
-.stats3{
-    position: relative;
-    margin-top: -2%;
-    margin-left: 14%;
-    color: white;
-    font-size: 50px;
-}
-
-.stats3data{
-    position: relative;
-    margin-top: 5%;
-    margin-left: -6.2%;
-    color: white;
-    font-size: 20px;
-}
 /* Part 2 */
 
 
-.rotatepos {
 
-    margin-top: 100px;
-}
-
-.rotateformatting{
-
-    
-    /* Safari */
-    -webkit-transform: rotate(-90deg);
-    
-    /* Firefox */
-    -moz-transform: rotate(-90deg);
-    
-    /* IE */
-    -ms-transform: rotate(-90deg);
-    
-    /* Opera */
-    -o-transform: rotate(-90deg);
-    
-    float: left;
-    color:#0B0C10;
-    font-weight: 500;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* Part 3 */
-
-/* #demo{
-    position: relative;
-    padding-left: 23%;
-    padding-top:10% ;
-    font-size: 80px;
-    color: white;
-} */
-
-.events-ul {
-
-    position: relative;
-	border-radius: 25px;
-	height: 40px;
-	/* display: inline-flex; */
-    display: none;
-	background-color: rgb(27,26,23); 
-	align-items: center;
-	padding: 5px 10px 5px 5px;
-    margin-top: 5%;
-    margin-left: 19%;
-}
-.events-li {
-    padding: 5px 85px 5px 85px;
-		list-style: none;
-		color: white;
-		font-family: sans-serif;
-		position: relative;
-		cursor: pointer;
-	
-}
-
-
-.eventsbox
-{
-    width: 90%;
-    height:50%;
- background-color: black;
-  margin-left: 1%;
-  border-color: black;
-}
-
+/* Builfing of the information */
 
 .smallbox
 {
     position: relative;
     width: 80%;
-    height:30px;
  background-color: black;
   margin-left: 1%;
   padding-top: 1%;
     
 }
-
 
 
 
@@ -526,29 +307,186 @@ background-color: #2f293d;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     padding: 55px;
+    margin-bottom: 10px;;
 
     
    
 }
 
-    .upcominginformation{
-        top:170px;
+
+
+.statsdiv{
+    top:215px;
+    padding-top: 4.3%;
+    margin-left: 3.6%;
+    display: inline-block;
+    position:relative;
+    width:1019px;
+    background-color: rgb(27,26,23) ;
+    height: 465px;
+}
+
+.statusdivhead{
+    text-align: center;
+    color: #ccc;
+    font-size: 5em;
+    text-shadow: 6px 12px #0B0C10;
+    font-family: 'Montserrat', sans-serif;
+}
+.statusdivheadtext{
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.newstats{
+    display:flex;
+}
+
+.eventsstats{
+font-size: 20px;
+color:white;
+margin-left:7%;
+}
+
+.smallvertical
+{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 15%; 
+    border-left: 3px solid white;
+  height: 50px;
+}
+
+
+.flagshipeventsstats{
+    font-size: 20px;
+    color:white;
+    margin-left:15%;
+    }
+    
+    .smallvertical1
+    {
+        display: flex;
+        margin-top: 1%;
+        margin-left: 15%; 
+        border-left: 3px solid white;
+      height: 50px;
+    }
+
+
+    .workshopstats{
+    font-size: 20px;
+    color:white;
+    margin-left:50px;
+    }
+
+
+/* Buttons in image 2 */
+
+    .leftbuttons{
+        display: inline-block;
+    }
+
+    .eventsbuttons{
+        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0);
+        border-radius: 12px;
+        background-color: #181E1E;
+        border: 2px solid white;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+
+    }
+
+    .upcomingeventsbuttonpos{
+
+        top:380px;
+    position: relative;
+    font-size: 10px;
+    color: white;
+    color: #ccc;
+    margin-left: 34px;
+    }
+
+    .flagshipeventsbuttonpos{
+
+    padding-top:630px;
+    position: relative;
+    font-size: 10px;
+    color: white;
+    margin-left: 50px;
+    color: #ccc;
+    }
+
+    .flagshipeventsbuttonpos{
+
+        top:-110px;
+    position: relative;
+    font-size: 10px;
+    color: white;
+    margin-left: 2%;
+    color: #ccc;
+    }
+
+    .workshopsbuttonpos{
+
+        top:-110px;
+    position: relative;
+    font-size: 10px;
+    color: white;
+    margin-left: 2%;
+    color: #ccc;
+    }
+
+    .technicaleventsbuttonpos{
+
+        top:-110px;
+    position: relative;
+    font-size: 10px;
+    color: white;
+    margin-left: 2%;
+    color: #ccc;
+    }
+    
+
+
+    #upcominginformation{
+        top:-325px;
         padding-top: 4%;
-        margin-left: 15%;
+        margin-left: 8%;
         display: inline-block;
         position:relative;
-        width:70%;
-        height:530px;
+        width:75%;
+        height:500px;
         background-color: rgb(27,26,23) ;
         border: 2px solid white;
         
         
     }
 
+    .close{
+        color:white;
+        margin-left:95%;
+        margin-top:-7%;
+        cursor: pointer;
+        font-size: x-large;
+    }
+
+
+
     .divheading
     {
         color:white;
-        margin-left:40%;
+        margin-left:37%;
+        margin-top:-1%;
+        font-family: 'Montserrat', sans-serif;
+
     }
 
     .cardalignment
@@ -562,7 +500,7 @@ background-color: #2f293d;
         position: relative;
         margin-left: 8%;
         width:87%;
-        margin-top: 2%;
+        margin-top: 1%;
         height:125px;
         background-color: rgb(255, 247, 247);  
         z-index: 1;      
@@ -574,7 +512,7 @@ background-color: #2f293d;
         padding-right: 10px;
         position: relative;
         width:10%;
-        height:70%;
+        height:115px;
         background-color: rgb(27,26,23);
     }
     
@@ -593,7 +531,8 @@ background-color: #2f293d;
     .dateandregistrationalignment
     {
         border-left: 2px solid rgb(27,26,23);
-        width:25%;
+        padding-top: 2%;
+        width:40%;
         display: inline-block;
     }
 
@@ -603,7 +542,7 @@ background-color: #2f293d;
         position: relative;
         font-size: 7px;
           margin-top: -3%;
-        margin-left: 48%;
+        margin-left: 55%;
     }
     .registereventscss{
     
@@ -617,14 +556,4 @@ background-color: #2f293d;
       }
 
 
-      .trailbutton{
-
-          background-color: #181E1E;
-  border: 2px solid white;
-  padding: 15px 32px;
-  
-  width:50px;
-      }
-      .trailbuttonim{
-        background-image: url("/Images/firefighting.webp");
-      }
+ 

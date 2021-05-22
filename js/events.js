@@ -1,3 +1,10 @@
+function closeupcomingevents(){
+  document.getElementById("upcominginformation").style.display = "none";
+}
+
+
+
+
 function showupcomingevents(){
     document.getElementById("upcominginformation").style.display = "flex";
     document.getElementById("flagshipinformation").style.display = "none";
