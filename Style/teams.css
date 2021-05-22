@@ -41,7 +41,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.527);
+  background-color: transparent;
   transition: background-color .5s ease;
   z-index: 100;
   height: auto;
