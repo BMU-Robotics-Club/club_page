@@ -161,7 +161,8 @@ html {
     /* background-image: linear-gradient(to bottom right, black, white); */
     /* background-color: #1B1A17; */
     background-image: url("/Images/teamsbg.png");
-    background-repeat:space;
+    
+    background-repeat:repeat;
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
