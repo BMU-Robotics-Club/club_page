@@ -1,10 +1,81 @@
-function animatedisplay()
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+ }
+
+ async function animatedisplay()
 {
-  
+ var img1=document.getElementById("img1");
+ var img2=document.getElementById("img2");
+ var img3=document.getElementById("img3");
+ var img4=document.getElementById("img4");
+ var img5=document.getElementById("img5");
+ var img6=document.getElementById("img6");
+
+img1.style.opacity=1;
+img2.style.opacity=0;
+img3.style.opacity=0;
+img4.style.opacity=0;
+img5.style.opacity=0;
+img6.style.opacity=0;
+
+await  sleep(800);
+img1.style.opacity=0;
+img2.style.opacity=1;
+img3.style.opacity=0;
+img4.style.opacity=0;
+img5.style.opacity=0;
+img6.style.opacity=0;
+
+await sleep(800);
+
+img1.style.opacity=0;
+img2.style.opacity=0;
+img3.style.opacity=1;
+img4.style.opacity=0;
+img5.style.opacity=0;
+img6.style.opacity=0;
+
+await sleep(800);
+
+img1.style.opacity=0;
+img2.style.opacity=0;
+img3.style.opacity=0;
+img4.style.opacity=1;
+img5.style.opacity=0;
+img6.style.opacity=0;
+
+await sleep(800);
+
+img1.style.opacity=0;
+img2.style.opacity=0;
+img3.style.opacity=0;
+img4.style.opacity=0;
+img5.style.opacity=1;
+img6.style.opacity=0;
+
+await sleep(800);
+img1.style.opacity=0;
+img2.style.opacity=0;
+img3.style.opacity=0;
+img4.style.opacity=0;
+img5.style.opacity=0;
+img6.style.opacity=1;
+
+await sleep(800);
+
+
+img1.style.opacity=1;
+img2.style.opacity=1;
+img3.style.opacity=1;
+img4.style.opacity=1;
+img5.style.opacity=1;
+img6.style.opacity=1;
+
 
 //my magic
 
-
+var stop=document.getElementById("stop");
+stop.style.display="none";
 }
 
 
