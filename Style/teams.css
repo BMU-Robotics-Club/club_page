@@ -8,12 +8,16 @@ root{
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size:auto ; 
 }
 body{
   margin: 0;
   padding: 0;
   color: black;
-  background-color: white;
+  /* Resize the background image to cover the entire container */
 }
 svg{
   transform: scale(3);
@@ -152,7 +156,7 @@ html {
     font-size: 62.5%;
   }
   body {
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
