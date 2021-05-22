@@ -9,7 +9,8 @@ root{
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-image: linear-gradient( to bottom left, white, black);
+  /* background-image: linear-gradient( to bottom left, white, black);
+   */
 }
 body{
   
@@ -157,7 +158,9 @@ html {
     font-size: 62.5%;
   }
   body {
-    background-image: linear-gradient(to bottom right, black, white);
+    /* background-image: linear-gradient(to bottom right, black, white); */
+    /* background-color: #1B1A17; */
+    background-image: url("/Images/fest.jpg");
     background-repeat:space;
     font-size: 16px;
     line-height: 24px;
@@ -764,8 +767,3 @@ margin-top:-100%;
   
       z-index: 1;
   }
-/*
-  .profile-img img{
-    filter:grayscale(90%);
-  }
-*/
