@@ -19,7 +19,7 @@ img5.style.opacity=0;
 img6.style.opacity=0;
 
 await  sleep(800);
-img1.style.opacity=0;
+img1.style.opacity=1;
 img2.style.opacity=1;
 img3.style.opacity=0;
 img4.style.opacity=0;
@@ -28,8 +28,8 @@ img6.style.opacity=0;
 
 await sleep(800);
 
-img1.style.opacity=0;
-img2.style.opacity=0;
+img1.style.opacity=1;
+img2.style.opacity=1;
 img3.style.opacity=1;
 img4.style.opacity=0;
 img5.style.opacity=0;
@@ -37,28 +37,28 @@ img6.style.opacity=0;
 
 await sleep(800);
 
-img1.style.opacity=0;
-img2.style.opacity=0;
-img3.style.opacity=0;
+img1.style.opacity=1;
+img2.style.opacity=1;
+img3.style.opacity=1;
 img4.style.opacity=1;
 img5.style.opacity=0;
 img6.style.opacity=0;
 
 await sleep(800);
 
-img1.style.opacity=0;
-img2.style.opacity=0;
-img3.style.opacity=0;
-img4.style.opacity=0;
+img1.style.opacity=1;
+img2.style.opacity=1;
+img3.style.opacity=1;
+img4.style.opacity=1;
 img5.style.opacity=1;
 img6.style.opacity=0;
 
 await sleep(800);
-img1.style.opacity=0;
-img2.style.opacity=0;
-img3.style.opacity=0;
-img4.style.opacity=0;
-img5.style.opacity=0;
+img1.style.opacity=1;
+img2.style.opacity=1;
+img3.style.opacity=1;
+img4.style.opacity=1;
+img5.style.opacity=1;
 img6.style.opacity=1;
 
 await sleep(800);
