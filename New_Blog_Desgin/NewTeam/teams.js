@@ -21,16 +21,22 @@ function two()
    
 
 var board2=document.getElementById("board2");
+var support1=document.getElementById("support1");
 board2.style.display="block";
+support1.style.display="block";
 board2.style.opacity=1;
+support1.style.opacity=1;
 
 }
 function twoout()
 {
 
 var board2=document.getElementById("board2");
+var support1=document.getElementById("support1");
 board2.style.opacity=0;
+support1.style.opacity=0;
 board2.style.display="none";
+support1.style.display="none";
 
 
 }
@@ -40,16 +46,22 @@ function three()
    
 
 var board3=document.getElementById("board3");
+var support2=document.getElementById("support2");
 board3.style.display="block";
+support2.style.display="block";
 board3.style.opacity=1;
+support2.style.opacity=1;
 
 }
 function threeout()
 {
 
 var board3=document.getElementById("board3");
+var support2=document.getElementById("support2");
 board3.style.opacity=0;
+support2.style.opacity=0;
 board3.style.display="none";
+support2.style.display="none";
 
 
 }
@@ -57,20 +69,24 @@ board3.style.display="none";
 
 function four()
 {
-   
 
-var boar4=document.getElementById("board4");
+
+var board4=document.getElementById("board4");
+var support3=document.getElementById("support3");
 board4.style.display="block";
+support3.style.display="block";
 board4.style.opacity=1;
-
+support3.style.opacity=1;
 }
 function fourout()
 {
 
 var board4=document.getElementById("board4");
+var support3=document.getElementById("support3");
 board4.style.opacity=0;
+support3.style.opacity=0;
 board4.style.display="none";
-
+support3.style.display="none";
 
 }
 
@@ -80,16 +96,23 @@ function five()
    
 
 var board5=document.getElementById("board5");
+var support4=document.getElementById("support4");
 board5.style.display="block";
+support4.style.display="block";
 board5.style.opacity=1;
+support4.style.opacity=1;
 
 }
 function fiveout()
 {
 
 var board5=document.getElementById("board5");
+var support4=document.getElementById("support4");
 board5.style.opacity=0;
+support4.style.opacity=0;
 board5.style.display="none";
+support4.style.display="none";
+
 
 
 }
