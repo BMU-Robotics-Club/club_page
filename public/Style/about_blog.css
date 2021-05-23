@@ -4,7 +4,9 @@ body {
    font-size: 1.125rem;
    font-weight: 300;
 }
-
+#pborder3{
+   border-bottom: 2px solid rgba(255, 255, 255, 0.822);
+}
 img {
    max-width: 100%;
    display: block;

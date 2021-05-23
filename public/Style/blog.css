@@ -24,7 +24,9 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
    color: black;
 }
-
+#pborder3{
+   border-bottom: 2px solid rgba(255, 255, 255, 0.822);
+}
 header{
    width: 100vw;
    position: fixed;
