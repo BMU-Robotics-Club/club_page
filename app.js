@@ -57,8 +57,26 @@ const blogSchema = {
     default:"/placeholder.png"
   }
 };
+const registrationSchema = {
+  name:{
+    type:String,
+    required:true
+  },
+  email:{
+    type:String,
+    required:true
+  },
+  number:{
+    type:Number,
+    required:true
+  },
+  registeredEvent:{
+    type:String,
+    required:true
+  }
+}
 const Blog = mongoose.model('Blog',blogSchema);
-
+const Event = mongoose.model('Event',registrationSchema);
 // ! ROUTING
 
 // * / -> home
@@ -79,13 +97,25 @@ app.get('/teams',(req,res)=>{
   res.render('teams');
 });
 
+app.post('/events/form/success',(req,res)=>{
+  // console.log(req.body);
+  const registeredPerson = new Event({
+    "name":req.body.name,
+    "email":req.body.email,
+    "number":req.body.contactNumber,
+    "registeredEvent":req.body.eventname
+  });
+  registeredPerson.save();
+  res.redirect('/events');
+});
+
 // * /blogs -> blogs
 app.get('/blogs',(req,res)=>{
    Blog.find().sort({$natural:-1}).exec((err,result)=>{
     if(err) console.log(err);
     else{
       if(result.length !== 0){
-        console.log(result);
+        // console.log(result);
         res.render('blogs',{
           "recentArTitle":result[0].blogTitle,
           "recentArImg":result[0].blogImg,
@@ -97,8 +127,8 @@ app.get('/blogs',(req,res)=>{
         });
       }
       else{
-        console.log(result);
-        console.log(typeof(result));
+        // console.log(result);
+        // console.log(typeof(result));
         res.render('error',{
           "errTitle":noBlogTitle
         });
@@ -116,7 +146,7 @@ app.get('/blogs/:blogID',(req,res)=>{
       const wrongId = "60aab4bcaab4b221c1a9a234";
       Blog.find({_id:blogid},(err,results)=>{
 
-        console.log(resultThree);
+        // console.log(resultThree);
         if(err) console.log(err);
         else{
           // ! for no result of the id
@@ -127,7 +157,7 @@ app.get('/blogs/:blogID',(req,res)=>{
           }
           else{
 
-            console.log("results"+results);
+            // console.log("results"+results);
             
             res.render('blogPost',{
               "postTitle":results[0].blogTitle,
@@ -150,8 +180,8 @@ app.get('/compose',(req,res)=>{
 });
 
 app.post('/compose',upload.single("image"),(req,res)=>{
-  console.log(req.file);
-  console.log(req.body);
+  // console.log(req.file);
+  // console.log(req.body);
   // todo : save the post to database
   let blogDic = {
     "blogAuthor":req.body.authorName,
@@ -162,7 +192,7 @@ app.post('/compose',upload.single("image"),(req,res)=>{
   if(req.file !== undefined){
     blogDic.blogImg = "/uploads/images/"+req.file.filename;
   }
-  console.log(blogDic);
+  // console.log(blogDic);
   const blog = new Blog(blogDic);
   blog.save((err)=>{
     if(!err){
@@ -174,7 +204,18 @@ app.post('/compose',upload.single("image"),(req,res)=>{
 // ! search results 
 app.post('/search',(req,res)=>{
   console.log(req.body);
-  res.redirect('/blogs');
+  Blog.find({blogTitle:req.body.query},'_id',(err,searchResult)=>{
+    console.log(searchResult.length);
+    console.log(searchResult);
+    if(searchResult.length === 0){
+      res.render('error',{
+        errTitle:"No blogs similar to that ........"
+      })
+    }
+    else{
+      res.redirect('/blogs/'+searchResult[0]._id);
+    }
+  });
 });
 
 app.get('/error',(req,res)=>{
