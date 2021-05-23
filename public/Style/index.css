@@ -148,7 +148,7 @@ header{
 
 /* * Achievements Section  */
 #Achievements{
-    margin-top: 2rem;
+    margin-top: 3rem;
     position : relative;
 }
 .Ach-header{
@@ -159,10 +159,11 @@ header{
     background-color: var(--titleBg);
     color: white;
     border-radius: 2rem;
+ 
 }
 .Ach-flex-container{
     /* margin: 2rem 3rem 0rem 5rem; */
-    
+    margin-top:4%;    
 }
 
 .Ach-navbar{
@@ -251,7 +252,7 @@ header{
 .Hidden-content{
     margin: 10vh 20vw;
     display: flex;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: white;
 
 }
@@ -326,7 +327,7 @@ header{
 #below-achievements{
     position: relative;
     bottom: 13rem;
-    padding-top: 6rem;
+    padding-top: 2rem;
 }
 
         /* !PROJECT CONTENT */
@@ -408,4 +409,5 @@ footer a:hover{
 }
 textarea{
     resize:none;
+    margin-left: 38%;
 }
