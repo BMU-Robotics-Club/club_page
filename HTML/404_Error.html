@@ -69,9 +69,48 @@
             font-size:20px;
             color:rgb(228, 78, 78);
         }
+        #animate{
+            position:absolute;
+            height:100vh;
+            width:100%;
+            background-color: black;
+           opacity:1;
+           display:block;
+        }
     </style>
+    <script>
+
+
+        async function animting()
+        {
+            var ani=document.getElementById("animate");
+            ani.style.opacity=0.9;
+            await sleep(300);
+            ani.style.opacity=0.8;
+            await sleep(300);
+            ani.style.opacity=0.7;
+            await sleep(300);
+            ani.style.opacity=0.6;
+            await sleep(300);
+            ani.style.opacity=0.5;
+            await sleep(300);
+            ani.style.opacity=0.4;
+            await sleep(300);
+            ani.style.opacity=0.3;
+            await sleep(300);
+            ani.style.opacity=0.2;
+            await sleep(300);
+            ani.style.opacity=0.1;
+            await sleep(300);
+            ani.style.opacity=0.0;
+            await sleep(100);
+            ani.style.display="none";
+
+        }
+
+    </script>
 </head>
-<body>
+<body onload="animting()">
     <h1>404 Page not Found</h1>
     <h3>Oh no, you’ve found our junior developer’s homepage!</h3>
     <h3 id="last">May be he is playing with a new bot in our Club room 😉.</h3>
@@ -79,6 +118,7 @@
     <div id="back">
         <a href="" >Check Here</a>
     </div>
+    <div id="animate"></div>
     <div id="container">
         <img src="/Images/404g.gif">
     </div>
