@@ -11,6 +11,14 @@ function sleep(ms) {
  var img5=document.getElementById("img5");
  var img6=document.getElementById("img6");
 
+ img1.style.opacity=0;
+img2.style.opacity=0;
+img3.style.opacity=0;
+img4.style.opacity=0;
+img5.style.opacity=0;
+img6.style.opacity=0;
+
+await  sleep(400);
 img1.style.opacity=1;
 img2.style.opacity=0;
 img3.style.opacity=0;
@@ -35,7 +43,7 @@ img4.style.opacity=0;
 img5.style.opacity=0;
 img6.style.opacity=0;
 
-await sleep(800);
+await sleep(600);
 
 img1.style.opacity=1;
 img2.style.opacity=1;
@@ -44,7 +52,7 @@ img4.style.opacity=1;
 img5.style.opacity=0;
 img6.style.opacity=0;
 
-await sleep(800);
+await sleep(900);
 
 img1.style.opacity=1;
 img2.style.opacity=1;
