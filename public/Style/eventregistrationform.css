@@ -173,9 +173,10 @@ body::-webkit-scrollbar-thumb{
     margin-bottom: 0;
     text-align: right;
   }
+
+  
   
   .app-form-control {
-      font-weight: 300;
     width: 150%;
     margin-top: 30px;
     padding: 20px 0;
@@ -192,6 +193,8 @@ body::-webkit-scrollbar-thumb{
   
   .app-form-control::placeholder {
     color: #666;
+    font-weight: bolder;
+    font-size: large;
   }
   
   .app-form-control:focus {
