@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/Style/teams.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/Style/teams.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <!-- FONT AWESOME  -->
     <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
-    <!-- <script src="/js/Achievments.js"></script> -->
-    <title>Our Team</title>
-</head>
-<body>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
+    <script src="/js/teams.js"></script>
+   <title>Our Team</title>
+
+  
+</head>
+<body  onload="animatedisplay()">
     <header>
         <nav class="navbar">
             <ul class="navbar-nav">
@@ -45,117 +47,102 @@
             </ul>
         </nav>
     </header>
-    
-    <!-- @grpnpraveen  -->
-    <section id="teams">
-        <div class="team">
-            <h1>Core Members </h1>
-            <div class="lgx-page-wrapper">
-                <!--News-->
-                <section>
-                    <div class="container">
-                        <div class="row">
+
+
+    <div id="stop"></div>
+
+    <div id="board1">
+
+        <h1 class="dr">Dr. </h1>
+        <h1 style="font-size: 80px;">Rajiv Dey</h1>
+        <h3>Faculty Mentor, Assistant Professor</h3>
+        <h2>Electronics and Communication Engineering</h2>
+      
+
+    </div>
+
+    <div id="board2">
+
+        <h1 class="dr">Dr. </h1>
+        <h1 style="font-size: 80px;">Meenakshi Agarwal</h1>
+        <h3>Faculty Mentor, Assistant Professor</h3>
+        <h2 style="font-size: 40px;">Electronics and Communication Engineering</h2>
+
+
+    </div>
+
+    <div id="board3">
+
+        <h1 class="dr">Dr. </h1>
+        <h1 style="font-size: 80px;">Shuvabrata</h1>
+        <h3 style="font-size: 40px;">Faculty Mentor, Assistant Professor</h3>
+        <h2 style="font-size: 30px;">Electronics and Communication Engineering</h2>
+
+
+    </div>
+
+    <div id="board4">
+
         
-                            <div class="lgx-single-speaker">
-                                <figure>
-                                    <a class="profile-img" href="#"><img src="/Images/rajiv.jpg" alt="Vice-President"/></a>
-                                <figcaption>
-                                    <div class="speaker-info">
-                                        <h3>Dr. Rajiv Dey</h3>
-                                        <h4 class="subtitle">Faculty Mentor</h4>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            
-                        </div>
+        <h1 style="margin-top: 40%;font-size: 90px;">Jaladi Sishir</h1>
+        <h3 style="font-size: 90px;">Treasurer</h3>
+        <h2 style="font-size: 40px;">Computer Science and Engineering</h2>
+
+
+    </div>
+
+    <div id="board5">
+
+        <h1 style="margin-top: 31%;font-size: 90px;">Gali Ravi Praveen</h1>
+        <h3 style="font-size: 90px;">Vice-President</h3>
+        <h2 style="font-size: 40px;">Computer Science and Engineering</h2>
+
+
+    </div>
+
+    <div id="board6">
+
         
-                        <div class="column">
-        
-                            <div class="lgx-single-speaker">
-                                <figure>
-                                    <a class="profile-img" href="#"><img src="/Images/meenakshi.jpg" alt="Vice-President"/></a>
-                                <figcaption>
-                                    <div class="speaker-info">
-                                        <h3>Dr. Meenakshi Agarwal</h3>
-                                        <h4 class="subtitle">Faculty Mentor</h4>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            
-                        </div>
-                        
-                        <div class="column">
-        
-                            <div class="lgx-single-speaker">
-                                <figure>
-                                    <a class="profile-img" href="#"><img src="/Images/shuvabratha.jpg" alt="Vice-President"/></a>
-                                <figcaption>
-                                    <div class="speaker-info">
-                                        <h3>Dr. Shuvabratha </h3>
-                                        <h4 class="subtitle">Faculty Mentor</h4>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            
-                        </div>
-                        
-                    </div>
-        
-                    <div class="column1">
-        
-                        <div class="lgx-single-speaker">
-                            <figure>
-                                <a class="profile-img" href="#"><img src="/Images/praveen.jpg" alt="Vice-President"/></a>
-                            <figcaption>
-                                <div class="speaker-info">
-                                    <h3>Praveen Gali</h3>
-                                    <h4 class="subtitle">Vice-President</h4>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        
-                    </div>
-                    <div class="column">
-        
-                        <div class="lgx-single-speaker">
-                            <figure>
-                                <a class="profile-img" href="#"><img src="/Images/harshith.jpg" alt="Vice-President"/></a>
-                            <figcaption>
-                                <div class="speaker-info">
-                                    <h3>Harshith Tunuguntla</h3>
-                                    <h4 class="subtitle">Vice-President</h4>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        
-                    </div>
-        
-                    <div class="column3">
-        
-                        <div class="lgx-single-speaker">
-                            <figure>
-                                <a class="profile-img" href="#"><img src="/Images/sishir.jpg" alt="Vice-President"/></a>
-                            <figcaption>
-                                <div class="speaker-info">
-                                    <h3>Jaladhi Sishir</h3>
-                                    <h4 class="subtitle">Treasurer</h4>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        
-                    </div>
-        
-                    
-                    </div>
-        
-                    
-                </section>
-                <!--News END-->
+        <h1 style="font-size: 90px;margin-top:25%;">Harshith Tunuguntla</h1>
+        <h3 style="font-size: 90px;">Vice-President</h3>
+        <h2 style="font-size: 40px;">Computer Science and Engineering</h2>
+
+
+    </div>
+    <div id="support1"></div>
+    <div id="support2"></div>
+    <div id="support3"></div>
+    <div id="support4"></div>
+
+
+
+        <div id="pcontainer">
+            <div id="p1" onmouseover="one()" onmouseout="oneout()">
+                <img id="img1" src="/Images/rajivb.jpg">
             </div>
-        </main>
-        
+            <div id="p2" onmouseover="two()" onmouseout="twoout()">
+                <img id="img2" src="/Images/meenakshib.jpg">
+                
+            </div>
+            <div id="p3" onmouseover="three()" onmouseout="threeout()">
+                <img id="img3" src="/Images/shuvabrathab.jpg">
+            </div>
+            <div id="p4" onmouseover="four()" onmouseout="fourout()">
+                <img id="img4" src="/Images/sishir.jpg">
+            </div>
+            <div id="p5" onmouseover="five()" onmouseout="fiveout()">
+                <img id="img5" src="/Images/praveen (2).jpg">
+            </div>
+            <div id="p6" onmouseover="six()" onmouseout="sixout()">
+                <img id="img6" src="/Images/harshith.jpg">
+            </div>
         </div>
-    </section>
+
+
+        
+
+
+        
+    
 </body>
-<script src="/js/navBar.js"></script>
 </html>

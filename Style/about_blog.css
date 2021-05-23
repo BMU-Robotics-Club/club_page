@@ -5,50 +5,6 @@ body {
    font-weight: 300;
 }
 
-/* SEARch bar */
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
-}
-
-.searchTerm {
-  width: 100%;
-  border: 3px solid #00B4CC;
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 20%;
-  position: absolute;
-  top: 23%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-}
-  
-
 img {
    max-width: 100%;
    display: block;
@@ -131,7 +87,25 @@ header {
    margin-bottom: 3em;
 }
 
+footer {
+   background: #143774;
+   color: white;
+   text-align: center;
+   padding: .5em 0;
+}
 
+.fa-heart {
+   color: red;
+}
+
+footer a {
+   text-decoration: none;
+   color: red;
+}
+
+strong {
+   font-weight: 700;
+}
 
 nav ul {
    list-style: none;
@@ -185,12 +159,10 @@ nav a:focus {
    order: 1;
 }
 
-
 .sidebar-widget {
    border: 10px solid #efefef;
    margin-bottom: 2em;
    padding: 1em;
-
 }
 
 .widget-title {
@@ -289,12 +261,8 @@ nav a:focus {
    
    .article-title {
       order: 0;
-     
    }
    
 }
-
-
-
 
 
