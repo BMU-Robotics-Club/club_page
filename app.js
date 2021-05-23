@@ -4,13 +4,13 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 const multer = require("multer");
-
+const date = require(__dirname+"/date.js");
 
 // ! define storage for the images 
 const storage = multer.diskStorage({
     // destination for files.
     destination:(request,response,callback)=>{
-      callback(null,__dirname + "/public/uploads/images");
+      callback(null,__dirname + "/public/uploads/images/");
     },
     // add back the file extension
     filename:(request,file,callback)=>{
@@ -29,11 +29,20 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect("mongodb+srv://jaladisishir:Test-123@cluster0.58bhe.mongodb.net/blogDB",{useNewUrlParser:true});
+mongoose.connect("mongodb://localhost:27017/blogDB",{useNewUrlParser:true});
 const blogSchema = {
+  blogAuthor:{
+    type:String,
+    minLenght:5,
+    required:true
+  },
   blogTitle:{
     type:String,
     minLenght:1,
+    required:true
+  },
+  blogDate:{
+    type:String,
     required:true
   },
   blogBody:{
@@ -73,12 +82,37 @@ app.get('/compose',(req,res)=>{
   res.render('compose');
 });
 
+app.post('/compose',upload.single("image"),(req,res)=>{
+  console.log(req.file);
+  console.log(req.body);
+  // todo : save the post to database
+  let blogDic = {
+    "blogAuthor":req.body.authorName,
+    "blogTitle":req.body.blogTitle,
+    "blogDate":date.getDate(),
+    "blogBody":req.body.blogBody
+  };
+  if(req.file !== undefined){
+    blogDic.blogImg = "/uploads/images/"+req.file.filename;
+  }
+  console.log(blogDic);
+  const blog = new Blog(blogDic);
+  blog.save((err)=>{
+    if(!err){
+      res.redirect('/blogs');
+    }
+  });
+});
+
 // ! search results 
 app.post('/search',(req,res)=>{
   console.log(req.body);
   res.redirect('/blogs');
 });
 
+app.get('/error',(req,res)=>{
+  res.render('error');
+});
 
 // ! Setting server to a port 
 app.listen(3000, function() {

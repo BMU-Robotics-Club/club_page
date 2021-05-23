@@ -2,4 +2,51 @@
     <link rel="stylesheet" href="/Style/compose.css">
     <title>Blogs</title>
        <%- include("partials/navbar") -%>
+
+<main>
+  <h2>Compose Your Blogs Here ....</h2>
+  <div class="container">
+
+    <form action="/compose" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <div class="col-25">
+          <label for="authorName">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="authorName" name="authorName" placeholder="Your Name .... " required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="blogTitle">Blog Title</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="blogTitle" name="blogTitle" placeholder="Your Blog Name ..." required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="body">Body</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="blogBody" placeholder="Write something.." style="height:200px" required></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="img">Upload Image</label>
+        </div>
+        <div class="col-75">
+          <input type="file" name="image" id="image">
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</main>
+
+
      <%- include("partials/footer") -%>
