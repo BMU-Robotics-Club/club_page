@@ -6,12 +6,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/eventregistrationform.css">
-    <link rel="stylesheet" href="js/eventregistrationform.js">
+    <link rel="stylesheet" href="/Style/eventregistrationform.css">
+    <script src="/js/eventregistrationform.js"></script>
 
-    <title>Registration Form</title>
+    
+
+    <title>abc</title>
+
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_PRV9WInZUmwliEnouQ5m8");
+        })();
+        </script>
+        <script src="index.js"></script>
+
+
 </head>
-<body>
+
+<body onload="sendMail()">
 
 
     <div class="background">
@@ -48,7 +60,7 @@
                   </div>
                   <div class="app-form-group buttons">
                     <!-- <button class="app-form-button">CANCEL</button> -->
-                    <button class="app-form-button" onclick='sendMail()' action = "POST" >SEND</button>
+                    <button class="app-form-button" onclick='sendMail()'>SEND</button>
                   </div>
                 </div>
             </form>
