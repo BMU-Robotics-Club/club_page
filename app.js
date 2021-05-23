@@ -68,6 +68,10 @@ app.get('/',(req,res)=>{
 app.get('/events',(req,res)=>{
     res.render('events');
 });
+
+app.get('/events/registration',(req,res)=>{
+  res.render('eventRegistrationForm');
+});
 // * /teams -> teams
 app.get('/teams',(req,res)=>{
   res.render('teams');
@@ -75,7 +79,26 @@ app.get('/teams',(req,res)=>{
 
 // * /blogs -> blogs
 app.get('/blogs',(req,res)=>{
-   res.render('blogs');
+   Blog.findOne().sort({$natural: -1}).limit(1).exec((err,result)=>{
+
+    if(err) console.log(err);
+    else{
+      if(result !== null){
+        res.render('blogs',{
+          "recentArTitle":result.blogTitle,
+          "recentArImg":result.blogImg,
+          "recentArBody":result.blogBody,
+          "recentArDate":result.blogDate,
+          "recentArId":result._id
+        });
+      }
+      else{
+        res.redirect('/error');
+      }
+    
+    }
+
+   });
 });
 
 app.get('/compose',(req,res)=>{
