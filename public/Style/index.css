@@ -76,7 +76,9 @@ header{
 .nav-item:hover{
     border-bottom: 2px solid rgba(255, 255, 255, 0.822);
 }
-
+#pborder1{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.822);
+}
 
             /* Scrolling Effect */
             /*Apply styles after scroll*/
