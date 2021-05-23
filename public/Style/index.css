@@ -251,7 +251,7 @@ header{
 .Hidden-content{
     margin: 10vh 20vw;
     display: flex;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: white;
 
 }
