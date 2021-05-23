@@ -43,6 +43,10 @@ header{
 
    /* transition: height .5s ease; */
 }
+h3 a{
+   text-decoration: none;
+   color: #1792d2;
+}
 .navbar-nav{
    margin: 0;
    padding: 0;

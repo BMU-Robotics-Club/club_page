@@ -93,7 +93,7 @@ app.get('/events',(req,res)=>{
 app.get('/events/registration',(req,res)=>{
   res.render('eventRegistrationForm');
 });
-// * /teams -> teams
+// * /teams -> teams page
 app.get('/teams',(req,res)=>{
   res.render('teams');
 });
@@ -106,8 +106,12 @@ app.post('/events/form/success',(req,res)=>{
     "number":req.body.contactNumber,
     "registeredEvent":req.body.eventname
   });
-  registeredPerson.save();
-  res.redirect('/events');
+  registeredPerson.save((err)=>{
+    if(!err){
+      res.redirect('/events');
+    }
+  });
+  
 });
 
 // * /blogs -> blogs
@@ -148,7 +152,12 @@ app.get('/blogs/:blogID',(req,res)=>{
       Blog.find({_id:blogid},(err,results)=>{
 
         // console.log(resultThree);
-        if(err) console.log(err);
+        if(err){
+          console.log(err);
+          res.redirect('error',{
+            errTitle:errTitle,
+          });
+        }
         else{
           // ! for no result of the id
           if(results.length === 0){
@@ -233,5 +242,6 @@ app.get("/:some",(req,res)=>{
 app.listen(3000, function() {
     console.log("Server started on port 3000");
   });
+
   
 

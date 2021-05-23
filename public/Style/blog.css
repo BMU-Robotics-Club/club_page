@@ -36,6 +36,10 @@ header{
    transition: background-color .5s ease;
    z-index: 100;
 }
+h3 a{
+   text-decoration: none;
+   color: #1792d2;
+}
 .navbar{
    margin: 0.5rem 5rem 0rem;
    border-bottom: 2px solid rgba(255, 255, 255, 0.055);
