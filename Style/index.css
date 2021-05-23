@@ -17,7 +17,7 @@ body{
 svg{
     transform: scale(3);
 }
-/* *for the scroll bar */
+/* *for te scroll bar */
 body::-webkit-scrollbar{
     width: 0.25rem;
 }
