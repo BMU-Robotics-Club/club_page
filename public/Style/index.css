@@ -366,12 +366,15 @@ header{
     background-color: white;
     text-align: center;
 }
-
+main{
+    margin-bottom: -10rem;
+}
 /* !FOOTER CONTENTS */
 #footer{
     text-align: center;
     position: relative;
-    bottom: 5rem;
+    /* bottom: -4rem; */
+    /* margin-bottom: -13rem; */
 
 }
 .footer-icons{
