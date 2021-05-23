@@ -192,7 +192,7 @@ div > a{
     position: relative;
     background-image: url("/Images/gallery2.png");
     background-size: cover;
-    margin-top: -6%;;
+    margin-top: -8%;;
     width: 1510px;
     height: 1600px;
     filter: grayscale(30%);
@@ -670,7 +670,7 @@ margin-left:6%;
 
  .eventorganizers{
      display: flex;
-     margin-top:0.5%;
+ 
     position: relative;
     background-image: url("/Images/event_organizers.png");
     background-size: cover;
