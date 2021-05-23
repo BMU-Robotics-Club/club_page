@@ -55,6 +55,10 @@
             padding:15px;
             margin-top:28%;
             margin-left:15%;
+            cursor: pointer;
+        }
+        #back:hover{
+            background-color: #166bac;
         }
         a{
             text-decoration: none;
@@ -79,21 +83,23 @@
         }
     </style>
     <script>
-
+        function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+ }
 
         async function animting()
         {
             var ani=document.getElementById("animate");
             ani.style.opacity=0.9;
-            await sleep(300);
+            await sleep(200);
             ani.style.opacity=0.8;
-            await sleep(300);
+            await sleep(200);
             ani.style.opacity=0.7;
-            await sleep(300);
+            await sleep(200);
             ani.style.opacity=0.6;
             await sleep(300);
             ani.style.opacity=0.5;
-            await sleep(300);
+            await sleep(200);
             ani.style.opacity=0.4;
             await sleep(300);
             ani.style.opacity=0.3;
