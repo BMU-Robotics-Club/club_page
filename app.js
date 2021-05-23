@@ -66,9 +66,18 @@ app.get('/teams',(req,res)=>{
 
 // * /blogs -> blogs
 app.get('/blogs',(req,res)=>{
-   res.render('error');
+   res.render('blogs');
 });
 
+app.get('/compose',(req,res)=>{
+  res.render('compose');
+});
+
+// ! search results 
+app.post('/search',(req,res)=>{
+  console.log(req.body);
+  res.redirect('/blogs');
+});
 
 
 // ! Setting server to a port 

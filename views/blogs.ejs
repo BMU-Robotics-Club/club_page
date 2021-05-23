@@ -1,42 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+<%- include("partials/externals") %> 
+
     <link rel="stylesheet" href="/Style/blog.css">
-    <title>Document</title>
-</head>
-<body>
+    <title>Blogs</title>
+
        <%- include("partials/navbar") -%>
+
+
+       
        <!--! Search Bar  -->
        <div class="wrap">
-        <div class="search">
-           <input type="text" class="searchTerm" placeholder="What are you looking for?">
-           <button type="submit" class="searchButton">
-             <i class="fa fa-search"></i>
-          </button>
-        </div>
+           <form action="/search" method="POST" class="search">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?" name="query">
+               <button type="submit" class="searchButton" name="search" value="search">
+                  <!-- <i class="fa fa-search"></i> -->
+                  Search
+               </button>
+           </form>
      </div> 
-
-     <div class="wrap">
-        <div class="search">
-           <input type="text" class="searchTerm" placeholder="What are you looking for?">
-           <button type="submit" class="searchButton">
-             <i class="fa fa-search"></i>
-          </button>
-        </div>
-     </div>
-    
      <!-- main -->
      <div class="container container-flex">
         
         <main role="main">
-           
            <article class="article-featured">
               <h2 class="article-title">Finding simplicity in life</h2>
               <img src="/Images/life.jpg" alt="greenery pic" class="article-image">
-              <p class="article-info">July 23, 2019 | 3 comments</p>
+              <p class="article-info">July 23, 2019</p>
               <p class="article-body">Life can get complicated really quickly, but it doesn't have to be! There are many ways to simplify your life, a few of which we've explored in the past. This week we're taking a bit of a approach through, in how you can find simplicity in the life you already leaving.</p>
               <a href="#" class="article-read-more">CONTINUE READING</a>
            </article>
@@ -50,7 +38,7 @@
               
               <div class="article-recent-secondary">
                  <img src="/Images/food.jpg" alt="" class="article-image">
-                 <p class="article-info">July 19, 2019 | 3 comments</p>
+                 <p class="article-info">July 19, 2019</p>
               </div>
            </article>
           
