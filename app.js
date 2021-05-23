@@ -183,6 +183,10 @@ app.get('/error',(req,res)=>{
   });
 });
 
+app.get("/:some",(req,res)=>{
+  res.redirect('/error');
+});
+
 // ! Setting server to a port 
 app.listen(3000, function() {
     console.log("Server started on port 3000");
