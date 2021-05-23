@@ -1,7 +1,7 @@
 exports.getDate = ()=>{
     let today = new Date();
     let options = {
-        weekday:"long",
+        year:"numeric",
         day:"numeric",
         month:"long"
     };

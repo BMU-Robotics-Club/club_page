@@ -305,12 +305,14 @@ nav a:focus {
 
 
 @media (min-width: 900px) {
+   .container-nav,
    .container-flex {
       flex-direction: row;
    }
    
    main {
       width: 70%;
+      
    }
 
    aside {
