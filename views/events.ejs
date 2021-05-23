@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="icon" href="Pictures/logo.png"> -->
+    <link rel="stylesheet" href="/Style/events.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/05d9116b93.js" crossorigin="anonymous"></script>
+    <title>Club Events</title>
+    <script src="/js/events.js"></script>
+
+</head>
+<body>
+<%- include("partials/navbar")-%>
+<div class = "imagesetup">
+           
+    <h1 class = "eventshead">LET THE CHASE BE ON !</h1>
+
+    <h1 class = "eventshead2">ACE IT !!</h1>
+
+
+
+    <div class="brochurepos">
+        <a href="#" class="topbutton1">Brochure</a>
+    </div>
+
+    <div class="gallerypos">
+        <a href="#galleryimage" class="topbutton2">Gallery</a>
+    </div>
+
+    <div class="registereventspos">
+        <a href="/HTML/eventregistrationform.html"   target="_blank" class="topbutton3">Register For Events</a>
+    </div>
+        
+
+    <div class="chatwithuspos">
+        <a href="https://wa.me/+919160511676" class="topbutton4">Chat With Us</a>
+    </div>
+
+
+    <div class="knowmoreaction">
+        <p>Know More ⬇</p>
+    </div>
+</div>
+
+
+
+
+
+<br>
+
+<div class="div2imagesetup">
+
+<!-- Left Side Buttons -->
+
+<div class="leftbuttons">
+
+    
+    <div class="upcomingeventsbuttonpos">
+        <button class="eventsbuttons" onclick="openupcomingevents()">Upcoming Events</button>
+    </div>
+
+    <div class="flagshipeventsbuttonpos">
+        <button class="eventsbuttons" onclick="openflagshipevents()">Flagship Events</button>
+    </div>
+
+</div>
+
+<!-- Information displayed on the middle -->
+
+
+
+<div class="middleinfo">
+
+    <!-- Upcoming Events Information -->
+    <div id="upcominginformation">
+        <div class="divheading">
+            <h1>Upcoming Events</h1>
+        </div>
+
+        <div class="close">
+            <p onclick="closeall()">X</p>
+        </div>
+
+        <br>
+    
+        <!-- Card One -->
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+
+                <div class="event_name">
+                    <p>Arduino Quiz</p>
+                </div>
+        
+
+                <div class="cardtextposition">
+                    <p style="color: white;">Daily a question will be posted on instagram related to arduino. Top three participants
+                        will be considered.
+                    </p>
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">27th May 2021</p>            
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Card Two -->
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+            
+                <div class="event_name">
+                    <p>Sensors Event</p>
+                </div>
+
+                <div class="cardtextposition">
+                    <p style="color: white;">An Indepth about sensors will be explained. This is a 
+                        beginner workshop with live demonstartion.
+                    </p>
+
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">15th June 2021</p>            
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Card Three -->
+
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+            
+                <div class="event_name">
+                    <p>Talk on IOT</p>
+                </div>
+
+                <div class="cardtextposition">
+                    <p style="color: white;">People who are industry will come and Interact with us about IOT Technolgies
+                        and Embeddded Systems.
+                    </p>
+
+
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">20th June 2021</p>            
+                </div>
+
+                
+                
+            </div>
+
+        </div>
+
+
+        <div class="registereventsbutton">
+
+            <a href="/HTML/eventregistrationform.html"  target="_blank"  class="registereventscss">Register For Events</a>
+
+        </div>
+
+
+    </div>  
+    <!-- Upcoming Information End -->
+
+
+    <!-- Flagship Events Information -->
+    <div id="flagshipinformation">
+        <div class="divheading">
+            <h1>Flagship Events</h1>
+        </div>
+
+        <div class="close">
+            <p onclick="closeall()">X</p>
+        </div>
+
+        <br>
+    
+        <!-- Card One -->
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+
+                <div class="event_name">
+                    <p>Drone competetions</p>
+                </div>
+        
+
+                <div class="cardtextposition">
+                    <p style="color: white;">In this competetion players need to complete all the rounds using their drones. Fly and Win!
+                    </p>
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">_</p>            
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Card Two -->
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+            
+                <div class="event_name">
+                    <p>RC Nitro Competetion</p>
+                </div>
+
+                <div class="cardtextposition">
+                    <p style="color: white;">Participants need to complete all the track for four laps
+                        The Participant completeting in less time is the winner. 
+                    </p>
+
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">_</p>            
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Card Three -->
+
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+            
+                <div class="event_name">
+                    <p>Robo Wars</p>
+                </div>
+
+                <div class="cardtextposition">
+                    <p style="color: white;">The Battle of Bots! The fight between the bots with different weapons
+                        and the strategies will decide the winner. 
+                    </p>
+
+
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">_</p>            
+                </div>
+
+                
+                
+            </div>
+
+        </div>
+
+        <!-- <div class="registereventsbutton">
+
+            <a href="/HTML/eventregistrationform.html"  target="_blank"  class="registereventscss">Register For Events</a>
+
+        </div> -->
+
+        <!-- Removed Register Here for flagship events as those events are not happening now -->
+
+    </div>  
+    <!-- Flagship Information End -->
+
+
+    <!-- Workshop Events Information -->
+    <div id="workshopinformation">
+        <div class="divheading">
+            <h1>Workshops</h1>
+        </div>
+
+        <div class="close">
+            <p onclick="closeall()">X</p>
+        </div>
+
+        <br>
+    
+         <!-- Card One -->
+         <div class="card">
+        
+        
+            <div class="cardalignment">
+
+
+                <div class="event_name">
+                    <p>Arduino Workshop</p>
+                </div>
+        
+
+                <div class="cardtextposition">
+                    <p style="color: white;">Arduino Workshop is where we dive into basics of arduino. This course
+                        had been designed entirely for beginners.
+                    </p>
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">28th May 2021</p>            
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Card Two -->
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+            
+                <div class="event_name">
+                    <p>Drone Workshop</p>
+                </div>
+
+                <div class="cardtextposition">
+                    <p style="color: white;">Arduino Workshop is where we dive into basics of Drones. This course
+                        had been designed entirely for beginners. 
+                    </p>
+
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">10th June 2021</p>            
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Card Three -->
+
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+            
+                <div class="event_name">
+                    <p>Battery Workshop</p>
+                </div>
+
+                <div class="cardtextposition">
+                    <p style="color: white;">Arduino Workshop is where we dive into basics of Battery. This course
+                        had been designed entirely for beginners. 
+                    </p>
+
+
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">20th June 2021</p>            
+                </div>
+
+                
+                
+            </div>
+        </div>
+
+        <div class="registereventsbutton">
+
+            <a href="/HTML/eventregistrationform.html" target="_blank" class="registereventscss">Register For Events</a>
+
+        </div>
+
+    </div>  
+    <!-- Workshop Information End -->
+
+    <!-- Technical Events Information -->
+    <div id="technicalinformation">
+        <div class="divheading">
+            <h1>Technical Events</h1>
+        </div>
+
+        <div class="close">
+            <p onclick="closeall()">X</p>
+        </div>
+
+        <br>
+    
+        <!-- Card One -->
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+
+                <div class="event_name">
+                    <p>Line Follower</p>
+                </div>
+        
+
+                <div class="cardtextposition">
+                    <p style="color: white;">An autonomus bot must be made. This bot must follow a black line on white background.
+                    </p>
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">_</p>            
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Card Two -->
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+            
+                <div class="event_name">
+                    <p>Robo Race</p>
+                </div>
+
+                <div class="cardtextposition">
+                    <p style="color: white;">Robo Race is a racing competetion where you can have wired or wireless bots for racing. 
+                    </p>
+
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">_</p>            
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Card Three -->
+
+        <div class="card">
+        
+        
+            <div class="cardalignment">
+
+            
+                <div class="event_name">
+                    <p>Robo Soccer</p>
+                </div>
+
+                <div class="cardtextposition">
+                    <p style="color: white;">Robo Soccer is a soccer game with bots which should be controlled and goals must be made to win.
+                    </p>
+
+
+                </div>
+
+                <div class="dateandregistrationalignment">
+                    <p style="text-align:center">Date</p>
+                    <p style="text-align:center">_</p>            
+                </div>
+
+                
+                
+            </div>
+
+        </div>
+
+        <!-- <div class="registereventsbutton">
+
+            <a href="/HTML/eventregistrationform.html"   target="_blank" class="registereventscss">Register For Events</a>
+
+        </div> -->
+
+         <!-- Removed Register Here for Technical events as those events are not happening now -->
+
+    </div>  
+    <!-- Technical Information End -->
+
+
+    <!-- Stats Divison -->
+    <div id="statsdiv">
+        <h1 class="statusdivhead">BMU ROBOTICS CLUB</h1>
+        <p class="statusdivheadtext" style="color: white;">BMU Robotics Club is renowned for its events at our University.  Students in Robotics Club have been actively participating in many competetions and grabbed many 
+            prizes. Students in BMU have been actively participating in many events and we at BMU Club are always keen in learning 
+            new things and teaching to students. 
+        </p>
+        
+        <div class="statusdivheadtextbox">
+
+            <p class="statusdivheadtext" style="margin-left:6%; font-size:25px;">Our Event Stats</p>
+
+        <div class="newstats">
+            <div class="eventsstats">
+                <p>6 Events</p>
+            </div>
+            <div class="smallvertical"></div>
+
+
+            <div class="flagshipeventsstats">
+                <p>3 Flagship Events</p>
+            </div>
+            <div class="smallvertical1"></div>
+
+
+            <div class="workshopstats">
+                <p>15+ Workshop</p>
+            </div>
+
+        </div>
+        
+
+
+        </div>
+        
+
+    </div>
+
+<!-- Stats Divison End -->
+
+</div>
+<!-- Middle Information End -->
+
+
+<!-- ------------- -->
+
+<!-- Right Side Buttons -->
+
+<div class="rightbuttons">
+    <div class="workshopsbuttonpos">
+        <button onclick="openworkshopevents()" class="eventsbuttons">Workshops</button>
+    </div>
+
+    <div class="technicaleventsbuttonpos">
+        <button onclick="opentechnicalevents()" class="eventsbuttons">Technical Events</button>
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- Image 2 Setup Done -->
+
+
+<div class="eventorganizers">
+<div class="eventorganizers1">
+    <p>Harshith Sai Tunuguntla</p>
+    <p>+91 91605 11676</p>
+    <p>harshith.tunuguntla.19cse@bmu.edu.in</p>
+</div>
+
+<div class="eventorganizers2">
+    <p>Jaladi Saai Sishir</p>
+    <p>+91 86889 25540</p>
+    <p>sishir.jaladi.19cse@bmu.edu.in</p>
+</div>
+</div>
+
+
+<div id = "galleryimage">
+<p id="ourgalleytext">OUR GALLERY</p>
+</div>
+
+<script src="/js/navBar.js"></script>
+
+
+
+<%- include("partials/footer")-%> 

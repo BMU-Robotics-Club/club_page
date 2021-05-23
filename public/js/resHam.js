@@ -1,5 +1,3 @@
-//! for responsive hamburger icon
-
 let hamburger = document.querySelector("#hamburger");
 let nav_words_list = document.querySelectorAll(".nav-words");
 let altCheck = 0;
@@ -18,5 +16,4 @@ hamburger.addEventListener('click',()=>{
         nav_home_close.classList.replace("fa-times","fa-bars");
         altCheck = 0;
     }
-
 });

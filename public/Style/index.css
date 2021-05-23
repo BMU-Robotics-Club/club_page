@@ -77,6 +77,7 @@ header{
     border-bottom: 2px solid rgba(255, 255, 255, 0.822);
 }
 
+
             /* Scrolling Effect */
             /*Apply styles after scroll*/
 .scrolling-active{
@@ -381,8 +382,6 @@ footer a:hover{
     color: grey;
 }
 
-
-
 /* Team's CSS */
 
 /* * media queries  */
@@ -407,7 +406,6 @@ footer a:hover{
     }
 
 }
-
 textarea{
     resize:none;
 }

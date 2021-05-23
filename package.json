@@ -1,0 +1,27 @@
+{
+  "name": "club_page",
+  "version": "1.0.0",
+  "description": "BMU Robotics Club Webpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BMU-Robotics-Club/club_page.git"
+  },
+  "author": "SEPteens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BMU-Robotics-Club/club_page/issues"
+  },
+  "homepage": "https://github.com/BMU-Robotics-Club/club_page#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.10",
+    "multer": "^1.4.2"
+  }
+}
