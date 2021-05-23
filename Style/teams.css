@@ -5,15 +5,25 @@ root{
   --titleBg :#1b1a17;
   --transition-speed: 600ms;
 }
+
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+  /* background-image: linear-gradient( to bottom left, white, black);
+   */
+
 }
 body{
+  
   margin: 0;
   padding: 0;
   color: black;
-  background-color: white;
+
+  
+  /* background-image: linear-gradient(to bottom right, black, white); */
+  
+
 }
 svg{
   transform: scale(3);
@@ -36,7 +46,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: transparent;
   transition: background-color .5s ease;
   z-index: 100;
   height: auto;
@@ -152,7 +162,13 @@ html {
     font-size: 62.5%;
   }
   body {
-    background: #f1f1f1;
+
+    /* background-image: linear-gradient(to bottom right, black, white); */
+    /* background-color: #1B1A17; */
+    background-image: url("/Images/teamsbg.png");
+    
+    background-repeat:repeat;
+
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
@@ -732,12 +748,18 @@ margin-top:-100%;
       margin-top: -428px;
       margin-left: 490px;
     }
+    
     .column1{
       margin-top: 10%;
     }
+    .column2{
+      position:absolute;
+      margin-top: -428px;
+      margin-left: 500px;
+    }
     .column3{
       position:absolute;
-      margin-top: -408px;
+      margin-top: -428px;
       margin-left: -980px;
     }
 
@@ -745,7 +767,7 @@ margin-top:-100%;
       background-color: rgb(0, 0, 0);
       position: absolute;
       margin-top: -1%;
-      margin-left: 42%;
+      margin-left: 43%;
       color: white;
       padding: 5px  5rem;
       text-align: center;
