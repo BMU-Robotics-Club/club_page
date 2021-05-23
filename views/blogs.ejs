@@ -29,19 +29,21 @@
               <p class="article-body"><%= recentArBody.slice(0,100) %></p>
               <a href="/blogs/<%= recentArId %>" class="article-read-more">CONTINUE READING</a>
            </article>
-           <!-- !for loop -->
+           <!-- !for loop 5 to rest -->
+           <%smallArr.forEach((element)=>{%> 
            <article class="article-recent">
               <div class="article-recent-main">
-                 <h2 class="article-title">Keeping cooking simple</h2>
-                 <p class="article-body">Food is a very important part of everyone's life. If you want to be healthy, you have to eat healthy. One of the easiest way to do that is to keep your cooking nice and simple.</p>
-                 <a href="#" class="article-read-more">CONTINUE READING</a>
+                 <h2 class="article-title"><%= element.blogTitle %></h2>
+                 <p class="article-body"><%= element.blogBody.slice(1,50) %></p>
+                 <a href="/blogs/<%= element._id %>" class="article-read-more">CONTINUE READING</a>
               </div>
               
               <div class="article-recent-secondary">
-                 <img src="/Images/food.jpg" alt="" class="article-image">
-                 <p class="article-info">July 19, 2019</p>
+                 <img src="<%= element.blogImg %>" alt="" class="article-image">
+                 <p class="article-info"><%= element.blogDate %></p>
               </div>
             </article>
+            <% }) %> 
         </main>
         <!-- main end -->
 
@@ -51,22 +53,15 @@
            
            <div class="sidebar-widget">
               <h2 class="widget-title">RECENT POSTS</h2>
-              
+              <!-- ! 2 to 4 -->
+              <% sideArr.forEach((element)=>{ %> 
+
               <div class="widget-recent-post">
-                 <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
-                 <img src="/Images/food.jpg" alt="" class="widget-image">
+                 <h3 class="widget-recent-post-title"><%= element.blogTitle %></h3>
+                 <img src="<%=element.blogImg%>" alt="" class="widget-image">
               </div>
-              
-              <div class="widget-recent-post">
-                 <h3 class="widget-recent-post-title">Simplicity and work</h3>
-                 <img src="/Images/deco.jpg" alt="" class="widget-image">
-              </div>
-              
-              <div class="widget-recent-post">
-                 <h3 class="widget-recent-post-title">Simple decoration</h3>
-                 <img src="/Images/deco.jpg" alt="" class="widget-image">
-              </div>
-              
+
+              <% }); %> 
            </div>
            
         </aside>
