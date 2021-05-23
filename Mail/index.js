@@ -1,4 +1,7 @@
+let Event="placeholderevent";
+let Username="somex";
 // params
+
 
 function sendMail() {
 
@@ -10,13 +13,14 @@ function sendMail() {
     // message: document.getElementById("msg").value,
 
 
-    first_name:"prrkdssf",
     contact_number: "12344567890",
     from_gmail: "bmuroboticsclub@bmu.edu.in",
-    to_name:"USer Name",
+    to_name:" "+ Username +".",
     reply_to:"grpnpraveen@gmail.com",
-    message: "oh k then",
-    from_name:"BMU Robotics Club",
+    message: "Thank you for registering in "+Event+".",
+  
+    
+    from_name:"Confirmation Mail | BMU Robotics Club",
         
     };
     emailjs.send('service_7vmu1d5','template_7yz7myp',tempParams)
