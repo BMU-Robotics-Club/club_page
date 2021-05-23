@@ -16,6 +16,7 @@ function sendMail() {
     to_name:"USer Name",
     reply_to:"grpnpraveen@gmail.com",
     message: "oh k then",
+    from_name:"BMU Robotics Club",
         
     };
     emailjs.send('service_7vmu1d5','template_7yz7myp',tempParams)
@@ -23,4 +24,4 @@ function sendMail() {
         console.log("success", res.status);
     })
     
-}
+}x
