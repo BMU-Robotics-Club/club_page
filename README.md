@@ -1,2 +1,3 @@
-BMU-Robotics-Club/club_page # club_page
-Official webpage
+## BMU Robotics
+* **Official webpage**
+* Download the **npm dependencies** after cloning / downloading the repo ..
