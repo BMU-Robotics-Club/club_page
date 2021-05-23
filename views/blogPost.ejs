@@ -1,0 +1,40 @@
+<%- include("partials/externals") %> 
+    <link rel="stylesheet" href="/Style/about_blog.css">
+    <title>Blogs</title>
+
+       <%- include("partials/navbar") -%>
+     <!-- main -->
+     <div class="container container-flex">
+        
+        <main role="main">
+           <article class="article-featured">
+              <h1 class="article-title"><%= postTitle %></h1>
+              <p class="article-author">Written By :<%= postAuthor %></p>
+              <p class="article-date"><%= postDate %></p>
+              <img src="<%= postImg %>" alt="recentArtImg" class="article-image">
+              <p>class="article-body"><%= postBody %></p>
+           </article>
+        </main>
+        <!-- main end -->
+        <!-- side bar -->
+        <aside class="sidebar">
+           
+           <div class="sidebar-widget">
+              <h2 class="widget-title">RECENT POSTS</h2>
+              <!-- ! 2 to 4 -->
+              <% sideArr.forEach((element)=>{ %> 
+
+              <div class="widget-recent-post">
+                 <h3 class="widget-recent-post-title"><%= element.blogTitle %></h3>
+                 <img src="<%=element.blogImg%>" alt="" class="widget-image">
+              </div>
+
+              <% }); %> 
+           </div>
+           
+        </aside>
+        <!-- side end -->
+     </div>
+     
+
+     <%- include("partials/footer") -%>

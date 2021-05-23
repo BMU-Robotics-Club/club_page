@@ -110,11 +110,39 @@ app.get('/blogs',(req,res)=>{
 });
 
 app.get('/blogs/:blogID',(req,res)=>{
-  console.log(req.params);
-  
-  res.render('error',{
-    "errTitle":"Wait for sometime .."
-  });
+  // ! retrieving the latest 3 posts
+  Blog.find({},'blogImg blogTitle').sort({$natural:-1}).limit(3).exec((err,resultThree)=>{
+      const blogid = req.params.blogID;
+      const wrongId = "60aab4bcaab4b221c1a9a234";
+      Blog.find({_id:blogid},(err,results)=>{
+
+        console.log(resultThree);
+        if(err) console.log(err);
+        else{
+          // ! for no result of the id
+          if(results.length === 0){
+            res.render('error',{
+              "errTitle":errTitle
+            });
+          }
+          else{
+
+            console.log("results"+results);
+            
+            res.render('blogPost',{
+              "postTitle":results[0].blogTitle,
+              "postAuthor":results[0].blogAuthor,
+              "postDate":results[0].blogDate,
+              "postImg":results[0].blogImg,
+              "postBody":results[0].blogBody,
+              "sideArr":resultThree
+            });
+          }
+
+        }
+      });
+
+  });  
 });
 
 app.get('/compose',(req,res)=>{
