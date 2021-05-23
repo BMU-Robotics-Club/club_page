@@ -1,6 +1,7 @@
 
+
 :root{
-    font-family: 'Montserrat', sans-serif;
+
     font-size: 16px;
     --navBg:  rgba(139, 138, 138, 0.493);
     --titleBg :#1b1a17;
@@ -120,110 +121,215 @@ div > a{
     text-decoration: none;
 }
 
+/* --------------------------------------------------------- */
+
+
+.eventshead{
+    
+    position: relative;
+        padding-top: 23%;
+        text-align: center;
+        color: #ccc;
+        font-size: 5em;
+        text-shadow: 6px 12px #0B0C10;
+        font-family: 'Montserrat', sans-serif;
+        top:-100px;
+        margin-left: -50px;
+        font-weight:bolder;
+}
+
+
+.eventshead2{
+    
+    position: relative;
+        padding-top: 23%;
+        text-align: center;
+        color: #ccc;
+        font-size: 5em;
+        text-shadow: 6px 12px #0B0C10;
+        font-family: 'Montserrat', sans-serif;
+        top:-380px;
+}
+
 .imagesetup{
     position: relative;
-    background-image: url("/Images/rccarbg.jpeg");
+    /* background-image: url("/Images/eventsbggif.gif"); */
     background-size: cover;
     width:100%;
-    height:80%;
-    filter:grayscale(60%);
+    height: 900px;
+    background-image: url("/Images/robowar.jpg");
+    filter:grayscale(80%);
+
+
 
 }
-/* .imagesetup2{
+
+.div2imagesetup{
+    display: flex;
     position: relative;
-    background-image: url("/Images/bgdots.jpg");
+    background-image: url("/Images/bb4.png");
     background-size: cover;
     width:100%;
-    filter:grayscale();
-} */
+    height: 900px;
 
-.registereventspos
-{
+    /* background-image: url("/Images/robowar.jpg"); */
+
+
+}
+#galleryimage{
+    position: relative;
+    background-image: url("/Images/gallery2.png");
+    background-size: cover;
+    margin-top: -6%;;
+    width: 1510px;
+    height: 1600px;
+    filter: grayscale(30%);
+
+
+}
+#ourgalleytext{
+    position: relative;
+    font-size: 100px;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    top:30%;
+    margin-left:430px;
+
+}
+/* Image 1 Buttons */
+
+.brochurepos{
+    
     position: relative;
     font-size: 10px;
     color: white;
-        margin-top: -5%;
-    margin-left: 5%;
+    margin-left: 84%;
     color: #ccc;
+    top:-790px;
 }
-.registerevents{
+.gallerypos{
     
-  border: 2px solid white;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    position: relative;
+    font-size: 10px;
+    color: white;
+    margin-left: 84%;
+    color: #ccc;
+    top:-730px;
+}
+
+.registereventspos{
+    
+    position: relative;
+    font-size: 10px;
+    color: white;
+    margin-left: 84%;
+    color: #ccc;
+    top:-670px;
 }
 
 .chatwithuspos{
+    
     position: relative;
     font-size: 10px;
     color: white;
-        margin-top: -1.7%;
-    margin-left: 82%;
+    margin-left: 84%;
     color: #ccc;
-}
-.chatwithus{
+    top:-610px;
     
+}
+
+
+
+.buttonclass{
+    width:500px;
+}
+
+.topbutton1{
+    box-shadow: 4px 4px 4px 1px black;
+    width: 1000px;
+  border-radius: 12px;
+  background-color: black;
   border: 2px solid white;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 75px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
+  z-index:-1;
+  
 }
 
 
-
-/* 
-
-.eventsheading
-{
-    margin-top: 2%;
-    margin-left:43%;
-    border-radius:10px;
-    background-color: #0B0C10;
-    width:130px;
-    height:40px;
- 
+.topbutton2{
+    box-shadow: 4px 4px 4px 1px black;
+    width: 1000px;
+  border-radius: 12px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 81px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  z-index:-1;
+  
 }
 
-.eventsheadingformatting
+
+.topbutton3{
+    box-shadow: 4px 4px 4px 1px black;
+    width: 1000px;
+  border-radius: 12px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  z-index:-1;
+  
+}
+
+
+.topbutton4{
+    box-shadow: 4px 4px 4px 1px black;
+    width: 1000px;
+  border-radius: 12px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  z-index:-1;
+  
+}
+
+.topbutton:hover{
+background-color: #2f293d;
+}
+
+
+/* Know More on Image 1 Action */
+.knowmoreaction
 {
-    margin-left:14%;
-    color:white;
-    font-weight:bold;
-} */
-
-/* 
-.imagesetup2{
     position: relative;
-    
-    background-size: cover;
-    width:100%;
-    
-} */
-
-
-.newpos{
-    position: relative;
-    font-size: 50px;
-    color: #0B0C10;
-    font-weight: 500;
-    margin-top: 20%;
-    margin-left: 50%;
+    font-size: 20px;
+    color: white;
+    margin-left: 47%;
     color: #ccc;
+    top:-300px;
+
+    animation: slide1 1s ease-in-out infinite;
 }
 
-  .arrow1 {
-    animation: slide1 1s ease-in-out infinite;
-    margin-left: 9px;
-  }
 
   @keyframes slide1 {
     0%,
@@ -239,164 +345,343 @@ div > a{
 
 
 
-.eventshead{
-    
-    
-    position: relative;
-        /* margin: 300px auto; */
-        padding-top: 5.5%;
-        text-align: center;
-        color: white;
-        font-size: 6em;
-        
-        font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.eventsstats{
-      
-        margin-top: 4%;
-        width:100%;
-        height:130px;
-        background-color: rgb(27,26,23);
-        display: flex;
-        
-    
-}
-
-/* .ourstats{
-    position: relative;
-    margin-top: -2%;
-    margin-left: 10%;
-    color: white;
-    font-size: 50px;
-} */
-
-
-
-
-
-
-.stats1{
-    position: relative;
-    margin-top: -2%;
-    margin-left: 10%;
-    color: white;
-    font-size: 50px;
-}
-
-.stats1data{
-    position: relative;
-    margin-top: 5%;
-    margin-left: -5.5%;
-    color: white;
-    font-size: 20px;
-}
-
-.vertical1{
-    margin-top: 1%;
-    margin-left: 16%; 
-    border-left: 2px solid white;
-  height: 100px;
-}
-
-.stats2{
-    position: relative;
-    margin-top: -2%;
-    margin-left: 17%;
-    color: white;
-    font-size: 50px;
-}
-
-.stats2data{
-    position: relative;
-    margin-top: 5%;
-    margin-left: -6%;
-    color: white;
-    font-size: 20px;
-    
-}
-
-.vertical2{
-    margin-top: 1%;
-    margin-left: 16%;
-    border-left: 2px solid white;
-  height: 100px;
-}
-
-.stats3{
-    position: relative;
-    margin-top: -2%;
-    margin-left: 14%;
-    color: white;
-    font-size: 50px;
-}
-
-.stats3data{
-    position: relative;
-    margin-top: 5%;
-    margin-left: -6.2%;
-    color: white;
-    font-size: 20px;
-}
 /* Part 2 */
 
 
-.rotatepos {
 
-    margin-top: 100px;
+/* Builfing of the information */
+
+
+
+.event_name{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+
+
 }
 
-.rotateformatting{
 
-    
-    /* Safari */
-    -webkit-transform: rotate(-90deg);
-    
-    /* Firefox */
-    -moz-transform: rotate(-90deg);
-    
-    /* IE */
-    -ms-transform: rotate(-90deg);
-    
-    /* Opera */
-    -o-transform: rotate(-90deg);
-    
-    float: left;
-    color:#0B0C10;
-    font-weight: 500;
-    font-family: 'Courier New', Courier, monospace;
+#statsdiv{
+    padding-top: 2%;
+    display: inline-block;
+    position:relative;
+    width:1019px;
+    background-color: #1b1a17;
+    height: 490px;
 }
 
-/* Part 3 */
+.statusdivhead{
+    text-align: center;
+    color: #ccc;
+    font-size: 5em;
+    text-shadow: 6px 12px #222738;
+    font-family: 'Montserrat', sans-serif;
+}
 
-/* #demo{
+.statusdivheadtextbox
+{
+    margin-top: 6.3%;
+    width:100%;
+    height:200px;
+    background-color: white;
+    border-color:#0B0C10 ;
+    border-width: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.statusdivheadtext{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.newstats{
+    display:flex;
+}
+
+.eventsstats{
+font-size: 20px;
+color:black;
+margin-left:6%;
+}
+
+.smallvertical
+{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 15%; 
+    border-left: 3px solid black;
+  height: 50px;
+}
+
+
+.flagshipeventsstats{
+    font-size: 20px;
+    color:black;
+    margin-left:15%;
+    }
+    
+    .smallvertical1
+    {
+        display: flex;
+        margin-top: 1%;
+        margin-left: 15%; 
+        border-left: 3px solid black;
+      height: 50px;
+    }
+
+
+    .workshopstats{
+    font-size: 20px;
+    color:black;
+    margin-left:50px;
+    }
+
+
+/* Buttons in image 2 */
+
+    .leftbuttons{
+        display: inline-block;
+        margin-left: 22px;
+        
+    }
+    .middleinfo{
+        margin-top:210px;
+        margin-left: 40px;
+        height:510px;
+        width:1018px;
+
+
+    }
+    .rightbuttons
+    {
+    
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .eventsbuttons{
+        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0);
+        border-radius: 12px;
+        background-color: #1b1a17;
+        border: 2px solid white;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .upcomingeventsbuttonpos{
+
+        top:360px;
+        position: relative;
+        font-size: 10px;
+        color: white;
+        z-index: 100;
+        
+    }
+
+    .flagshipeventsbuttonpos{
+
+    padding-top:450px;
     position: relative;
-    padding-left: 23%;
-    padding-top:10% ;
-    font-size: 80px;
+    font-size: 10px;
     color: white;
-} */
+    }
 
-.events-ul {
+
+    .workshopsbuttonpos{
+        top:380px;
     position: relative;
-	border-radius: 25px;
-	height: 40px;
-	display: inline-flex;
-	background-color: rgba(0, 0, 0, .4); 
-	align-items: center;
-	padding: 5px 10px 5px 5px;
-    margin-top: -30px;
+    font-size: 10px;
+    color: white;
     margin-left: 15%;
-}
-.events-li {
-    padding: 5px 85px 5px 85px;
-		list-style: none;
-		color: black;
-		font-family: sans-serif;
-		position: relative;
-		cursor: pointer;
-	
-}
-	
 
+    }
+
+    .technicaleventsbuttonpos{
+
+        top:460px;
+    position: relative;
+    font-size: 10px;
+    color: white;
+
+    }
+    
+
+
+    #upcominginformation{
+     
+        padding-top: 4%;
+        display: none;
+        position:relative;
+        height:500px;
+        background-color:  #1b1a17;
+        border: 2px solid white;
+        
+        
+    }
+
+    #flagshipinformation{
+     
+        padding-top: 4%;
+        display: none;
+        position:relative;
+        height:500px;
+        background-color:  #1b1a17;
+        border: 2px solid white;
+        
+        
+    }
+    #workshopinformation{
+     
+        padding-top: 4%;
+        display: none;
+        position:relative;
+        height:500px;
+        background-color:  #1b1a17;
+        border: 2px solid white;
+        
+        
+    }
+    #technicalinformation{
+     
+        padding-top: 4%;
+        display: none;
+        position:relative;
+        height:500px;
+        background-color:  #1b1a17;
+        border: 2px solid white;
+        
+        
+    }
+
+    .close{
+        color:white;
+        margin-left:95%;
+        margin-top:-7%;
+        cursor: pointer;
+        font-size: x-large;
+    }
+
+
+
+    .divheading
+    {
+        color:white;
+        margin-left:37%;
+        margin-top:-1%;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .cardalignment
+    {
+        display: inline-block;
+     
+        
+    }
+
+    .card
+    {
+        background-image: url("/Images/fest.jpg");
+        display: inline-block;
+        position: relative;
+        width:30%;
+        margin-left: 20px;
+        height:360px;
+        background-color: black;  
+        z-index: 1;     
+        
+    }
+
+    .smallbox
+    {
+        padding-top: 10px;
+        padding-right: 10px;
+        position: relative;
+        width:30%;
+        height:115px;
+    }
+    
+    .cardtextposition
+    {
+        position: relative;
+        color:white;
+        margin-top: 20px;
+        margin-left:20px;
+        margin-right: 10px;
+        display: inline-block;
+
+    }
+
+   
+
+    .dateandregistrationalignment
+    {
+        border-top: 2px solid rgb(223, 220, 211);
+        color:white;
+        padding-top: 2%;
+        width:40%;
+        display: inline-block;
+        margin-left: 85px;
+        margin-top: 30px;
+    }
+
+    .registereventsbutton
+    {
+
+        position: relative;
+        font-size: 7px;
+        margin-left: 39.5%;
+        margin-top: 2.5%;
+    }
+    .registereventscss{
+    
+        border: 2px solid white;
+        color: white;
+        padding: 10px 28px;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+
+ .eventorganizers{
+     display: flex;
+     margin-top:0.5%;
+    position: relative;
+    background-image: url("/Images/event_organizers.png");
+    background-size: cover;
+    width: 1510px;
+    height: 290px;
+ }
+
+ .eventorganizers1{
+     width:290px;
+     height:290px;
+     margin-left:37.5%;
+     padding-top: 6%;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bolder;
+ }
+
+ .eventorganizers2{
+    width:290px;
+    height:290px;
+    margin-left:25.5%;
+    padding-top: 6%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
