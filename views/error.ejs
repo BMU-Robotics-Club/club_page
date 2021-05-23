@@ -98,6 +98,17 @@
            opacity:1;
            display:block;
         }
+        .flex-container{
+            display: flex;
+            flex-flow: column wrap;
+            line-height: 1rem;
+        }
+        @media screen and (max-width:500px) {
+            .flex-container{
+                justify-content: center;
+                align-items: center;
+            }
+        }
     </style>
     <script>
         function sleep(ms) {
@@ -134,17 +145,20 @@
     </script>
 </head>
 <body onload="animting()">
-    <h1>404 Page Not Found</h1>
-    <h3>Oh no, you’ve found our junior developer’s homepage!</h3>
-    <h3 id="last">May be he is playing with a new bot in our Club room 😉.</h3>
-    <h3 id="lastf">Despite playing, he also wrote some code ! </h3>
-    <div id="back">
-        <a href="/" >Go Back To Home</a>
+    <div class="flex-container">
+        <h1><%= errTitle %></h1>
+        <h3>Oh no, you’ve found our junior developer’s homepage!</h3>
+        <h3 id="last">May be he is playing with a new bot in our Club room 😉.</h3>
+        <h3 id="lastf">Despite playing, he also wrote some code ! </h3>
+        <div id="back">
+            <a href="/" >Go Back To Home</a>
+        </div>
+        <div id="animate"></div>
+        <div id="container">
+            <img src="/Images/404g.gif">
+        </div>
     </div>
-    <div id="animate"></div>
-    <div id="container">
-        <img src="/Images/404g.gif">
-    </div>
+    
    
     
 </body>

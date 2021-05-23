@@ -5,6 +5,8 @@ const _ = require("lodash");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const date = require(__dirname+"/date.js");
+const errTitle = "404 Page Not Found ... ";
+const noBlogTitle = "Blogs coming soon ..."
 
 // ! define storage for the images 
 const storage = multer.diskStorage({
@@ -79,26 +81,40 @@ app.get('/teams',(req,res)=>{
 
 // * /blogs -> blogs
 app.get('/blogs',(req,res)=>{
-   Blog.findOne().sort({$natural: -1}).limit(1).exec((err,result)=>{
-
+   Blog.find().sort({$natural:-1}).exec((err,result)=>{
     if(err) console.log(err);
     else{
-      if(result !== null){
+      if(result.length !== 0){
+        console.log(result);
         res.render('blogs',{
-          "recentArTitle":result.blogTitle,
-          "recentArImg":result.blogImg,
-          "recentArBody":result.blogBody,
-          "recentArDate":result.blogDate,
-          "recentArId":result._id
+          "recentArTitle":result[0].blogTitle,
+          "recentArImg":result[0].blogImg,
+          "recentArBody":result[0].blogBody,
+          "recentArDate":result[0].blogDate,
+          "recentArId":result[0]._id,
+          "smallArr":result.slice(4),
+          "sideArr":result.slice(1,4)
         });
       }
       else{
-        res.redirect('/error');
+        console.log(result);
+        console.log(typeof(result));
+        res.render('error',{
+          "errTitle":noBlogTitle
+        });
       }
-    
+     
     }
 
    });
+});
+
+app.get('/blogs/:blogID',(req,res)=>{
+  console.log(req.params);
+  
+  res.render('error',{
+    "errTitle":"Wait for sometime .."
+  });
 });
 
 app.get('/compose',(req,res)=>{
@@ -134,7 +150,9 @@ app.post('/search',(req,res)=>{
 });
 
 app.get('/error',(req,res)=>{
-  res.render('error');
+  res.render('error',{
+    "errTitle":errTitle
+  });
 });
 
 // ! Setting server to a port 
