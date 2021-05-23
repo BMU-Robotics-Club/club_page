@@ -28,4 +28,4 @@ function sendMail() {
         console.log("success", res.status);
     })
     
-}x
+}
