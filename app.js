@@ -77,6 +77,12 @@ app.get('/teams',(req,res)=>{
   res.render('teams');
 });
 
+app.get('/registrationsuccesful',(req,res)=>{
+  res.render('error',{
+    "errTitle":"Registration Succesful"
+  });
+});
+
 // * /blogs -> blogs
 app.get('/blogs',(req,res)=>{
    Blog.findOne().sort({$natural: -1}).limit(1).exec((err,result)=>{
