@@ -351,6 +351,12 @@ header{
 }
 .flex-content{
     padding: 2rem;
+    display:flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 .flex-right{
     background-color: white;
