@@ -82,6 +82,8 @@ const Event = mongoose.model('Event',registrationSchema);
 
 // * / -> home
 app.get('/',(req,res)=>{
+    // todo : read achivements from database .
+    
     res.render('home');
 });
 
