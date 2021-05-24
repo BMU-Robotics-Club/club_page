@@ -238,8 +238,14 @@ app.get("/:some",(req,res)=>{
   res.redirect('/error');
 });
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+
 // ! Setting server to a port 
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log("Server started on port 3000");
   });
 
