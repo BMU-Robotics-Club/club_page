@@ -192,8 +192,9 @@ div > a{
     position: relative;
     background-image: url("/Images/gallery2.png");
     background-size: cover;
-    margin-top: -8%;;
-    width: 1532px;
+
+    margin-top: -6%;
+    width: 1700px;
     height: 1600px;
     filter: grayscale(30%);
 
@@ -674,14 +675,15 @@ margin-left:6%;
     position: relative;
     background-image: url("/Images/event_organizers.png");
     background-size: cover;
-    width: 1532px;
+
+    width: 100vw;
     height: 290px;
  }
 
  .eventorganizers1{
      width:290px;
      height:290px;
-     margin-left:37.5%;
+     margin-left:35.5%;
      padding-top: 6%;
      text-align: center;
      font-family: 'Montserrat', sans-serif;
