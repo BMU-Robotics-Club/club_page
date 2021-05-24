@@ -76,6 +76,13 @@ const registrationSchema = {
     required:true
   }
 }
+const acheivementSchema = {
+  name:String,
+  desciption:String,
+  title:String,
+  participants:[String]
+}
+const Acheivements = mongoose.model("Acheivement",acheivementSchema);
 const Blog = mongoose.model('Blog',blogSchema);
 const Event = mongoose.model('Event',registrationSchema);
 // ! ROUTING
@@ -83,7 +90,13 @@ const Event = mongoose.model('Event',registrationSchema);
 // * / -> home
 app.get('/',(req,res)=>{
     // todo : read achivements from database .
-    
+    Acheivements.find({},(err,results)=>{
+      if(err) console.log(err);
+      else{
+        console.log(results);
+        console.log(results.length);
+      }
+    });
     res.render('home');
 });
 
